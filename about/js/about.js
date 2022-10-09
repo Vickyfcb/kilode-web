@@ -58,3 +58,10 @@ const toggleItem = (item) =>{
     }
 
 }
+
+/*=============== DARK THEME ===============*/
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-theme");
+}
+/*=============== TESTIMONY ===============*/

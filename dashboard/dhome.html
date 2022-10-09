@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__profile">
+                <img src="image/profile-img.png" class="profile__img">
+                <div class="profile__text">
+                    <h1 class="profile__name">Hey UserX</h1>
+                    <span>Welcome back!</span>
+                </div>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-apps"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="dmessage.html" class="nav__link">
+                            <i class="uil uil-comment"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#journal" class="nav__link">
+                            <i class="uil uil-notebooks"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#feeds" class="nav__link">
+                            <i class="uil uil-thumbs-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#settings" class="nav__link active-link">
+                            <i class="uil uil-setting"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="notification__button">
+                <img src="image/notification.png">
+            </a>
+        </nav>
+    </header>
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+        <section class="home container grid">
+            <div class="start">
+                <h1 class="start__title">
+                    Ready to start your conversation?
+                </h1>
+                <a href="/dashboard/dstopic.html" class="button start__button">
+                    Start Conversation
+                </a>
+            </div>
+            <div class="convo">
+                <h1 class="convo__title">
+                    Total Conversations
+                </h1>
+                <div class="convo__img">
+                    <img src="image/convo.png" class="convo__icon">
+                </div>
+                <h1 class="convo__number">
+                    0 Conversations
+                </h1>
+            </div>
+            <div class="volunteer">
+                <h1 class="volunteer__title">
+                    Want to become a Volunteer Kilopal?
+                </h1>
+                <p class="volunteer__description">
+                    Join our ever growing community of trained
+                    empathic listeners bringinng change ti the world.
+                </p>
+                <a href="dkilopal.html" class="volunteer__button">
+                    <i class="uil uil-angle-right-b volunteer__icon"></i>
+                </a>
+            </div>
+            <div class="blog" id="#messages">
+                <h1 class="blog__title">
+                    Read our blog
+                </h1>
+                <p class="blog__description">
+                    Get tips to stay healthy mentally and
+                    emotionally with inspiring stories from our blog.
+                </p>
+                <a href="#" class="button blog__button">
+                    Read blog
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>

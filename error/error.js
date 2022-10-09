@@ -28,9 +28,3 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
-
-/*=============== DARK THEME ===============*/
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-theme");
-}

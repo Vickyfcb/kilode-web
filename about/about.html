@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="/about/css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>About</title>
 </head>
@@ -12,12 +14,14 @@
      <!-- ============ HEADER ============ -->
      <header class="header" id="header">
         <nav class="nav container">
-            <img src="image/kilode-logo-white.png" alt="logo" class="nav__logo">
-
+            <a href="/index.html" class="nav__logo-img">
+                <img src="/home/image/kilode-logo-white.png" class="nav__logo nav__logo-light">
+                <img src="/home/image/kilode-logo.png" class="nav__logo nav__logo-dark">
+            </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="/home/index.html" class="nav__link">Home</a>
+                        <a href="/index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="/about/about.html" class="nav__link active-link">About Us</a>
@@ -26,11 +30,11 @@
                         <a href="/contact/contact.html" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#blog" class="nav__link">Blog</a>
+                        <a href="/error/error.html" class="nav__link">Blog</a>
                     </li>
                 </ul>
                 <div class="nav__menu-btn">
-                   <a href="#" class="nav__button button">
+                   <a href="/kilode sign up/signin.html" class="nav__button button">
                         Login
                    </a>
                 </div>
@@ -40,6 +44,13 @@
                 </div>
             </div>
             <div class="nav__btns">
+                <!-- <label class="switch">
+                    <input type="checkbox" onclick="myFunction()" class="switch__input">
+                    <div class="switch__rail">
+                        <span class="switch__circle"></span>
+                    </div>
+                </label> -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-bars"></i>
                 </div>
@@ -93,21 +104,162 @@
             </div>
         </section>
         <!-- =============== TEAM =============== -->
-        <!-- <section class="section team">
-            <div class="team__container container">
-                <h1 class="team__title">Meet Our Team</h1>
-                <div class="team__contents grid">
-                    <div class="team__card">
-                        <img src="/about/image/team-img.png">
-                        <div class="team__data">
-                            <h2 class="team__name">Okokon Victor</h2>
-                            <p class="team__job">Developer</p>
-                            <p class="team__about">About</p>
+        <div class="team">
+            <h1 class="team__title">Meet Our Team</h1>
+        </div>    
+        <div class="teams">
+            <div class="team__container swiper mySwiper2 container">
+                <div class="team__contents swiper-wrapper">
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Taiwo Samuel</h2>
+                                    <p class="team__job">Designer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Eddidiong Chris</h2>
+                                    <p class="team__job">Designer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Okokon Victor</h2>
+                                    <p class="team__job">Developer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Suvwe Adidi</h2>
+                                    <p class="team__job">Designer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Mozez Charles</h2>
+                                    <p class="team__job">Developer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Lily Chiamaka</h2>
+                                    <p class="team__job">Designer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card swiper-slide">
+                        <div class="team__card front__card">
+                            <img src="/about/image/team-img.png" class="team__img">
+                            <div class="team__data">
+                                <div class="team__text">
+                                    <h2 class="team__name">Enobong Johnson</h2>
+                                    <p class="team__job">Developer</p>
+                                    <p class="team__about">About</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back__card">
+                            <div class="team__socials">
+                                <img class="team__social-icon" src="/home/image/insta-logo.png">
+                                <img class="team__social-icon" src="/home/image/twitter-logo.png">
+                                <img class="team__social-icon" src="/home/image/fb-logo.png">
+                                <img class="team__social-icon" src="/home/image/like-logo.png">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- <div class="swiper-button-next">
+                    <i class="uil uil-arrow-circle-right swiper-team-icon icon-next"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-arrow-circle-left swiper-team-icon icon-prev"></i>
+                </div> -->
+                <div class="swiper-pagination"></div>
             </div>
-        </section> -->
+        </div> 
         <section class="section faq">
             <div class="faq__container container">
                 <h1 class="faq__title">FAQ</h1>
@@ -284,16 +436,16 @@
                     <h2 class="social__title">Connect with us</h2>
                     <div class="footer__social">
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-instagram"></i>
+                            <img src="/home/image/insta-logo.png" alt="">
                         </a>
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-twitter"></i>
+                            <img src="/home/image/twitter-logo.png" alt="">
                         </a>
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-facebook-f"></i>
+                            <img src="/home/image/fb-logo.png" alt="">
                         </a>
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-linkedin-alt"></i>
+                            <img src="/home/image/like-logo.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -302,5 +454,40 @@
         </div>
     </footer>
     <script src="/about/js/about.js"></script>
+    <script src="/changetheme.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper2 = new Swiper(".mySwiper2", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          rewind: true,
+          grabCursor:true,
+          mouseWheel:true,
+          keyboard:true,
+          breakpoints: {
+              200:{
+                  slidesPerView:1.2,
+              },
+              568:{
+                  slidesPerView:2.2,
+                  spaceBetween:20,
+              },
+              992:{
+                  slidesPerView:3.2,
+                  spaceBetween:20,
+              },
+          },
+        //   navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //   },
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 </html>

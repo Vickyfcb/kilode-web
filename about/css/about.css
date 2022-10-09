@@ -16,6 +16,7 @@
     --secondary-color-volunteer: hsl(24, 75%, 73%);
     --ash-color: hsl(0, 0%, 95%);
     --placeholder-color: hsl(0, 0%, 31%);
+    --header-color: hsl(0, 0%, 100%);
   
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -76,6 +77,7 @@ ul{
   
 a{
     text-decoration: none;
+    cursor: pointer;
 }
   
 img{
@@ -102,10 +104,121 @@ img{
     color: var(--text-color-white);
     border-radius: .5rem;
 }
+/* ===== THEMES ===== */
+.switch{
+    display: inline-block;
+    width: 43px;
+    height: 24px;
+    cursor: pointer;
+}
+.switch__input{
+    display: none;
+}
+.switch__rail{
+    position: relative;
+    width: 43px;
+    height: 25px;
+    background-color: #828282;
+    border-radius: 3rem;
+}
+.switch__circle{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    transition: transform .4s;
+}
+.switch__input:checked ~ .switch__rail .switch__circle{
+    transform: translate(18px, -50%);
+}
+.switch__input:checked ~ .switch__rail{
+    background-color: var(--first-color);
+}
+.change-theme{
+    font-size: 1.5rem;
+    color: var(--first-color-alt);
+    cursor: pointer;
+    transition: .3s;
+}
+.change-theme:hover{
+    transform: rotate(360deg);
+    transition: all .3s ease-in-out;
+}
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    --header-color: hsl(178, 77%, 9%);
+    --body-color: hsl(178, 21%, 9%);
+    --ash-color:hsla(180, 10%, 8%, 1);
+}
+.dark-theme .values__content{
+    background-color: hsla(178, 97%, 14%, 1);
+}
+.dark-theme .change-theme{
+    color: #fff;
+}
+.dark-theme .values__title{
+    color: var(--text-color-white);
+}
+.dark-theme .verify__content-title{
+    color: var(--text-color-white);
+}
+.dark-theme .verify__content-description{
+    color: var(--text-color-white);
+}
+.dark-theme .faq__title{
+    color: var(--text-color-white);
+}
+.dark-theme .team__title{
+    color: var(--text-color-white);
+}
+.dark-theme .faq__content-description{
+    color: var(--text-color-white);
+}
+.dark-theme .faq__item-title{
+    color: var(--text-color-white);
+}
+.dark-theme .faq__icon{
+    color: var(--text-color-white);
+}
+.dark-theme .faq__description{
+    color: var(--text-color-white);
+}
+.dark-theme .sharing__title{
+    color: var(--text-color-white);
+}
+.dark-theme .sharing__description{
+    color: var(--text-color-white);
+}
+.dark-theme .nav__toggle{
+    color: var(--text-color-white);
+}
+.dark-theme .nav__close{
+    color: var(--text-color-white);
+}
+.dark-theme .active-link::after{
+    background-color: var(--text-color-white);
+}
+.dark-theme .nav__link{
+    color: var(--text-color-white);
+}
+.dark-theme .footer{
+    background-color:hsla(178, 77%, 9%, 1);
+}
+.dark-theme .nav__logo-dark{
+    display: inline;
+}
+.dark-theme .nav__logo-white{
+    display: inline;
+}
 /* header */
 .header{
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--header-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -118,19 +231,29 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+.nav__logo-img{
+    position: relative;
+    display: inline-block;
+}
 .nav__logo{
-    width: 63px;
+    width: 85px;
+}
+.nav__logo-dark{
+    display: none;
+    position: absolute;
+    top: 0;left: 0;
+    z-index: 99;
 }
 .nav__toggle{
     display: inline-flex;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     cursor: pointer;
     color: var(--first-color-alt);
 }
 @media screen and (max-width:767px) {
     .nav__menu{
         position: fixed;
-        background-color: var(--container-color);
+        background-color: var(--body-color);
         width: 75%;
         height: 100%;
         top: 0;
@@ -167,12 +290,12 @@ img{
 .nav__btns{
     display: flex;
     gap: .5rem;
+    align-items: center;
+    justify-content: center;
 }
 .nav__menu-btn{
     margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 3rem;
 }
 .nav__button{
     padding: .7rem 2.5rem;
@@ -190,6 +313,7 @@ img{
 .active-link{
     position: relative;
     color: var(--first-color-alt);
+    font-weight: 700;
 }
 .active-link::after{
     content: '';
@@ -212,7 +336,10 @@ img{
     padding-top: 5rem;
 }
 .about__container{
-    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .about__title{
     color: var(--text-color-white);
@@ -228,6 +355,7 @@ img{
     color: var(--text-color-white);
     font-size: .813rem;
     font-weight: 400;
+    margin-right: 3rem;
 }
 /* VALUES */
 .values__title{
@@ -264,9 +392,107 @@ img{
     color: var(--text-color);
     margin-bottom: 0.5rem;
 }
+/* TEAM */
+.team{
+    margin-bottom: 1.5rem;
+}
+.team__title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    font-weight: 700;
+}
+.teams{
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+    background-image: url(/about/image/team-bg\ \(2\).png);
+    background-color: var(--first-color);
+    /* filter: blur(2px); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+    background: #fff;
+}
+.team__contents{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.team__card{
+    border: 1px solid rgb(158, 158, 158);
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-left: 2rem;
+    background: linear-gradient(146.44deg, rgba(255, 255, 255, 0.3) 0%,
+                                           rgba(255, 255, 255, 0) 99.95%);
+}
+.team__data{
+    padding: 2rem 1rem 4rem;
+    backdrop-filter:blur(5px);
+}
+.team__name{
+    font-weight: 700;
+    color: var(--text-color-white);
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+.team__job,
+.team__about{
+    font-weight: 400;
+    color: var(--text-color-white);
+    font-size: .9rem;
+}
+.team__job{
+    margin-bottom: 2rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
+.swiper-team-icon{
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+}
+.icon-next{
+    right: -2rem;
+}
+.back__card{
+    padding: 9.3rem 3.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: .5rem;
+    backdrop-filter:blur(5px);
+    background: linear-gradient(146.44deg, rgba(255, 255, 255, 0.3) 0%,
+                                           rgba(255, 255, 255, 0) 99.95%);;
+}
+.team__socials{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.team__social-icon{
+    width: 35px;
+}
+.team-card{
+    position: relative;
+    display: inline-block;
+}
+.team-card:hover .back__card{
+    display: inline;
+}
+.team-card:hover .front__card{
+    display: none;
+}
 /* FAQS */
 .faq{
-    background-color: var(--container-color);
+    background-color: var(--body-color);
 }
 .faq__title{
     color: var(--first-color);
@@ -386,6 +612,7 @@ img{
     color: var(--text-color);
     font-size: 16px;
     outline: none;
+    border-radius: .2rem;
 }
 .footer__input::placeholder{
     font-weight: 400;
@@ -446,11 +673,12 @@ img{
     gap: .3rem;
 }
 .footer__social-link{
-    color: var(--text-color-white);
+    /* color: var(--text-color-white);
     padding: .6rem;
     font-size: 1rem;
     border-radius: .5rem;
-    background-color: var(--first-color-alt);
+    background-color: var(--first-color-alt); */
+    width: 35px;
 }
 .footer__copy{
     color: var(--text-color-white);
@@ -468,8 +696,12 @@ img{
     }
 }
 @media screen and (min-width:568px) {
-    .about__container{
-        margin-right: 17rem;
+    .about{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    .about__description{
+        margin-right: 9rem;
     }
     .faq__header{
         column-gap: 1rem;
@@ -502,13 +734,13 @@ img{
     .nav{
         height: calc(var(--header-height) + 1rem);
         column-gap: 3rem;
+        max-width: 968px;
     }
     .nav__menu{
         margin-left: auto;
     }
     .nav__toggle,
-    .nav__close,
-    .nav__btns{
+    .nav__close{
         display: none;
     }
     .nav__menu{
@@ -526,18 +758,18 @@ img{
         gap: 1.5rem;
     }
     .nav__logo{
-        width: 85px;
+        width: 105px;
     }
     .container{
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .about{
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
     }
-    .about__container{
-        width: 40%;
+    .about__description{
+        margin-right: 22rem;
     }
     .sharing__title,
     .about__title,
@@ -558,6 +790,14 @@ img{
     .footer__title{
         font-size: 1.5rem;
     }
+    .footer__contents{
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+    }
+    .footer__content{
+        justify-content: center;
+        gap: 3rem;
+    }
 }  
 @media screen and (min-width:992px) {
     .container{
@@ -567,6 +807,7 @@ img{
     }
     .nav{
         column-gap: 5rem;
+        max-width: 968px;
     }
     .nav__menu{
         gap: 4rem;
@@ -574,9 +815,20 @@ img{
     .nav__list{
         gap: 2.5rem;
     }
-    .about__container{
-        margin-left: 4rem;
-        width: 30%;
+    .about{
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+    .faq,
+    .values,
+    .sharing{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .about__description{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-right: 27rem;
     }
     .values__contents{
         grid-template-columns: repeat(3,1fr);
@@ -586,5 +838,13 @@ img{
     }
     .footer__contents{
         grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
     }
-}  
+    .footer__content{
+        justify-content: center;
+        gap: 4rem;
+    }
+    .footer__social-link{
+        width: 45px;
+    }
+}   

@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kilode Home</title>
     <link rel="stylesheet" href="/home/css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
     <!-- ============ HEADER ============ -->
     <header class="header" id="header">
         <nav class="nav container">
-            <img src="/home/image/kilode-logo-white.png" class="nav__logo">
-
+            <a href="/index.html" class="nav__logo-img">
+                <img src="/home/image/kilode-logo-white.png" class="nav__logo nav__logo-light">
+                <img src="/home/image/kilode-logo.png" class="nav__logo nav__logo-dark">
+            </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__item">
@@ -26,11 +29,11 @@
                         <a href="/contact/contact.html" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#blog" class="nav__link">Blog</a>
+                        <a href="/error/error.html" class="nav__link">Blog</a>
                     </li>
                 </ul>
                 <div class="nav__menu-btn">
-                   <a href="#" class="nav__button button">
+                   <a href="/kilode sign up/signin.html" class="nav__button button">
                         Login
                    </a>
                 </div>
@@ -40,6 +43,13 @@
                 </div>
             </div>
             <div class="nav__btns">
+                <!-- <label class="switch">
+                    <input type="checkbox" onclick="myFunction()" class="switch__input">
+                    <div class="switch__rail">
+                        <span class="switch__circle"></span>
+                    </div>
+                </label> -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-bars"></i>
                 </div>
@@ -58,7 +68,7 @@
                         Have anonymous conversations, free your mind and 
                         improve your sense of well-being all in a supportive and safe space.
                     </p>
-                    <a class="home__button button">
+                    <a href="/dashboard/dhome.html" class="home__button button">
                         Start Conversation
                     </a>
                 </div>
@@ -166,55 +176,45 @@
             </div>
         </section>
         <!-- =============== TESTIMONIALS =============== -->
-        <section class="section testimonial">
+        <section class="test">
+        <div class="testimonial">
             <h1 class="testimonial__title">What People Say</h1>
-            <div class="testimonial__container container">
-                <!-- <div class="swiper-wrapper"> -->
-                  <div class="testimonial__content">
-                    <div class="testimonial__data">
-                        <p class="testimony" id="info">
-                            Great job. It feels great to see things differently and to be 
-                            understood without judgement. I'll definitely reconnect with kilodé 
-                            again and tell my friends as well. Great Job.”
-                        </p>
-                        <span class="testimonial__name" id="author">ANONYMOUS</span>
-                    </div>
-                  </div>
-                  <!-- prev next button -->
-                  <div class="button-container">
-                      <button class="prev-btn" id="prev-btn">
-                        <i class="uil uil-angle-left"></i>
-                      </button>
-                      <button class="next-btn" id="next-btn">
-                        <i class="uil uil-angle-right"></i>
-                      </button>
-                  </div>
-                  <!-- <div class="testimonial__content swiper-slide">
-                    <div class="testimonial__data">
-                        <p class="testimony">
-                            Great job. It feels great to see things differently and to be 
-                            understood without judgement. I'll definitely reconnect with kilodé 
-                            again and tell my friends as well. Great Job.”
-                        </p>
-                        <span class="testimonial__name">JOHN DOE</span>
-                    </div>
-                  </div> -->
-                  <!-- <div class="testimonial__content swiper-slide">
-                    <div class="testimonial__data">
-                        <p class="testimony">
-                            Great job. It feels great to see things differently and to be 
-                            understood without judgement. I'll definitely reconnect with kilodé 
-                            again and tell my friends as well. Great Job.”
-                        </p>
-                        <span class="testimonial__name">ANON</span>
-                    </div>
-                  </div> -->
-                <!-- </div> -->
-
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+        </div>
+        <div class="testimonial__container container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial__data swiper-slide">
+                <p class="testimony" id="info">
+                    Great job. It feels great to see things differently and to be 
+                    understood without judgement. I'll definitely reconnect with kilodé 
+                    again and tell my friends as well. Great Job.”
+                </p>
+                <span class="testimonial__name" id="author">ANONYMOUS</span>
+              </div>
+              <div class="testimonial__data swiper-slide">
+                <p class="testimony" id="info">
+                    Great job. It feels great to see things differently and to be 
+                    understood without judgement. I'll definitely reconnect with kilodé 
+                    again and tell my friends as well. Great Job.”
+                </p>
+                <span class="testimonial__name" id="author">EDDY CHRIS</span>
+              </div>
+              <div class="testimonial__data swiper-slide">
+                <p class="testimony" id="info">
+                    Great job. It feels great to see things differently and to be 
+                    understood without judgement. I'll definitely reconnect with kilodé 
+                    again and tell my friends as well. Great Job.”
+                </p>
+                <span class="testimonial__name" id="author">TAIWO SAMUEL</span>
+              </div>
             </div>
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-testimonial-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-testimonial-icon"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
         </section>
         <section class="section better">
             <div class="better__container container">
@@ -246,7 +246,7 @@
             <div class="footer__contents grid">
                 <div class="footer__logo">
                     <img src="/home/image/kilode-logo.png" class="footer__logo-img">
-                    <p class="footer__logo-text">“Kilodé doesn't replace therapy, but gives users a place to start.”</p>
+                    <p class="footer__logo-text">“Kilodé doesn't replace therapy, <br> but gives users a place to start.”</p>
                 </div>
                 <div class="footer__content">
                 <div class="footer__company">
@@ -285,16 +285,16 @@
                     <h2 class="social__title">Connect with us</h2>
                     <div class="footer__social">
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-instagram"></i>
+                            <img src="/home/image/insta-logo.png" alt="">
                         </a>
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-twitter"></i>
+                            <img src="/home/image/twitter-logo.png" alt="">
                         </a>
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-facebook-f"></i>
+                            <img src="/home/image/fb-logo.png" alt="">
                         </a>
                         <a href="#" class="footer__social-link">
-                            <i class="uil uil-linkedin-alt"></i>
+                            <img src="/home/image/like-logo.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -302,7 +302,27 @@
             <p class="footer__copy">&#169; 2022 Kilode. All rights reserved.</p>
         </div>
     </footer>
+    <script src="changetheme.js"></script>
     <script src="/home/js/main.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          slidesPerView:1,
+          loop: true,
+          autoplay:{
+              delay:2000,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
 </body>
 </html>
