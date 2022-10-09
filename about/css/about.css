@@ -458,7 +458,7 @@ body.dark-theme{
 .icon-next{
     right: -2rem;
 }
-.back__card{
+/* .back__card{
     padding: 9.3rem 3.2rem;
     position: absolute;
     top: 0;
@@ -470,7 +470,7 @@ body.dark-theme{
     backdrop-filter:blur(5px);
     background: linear-gradient(146.44deg, rgba(255, 255, 255, 0.3) 0%,
                                            rgba(255, 255, 255, 0) 99.95%);;
-}
+} */
 .team__socials{
     display: flex;
     gap: 0.5rem;
@@ -484,12 +484,12 @@ body.dark-theme{
     position: relative;
     display: inline-block;
 }
-.team-card:hover .back__card{
+/* .team-card:hover .back__card{
     display: inline;
 }
 .team-card:hover .front__card{
     display: none;
-}
+} */
 /* FAQS */
 .faq{
     background-color: var(--body-color);
