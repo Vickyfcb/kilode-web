@@ -197,6 +197,9 @@ body.dark-theme{
 .dark-theme .testimonial__name{
     color: var(--text-color-white);
 }
+.dark-theme .swiper-testimonial-icon{
+    color: var(--text-color-white);
+}
 .dark-theme .better__title{
     color: var(--text-color-white);
 }
@@ -208,6 +211,9 @@ body.dark-theme{
 }
 .dark-theme .nav__close{
     color: var(--text-color-white);
+}
+.dark-theme .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: var(--text-color-white);
 }
 .dark-theme .active-link::after{
     background-color: var(--text-color-white);
@@ -513,12 +519,14 @@ body.dark-theme{
     margin-top: 3rem;
     padding-bottom: 4rem;
     padding-top: 4rem;
+    position: relative;
 }
 .volunteer__img{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 290px;
+    z-index: 2;
 }
 .volunteer__data{
     margin-top: 2rem;
@@ -549,6 +557,15 @@ body.dark-theme{
 }
 .volunteer__button:hover{
     background-color: var(--first-color);
+}
+.volunteer__elipse{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.volunteer__elipse-img{
+    width: 150px;
 }
 /* testimonial */
 .test{
@@ -637,7 +654,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 19px;
 }
 .footer__suscribe{
@@ -886,6 +903,9 @@ body.dark-theme{
     .volunteer__button{
         margin-top: 0;
     }
+    .volunteer__elipse-img{
+        width: 190px;
+    }
     .footer__title{
         font-size: 1.5rem;
     }
@@ -932,7 +952,7 @@ body.dark-theme{
         padding-bottom: 5rem;
     }
     .home__data{
-        margin-right: 20rem;
+        margin-right: 30rem;
     }
     .home__title{
         font-size: 2.9rem;
@@ -952,19 +972,36 @@ body.dark-theme{
     .start__contents{
         grid-template-columns: repeat(3,1fr);
     }
+    .verify__content-description{
+        margin-right: 2rem;
+    }
     .volunteer__img{
         width: 490px;
     }
     .testimonial__data{
         padding: 0 10rem 2rem;
     }
+    .volunteer__data{
+        margin-right: 9rem;
+    }
+    .volunteer__elipse-img{
+        width: 290px;
+    }
+    .footer{
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
     .footer__contents{
         grid-template-columns: repeat(3,1fr);
         gap: 4rem;
+        margin-top: 6rem;
     }
     .footer__content{
         justify-content: center;
         gap: 4rem;
+    }
+    .footer__socials{
+        margin-left: 2rem;
     }
     .footer__social-link{
         width: 45px;

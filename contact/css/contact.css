@@ -373,7 +373,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 19px;
 }
 .footer__suscribe{
@@ -543,6 +543,12 @@ body.dark-theme{
     }
     .contact__container{
         grid-template-columns: repeat(2,1fr);
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .contact__data{
+        margin-left: 0;
+        margin-right: 0;
     }
     .contact__description{
         margin-right: 0;
@@ -566,6 +572,11 @@ body.dark-theme{
         margin-left: auto;
         margin-right: auto;
     }
+    .contact__container{
+        max-width: 968px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .nav{
         column-gap: 5rem;
         max-width: 968px;
@@ -576,13 +587,21 @@ body.dark-theme{
     .nav__list{
         gap: 2.5rem;
     }
+    .footer{
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
     .footer__contents{
         grid-template-columns: repeat(3,1fr);
         gap: 4rem;
+        margin-top: 6rem;
     }
     .footer__content{
         justify-content: center;
         gap: 4rem;
+    }
+    .footer__socials{
+        margin-left: 2rem;
     }
     .footer__social-link{
         width: 45px;

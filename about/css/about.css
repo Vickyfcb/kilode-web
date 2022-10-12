@@ -407,7 +407,7 @@ body.dark-theme{
     padding-right: 1.5rem; */
     background-image: url(/about/image/team-bg\ \(2\).png);
     background-color: var(--first-color);
-    /* filter: blur(2px); */
+    /* filter:blur(5px); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -596,7 +596,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 19px;
 }
 .footer__suscribe{
@@ -836,13 +836,21 @@ body.dark-theme{
     .faq__content-description{
         padding: 0 1.25rem 1.25rem .5rem;
     }
+    .footer{
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
     .footer__contents{
         grid-template-columns: repeat(3,1fr);
         gap: 4rem;
+        margin-top: 6rem;
     }
     .footer__content{
         justify-content: center;
         gap: 4rem;
+    }
+    .footer__socials{
+        margin-left: 2rem;
     }
     .footer__social-link{
         width: 45px;
