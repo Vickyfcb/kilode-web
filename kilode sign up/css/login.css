@@ -143,7 +143,7 @@ input{
 .login__title{
     text-align: center;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     color: var(--first-color);
     line-height: 1.5rem;
     margin-bottom: 2rem;
@@ -234,15 +234,15 @@ input{
     display: block;
     width: max-content;
     margin-left: auto;
-    margin-top: 0.5rem;
-    font-size: .75rem;
+    margin-top: 1rem;
+    font-size: .8rem;
     font-weight: 400;
     color: var(--forgot-color);
 }
 .login__button{
     display: block;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     background-color: var(--first-color);
     color: var(--white-color);
     font-weight: 600;

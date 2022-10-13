@@ -356,7 +356,7 @@ body.dark-theme{
 }
 .home__title{
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bolder;
     line-height: 2.2rem;
     color: var(--text-color-white);
 }
@@ -367,7 +367,7 @@ body.dark-theme{
     margin-top: 1.5rem;
     color: var(--text-color-gray);
     margin-bottom: 2.5rem;
-    font-size: .9rem;
+    font-size: .85rem;
     line-height: 1.4rem;
 }
 .home__button{
@@ -402,7 +402,7 @@ body.dark-theme{
 }
 .nothing__title{
     color: var(--first-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.625rem;
     margin-bottom: 1rem;
@@ -410,7 +410,7 @@ body.dark-theme{
 .nothing__description{
     color: var(--text-color);
     font-weight: 400;
-    font-size: .9rem;
+    font-size: .85rem;
     line-height: 1.3rem;
 }
 .nothing__button{
@@ -431,7 +431,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .values__contents{
     margin-top: 2rem;
@@ -466,7 +466,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .start__contents{
     margin-top: 2rem;
@@ -532,7 +532,7 @@ body.dark-theme{
     margin-top: 2rem;
 }
 .volunteer__title{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--text-color-white);
     line-height: 1.75rem;
     font-weight: 700;
@@ -544,7 +544,7 @@ body.dark-theme{
 .volunteer__description{
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: .9rem;
+    font-size: .85rem;
     line-height: 22px;
     margin-bottom: 2rem;
 }
@@ -580,7 +580,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .testimonial__data{
     padding:0 3rem 2rem;
@@ -616,13 +616,13 @@ body.dark-theme{
 }
 .better__title{
     color: var(--first-color);
-    font-size: 24px;
+    font-size: 1.8rem;
     line-height: 26.4px;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 .better__description{
-    font-size: .9rem;
+    font-size: .85rem;
     line-height: 22.4px;
     color: var(--text-color);
     font-weight: 400;
@@ -646,7 +646,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 28px;
     margin-bottom: 10px;
 }
@@ -696,13 +696,13 @@ body.dark-theme{
 .footer__logo-text{
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 19px;
 }
 .company__title,
 .legal__title{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.3rem;
     line-height: 28px;
     color: var(--text-color-white);
     margin-bottom: .1rem;
@@ -717,10 +717,10 @@ body.dark-theme{
 .legal__link{
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: .813rem;
+    font-size: .8rem;
 }
 .social__title{
-    font-size: 20px;
+    font-size:1.3rem;
     color: var(--text-color-white);
     font-weight: 700;
     margin-bottom: 0.6rem;

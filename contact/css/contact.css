@@ -270,11 +270,14 @@ body.dark-theme{
 .nav__menu-btn{
     margin-top: 3rem;
     margin-left: 3rem;
+    margin-right: 3rem;
 }
 .nav__button{
     padding: .7rem 2.5rem;
     color: var(--text-color-white);
     border-radius: .5rem;
+    width: 100%;
+    text-align: center;
 }
 .nav__button:hover{
     background-color: var(--first-color);
@@ -296,7 +299,7 @@ body.dark-theme{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--first-color);
+    background-color: var(--first-color-alt);
 }
 .main{
     margin-top: 3.5rem;
@@ -308,14 +311,14 @@ body.dark-theme{
     gap: 2rem;
 }
 .contact__title{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--first-color);
     margin-bottom: 1rem;
 }
 .contact__description{
     color: var(--text-color);
-    font-size: .9rem;
+    font-size: .85rem;
     line-height: 1.2rem;
     font-weight: 400;
     margin-right: 4rem;
@@ -365,7 +368,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.4rem;
     line-height: 28px;
     margin-bottom: 10px;
 }
@@ -415,13 +418,13 @@ body.dark-theme{
 .footer__logo-text{
     color: var(--text-color-white);
     font-weight: 400;
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 19px;
 }
 .company__title,
 .legal__title{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.3rem;
     line-height: 28px;
     color: var(--text-color-white);
     margin-bottom: .1rem;
@@ -439,7 +442,7 @@ body.dark-theme{
     font-size: .813rem;
 }
 .social__title{
-    font-size: 20px;
+    font-size: 1.3rem;
     color: var(--text-color-white);
     font-weight: 700;
     margin-bottom: 0.6rem;
