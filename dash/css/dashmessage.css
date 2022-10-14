@@ -251,6 +251,9 @@ img{
     font-size: .8rem;
     font-weight: 700;
 }
+@media screen and (max-width:767px) {
+    
+}
 .message__container{
     position: fixed;
     background-color: var(--body-color);
@@ -315,4 +318,37 @@ img{
 .message__header-status{
     font-size: .7rem;
     font-weight: 700;
+}
+@media screen and (min-width:767px) {
+    .chat__header{
+        left: 5rem;
+        transition: .5s;
+    }
+     .expander .chat__header{
+        left: 12rem;
+    }
+    .chat{
+        display: flex;
+        position: relative;
+        width: 1396px;
+        max-width: 100%;
+        height: 100vh;
+        background: #fff;
+    }
+    .chat__container{
+        margin-bottom: 2rem;
+        position: relative;
+        flex: 30%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .message__container{
+        position: relative;
+        flex: 70%;
+        right: 0;
+        height: 100%;
+    }
+    .chat__close{
+        display: none;
+    }
 }

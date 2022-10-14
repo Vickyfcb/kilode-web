@@ -160,6 +160,7 @@ img{
     .nav{
         position: fixed;
         left: 0;
+        top: 0;
         background-color: var(--body-color);
         width: 58px;
         height: 100vh;
