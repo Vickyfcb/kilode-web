@@ -106,7 +106,6 @@ img{
         column-gap: 2rem;
         transition: .4s;
         z-index: 100;
-        display: none;
     }
     .nav__list-first{
         display: flex;
