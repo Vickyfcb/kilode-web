@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
     --header-height: 3.5rem; /*56px*/
@@ -346,7 +346,7 @@ body.dark-theme{
 }
 .about__title{
     color: var(--text-color-white);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -364,7 +364,7 @@ body.dark-theme{
 .values__title{
     text-align: center;
     color: var(--first-color);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.8rem;
 }
 .values__contents{
@@ -403,7 +403,7 @@ body.dark-theme{
     text-align: center;
     font-size: 1.8rem;
     color: var(--first-color);
-    font-weight: 700;
+    font-weight: 800;
 }
 .teams{
     /* padding-left: 1.5rem;
@@ -499,7 +499,7 @@ body.dark-theme{
 }
 .faq__title{
     color: var(--first-color);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -565,7 +565,7 @@ body.dark-theme{
     color: var(--first-color);
     font-size: 1.8rem;
     line-height: 2.2rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 2rem;
 }
 .sharing__description{
@@ -590,7 +590,7 @@ body.dark-theme{
 .footer__title{
     text-align: center;
     color: var(--text-color-white);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.4rem;
     line-height: 28px;
     margin-bottom: 10px;

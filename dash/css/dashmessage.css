@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
     /*========== Colors ==========*/
@@ -70,7 +70,10 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-  
+input{
+    outline: none;
+    border: none;
+}
 img{
     max-width: 100%;
     height: auto;
@@ -151,7 +154,6 @@ img{
 }
 .user__status{
     font-size: .7rem;
-    font-style: italic;
     font-weight: 400;
 }
 .select-menu{
@@ -319,6 +321,87 @@ img{
     font-size: .7rem;
     font-weight: 700;
 }
+.messages{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 2rem 1rem;
+    overflow: auto;
+}
+.message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+.you__message{
+    justify-content: flex-end;
+}
+.kilode__message{
+    justify-content: flex-start;
+}
+.you__message p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: .6rem 2.2rem;
+    color: var(--text-color-white);
+    background:hsla(180, 32%, 50%, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.you__message span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+}
+.kilode__message p{
+    background: #fff;
+    text-align: left;
+    position: relative;
+    right: 0;
+    max-width: 65%;
+    padding: .6rem 2.2rem;
+    color: var(--text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.chat__box-input{
+    position: relative;
+    bottom: 2.3rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--body-color);
+}
+.chat__input{
+    display: flex;
+    padding: .9rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 100%;
+    gap: 1rem;
+}
+.chat__input input{
+    width: 100%;
+}
+.chat__input i{
+    font-size: 1.5rem;
+}
+.send__message{
+    font-size: 1.5rem;
+    padding:.6rem 1rem .7rem;
+    background-color: hsla(180, 38%, 50%, 1);
+    border-radius: 50%;
+    color: #fff;
+}
 @media screen and (min-width:767px) {
     .chat__header{
         left: 5rem;
@@ -326,6 +409,13 @@ img{
     }
      .expander .chat__header{
         left: 12rem;
+    }
+    .active-link{
+        background-color: hsla(230, 42%, 53%, 1);
+        color: var(--text-color-white);
+    }
+    .active-link::after{
+        display: none;
     }
     .chat{
         display: flex;

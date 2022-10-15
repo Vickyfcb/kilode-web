@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
     /*========== Colors ==========*/
@@ -103,7 +103,6 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 2rem;
         transition: .4s;
         z-index: 100;
     }
@@ -111,7 +110,10 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap:2rem;
+        column-gap:3.5rem;
+    }
+    .nav__list-second{
+        display: none;
     }
 }
 .nav__link{
@@ -204,7 +206,6 @@ img{
     .nav__link i,
     .logout__link i{
         font-size: 1.5rem;
-        color: var(--text-color);
     }
     .nav__link .nav__text{
         font-weight: 700;
@@ -261,4 +262,12 @@ img{
     .expander{
        padding: 0 0 0 12rem;
     }
+}
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background: hsla(180, 4%, 75%, 1);
+}
+::-webkit-scrollbar-thumb{
+    background: hsla(180, 4%, 55%, 1);
+    border-radius: .4rem;
 }

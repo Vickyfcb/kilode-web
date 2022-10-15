@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
     --header-height: 3.5rem; /*56px*/
@@ -312,7 +312,7 @@ body.dark-theme{
 }
 .contact__title{
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--first-color);
     margin-bottom: 1rem;
 }
@@ -367,7 +367,7 @@ body.dark-theme{
 .footer__title{
     text-align: center;
     color: var(--text-color-white);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.4rem;
     line-height: 28px;
     margin-bottom: 10px;
