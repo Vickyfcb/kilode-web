@@ -324,7 +324,7 @@ img{
 .messages{
     position: relative;
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 160px);
     padding: 2rem 1rem;
     overflow: auto;
 }
@@ -370,7 +370,7 @@ img{
     font-size: 1rem;
 }
 .chat__box-input{
-    position: relative;
+    position: sticky;
     bottom: 2.3rem;
     left: 0;
     display: flex;
