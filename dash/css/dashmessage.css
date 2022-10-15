@@ -269,6 +269,10 @@ img{
 .show-menu{
     right:0;
 }
+.show-menu .chat__box-input{
+    display: flex;
+    transition: .3s;
+}
 .message__header{
     height: 5.5rem;
     background-color: var(--container-color);
@@ -298,6 +302,19 @@ img{
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+.header-pic{
+    position: relative;
+}
+.active-online{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    background: hsl(130,95%,65%);
+    position: absolute;
+    bottom: 8px;
+    right: 0;
 }
 .message__header-pic{
     color: var(--text-color-white);
@@ -370,16 +387,16 @@ img{
     font-size: 1rem;
 }
 .chat__box-input{
-    position: sticky;
-    bottom: -1rem;
+    position: fixed;
+    bottom: 0;
     left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     background-color: var(--body-color);
-    padding: 0 .4rem;
+    padding: .4rem 1rem;
+    display: none;
 }
 .chat__input{
     display: flex;
@@ -438,6 +455,17 @@ img{
         flex: 70%;
         right: 0;
         height: 100%;
+    }
+    .chat__box-input{
+        position:sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--body-color);
+        padding: .4rem 1rem;
     }
     .chat__close{
         display: none;
