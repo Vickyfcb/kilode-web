@@ -371,14 +371,14 @@ img{
 }
 .chat__box-input{
     position: sticky;
-    bottom: 2.3rem;
     left: 0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    background-color: var(--body-color);
+    background-color:var(--body-color);
+    padding: .4rem 0;
 }
 .chat__input{
     display: flex;
