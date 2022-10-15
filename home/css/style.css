@@ -355,7 +355,7 @@ body.dark-theme{
     margin-right: 4rem;
 }
 .home__title{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 800;
     line-height: 2.2rem;
     color: var(--text-color-white);
@@ -402,7 +402,7 @@ body.dark-theme{
 }
 .nothing__title{
     color: var(--first-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: 1.625rem;
     margin-bottom: 1rem;
@@ -431,7 +431,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .values__contents{
     margin-top: 2rem;
@@ -466,7 +466,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .start__contents{
     margin-top: 2rem;
@@ -532,7 +532,7 @@ body.dark-theme{
     margin-top: 2rem;
 }
 .volunteer__title{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--text-color-white);
     line-height: 1.75rem;
     font-weight: 800;
@@ -580,7 +580,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .testimonial__data{
     padding:0 3rem 2rem;
@@ -616,7 +616,7 @@ body.dark-theme{
 }
 .better__title{
     color: var(--first-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 26.4px;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -646,7 +646,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 28px;
     margin-bottom: 10px;
 }

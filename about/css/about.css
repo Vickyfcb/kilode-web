@@ -365,7 +365,7 @@ body.dark-theme{
     text-align: center;
     color: var(--first-color);
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .values__contents{
     margin-top: 2rem;
@@ -401,7 +401,7 @@ body.dark-theme{
 }
 .team__title{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--first-color);
     font-weight: 800;
 }
@@ -500,7 +500,7 @@ body.dark-theme{
 .faq__title{
     color: var(--first-color);
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 .faq__contentss{
@@ -563,7 +563,7 @@ body.dark-theme{
 }
 .sharing__title{
     color: var(--first-color);
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     line-height: 2.2rem;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -591,7 +591,7 @@ body.dark-theme{
     text-align: center;
     color: var(--text-color-white);
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 28px;
     margin-bottom: 10px;
 }

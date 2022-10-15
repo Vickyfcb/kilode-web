@@ -246,12 +246,12 @@ img{
 }
 .user__name-closed{
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-color);
 }
 .user__status-closed{
     font-size: .8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media screen and (max-width:767px) {
     
