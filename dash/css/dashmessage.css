@@ -321,7 +321,7 @@ img{
     font-size: 1.5rem;
     font-weight: 700;
     background-color: hsla(11, 85%, 67%, 1);
-    padding:.5rem 1rem;
+    padding:.5rem .9rem;
     border-radius: 50%;
 }
 .message__header-names{
@@ -361,8 +361,7 @@ img{
     position: relative;
     right: 0;
     text-align: right;
-    max-width: 65%;
-    padding: .6rem 2.2rem;
+    padding: 1rem 2.2rem;
     color: var(--text-color-white);
     background:hsla(180, 32%, 50%, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -372,19 +371,25 @@ img{
 .you__message span{
     display: block;
     margin-top: 5px;
-    font-size: 0.85em;
+    font-size: 0.83rem;
+    text-align: right;
 }
 .kilode__message p{
     background: #fff;
     text-align: left;
     position: relative;
     right: 0;
-    max-width: 65%;
-    padding: .6rem 2.2rem;
+    padding: 1rem 2.2rem;
     color: var(--text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     font-size: 1rem;
+}
+.kilode__message span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.83rem;
+    text-align:left;
 }
 .chat__box-input{
     position: fixed;
@@ -397,6 +402,7 @@ img{
     background-color: var(--body-color);
     padding: .4rem 1rem;
     display: none;
+    transition: .3s;
 }
 .chat__input{
     display: flex;

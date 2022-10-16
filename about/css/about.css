@@ -409,10 +409,10 @@ body.dark-theme{
     /* padding-left: 1.5rem;
     padding-right: 1.5rem; */
     background-image: url(/about/image/team-bg\ \(2\).png);
-    background-color: var(--first-color);
+    background-color: hsla(178, 97%, 14%,.8);
     /* filter:blur(5px); */
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 200px;
+    background-repeat: repeat;
     background-position: center;
 }
 .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{

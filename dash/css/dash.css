@@ -188,6 +188,7 @@ img{
         margin-bottom: 1rem;
         gap: 1rem;
         padding: 0.5rem;
+        border-radius: 8px;
         flex-direction: row;
         justify-content: flex-start;
     }
