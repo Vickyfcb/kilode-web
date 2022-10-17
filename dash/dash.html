@@ -22,7 +22,7 @@
             </div>
             <div class="nav__list">
                 <div class="nav__list-first">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link active-link1">
                         <i class="uil uis-apps nav-icon"></i>
                         <span class="nav__text">Dashboard</span>
                     </a>
@@ -39,23 +39,41 @@
                         <span class="nav__text">Kilorant</span>
                     </a>
                 </div>
-                <div class="nav__list-second">
-                    <a href="#" class="nav__link">
-                        <i class="uil uil-setting nav-icon"></i>
-                        <span class="nav__text">Settings</span>
-                    </a>
-                    <a href="#" class="logout__link">
-                        <i class="uil uil-signout nav-icon"></i>
-                        <span class="nav__text logout-text">Logout</span>
-                    </a>
+                <div class="nav__list-second" id="nav-second">
+                    <div class="nav__second-back" id="navsecond-close">
+                        <i class="uil uil-angle-left"></i>
+                    </div>
+                    <img src="/dashboard/image/kilode-logo-white.png" class="nav__logo-second-icon">
+                    <div class="nav__second">
+                        <a href="#" class="nav__link">
+                            <i class="uil uil-setting nav-icon"></i>
+                            <span class="nav__text">Settings</span>
+                        </a>
+                        <a href="#" class="logout__link">
+                            <i class="uil uil-signout nav-icon"></i>
+                            <span class="nav__text logout-text">Logout</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
     <!-- =============== MAIN ============== -->
     <main class="main">
-        <h1>Kilode Dashboard</h1>
+        <div class="nav__second-btn">
+            <div class="nav__second-toggle" id="navsecond-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <i class="uil uil-bell notification-icon"></i>
+        </div>
+        <!-- <div class="container dashhome__container">
+            <h1 class="dashhome__title">
+                Hey, What's up?
+            </h1>
+            div.
+        </div> -->
     </main>
     <script src="/dashboard/dashboard.js"></script>
+    <script src="dash.js"></script>
 </body>
 </html>

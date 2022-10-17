@@ -1,35 +1,30 @@
-const navMenu = document.getElementById('chat-box'),
-      navToggle = document.getElementById('chat-open'),
-      navClose = document.getElementById('chat-close')
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-second'),
+navToggle = document.getElementById('navsecond-toggle'),
+navClose = document.getElementById('navsecond-close')
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
+navToggle.addEventListener('click', () =>{
+  navMenu.classList.add('show-menu')
+})
 }
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-    })
+navClose.addEventListener('click', () =>{
+  navMenu.classList.remove('show-menu')
+})
 }
 
-const optionMenu = document.querySelector(".select-menu"),
-        selectBtn = optionMenu.querySelector(".select-btn"),
-        options = optionMenu.querySelectorAll(".option"),
-        sBtn_text = optionMenu.querySelector(".sBtn-text");
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav__link, .logout__link')
 
-        selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
-
-        options.forEach(option =>{
-        option.addEventListener("click", ()=>{
-        let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-
-        optionMenu.classList.remove("active");
-          });
-        });
+function linkAction(){
+const navMenu = document.getElementById('nav-second')
+// When we click on each nav__link, we remove the show-menu class
+navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));

@@ -254,7 +254,9 @@ img{
     font-weight: 600;
 }
 @media screen and (max-width:767px) {
-    
+    .nav__list-second {
+        display: none;
+    }
 }
 .message__container{
     position: fixed;
