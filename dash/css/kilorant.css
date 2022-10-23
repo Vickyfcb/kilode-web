@@ -63,7 +63,6 @@ button{
     border: none;
     outline: none;
 }
-  
 ul{
     list-style: none;
 }
@@ -414,6 +413,7 @@ img{
 }
 .relate__text{
     font-size: .6rem;
+    display: none;
 }
 .going{
     display: flex;
@@ -435,6 +435,7 @@ img{
 }
 .going__text{
     font-size: .6rem;
+    display: none;
 }
 .notifications{
     position: fixed;

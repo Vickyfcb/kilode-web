@@ -72,7 +72,6 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-  
 img{
     max-width: 100%;
     height: auto;
@@ -153,16 +152,18 @@ img{
         z-index: 100;
         box-shadow: 0px 2px 6px rgba(123, 111, 111, 0.25);
     }
+    .img-back{
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .nav__logo-second-icon{
-        width: 150px;
-        margin-bottom: 3rem;
+        width: 120px;
     }
     .nav__second-back{
-        position: absolute;
-        top: 3.25rem;
-        right: 1rem;
         font-size: 2rem;
-        color: var(--text-color);
+        color: var(--first-color);
     }
     .nav__second{
         display: flex;
@@ -218,6 +219,7 @@ img{
 .notification-icon{
     font-size: 1.5rem;
     color: var(--text-color);
+    display: none;
 }
 .nav__link{
     display: flex;
@@ -286,8 +288,9 @@ img{
 }
 .dashhome__title{
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 .dashhome__contents{
     gap: 1rem;
