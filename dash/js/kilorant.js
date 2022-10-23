@@ -17,3 +17,13 @@ if(chatClose){
         chatBox.classList.remove('show-menu')
     })
 }
+
+var likeButton = document.getElementById('like-button');
+
+function Toggle() {
+    if(likeButton.classList.contains == ".bx-heart"){
+        likeButton.classList.remove(".bx-heart");
+        likeButton.classList.add(".bxs-heart");
+    }
+}
+
