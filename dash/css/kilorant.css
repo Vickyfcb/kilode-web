@@ -393,24 +393,28 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: .2rem;
 }
-.bxs-heart:hover{
+.fa-heart:hover{
     color: hsla(0, 79%, 63%, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 10px rgba(255, 0, 0, 0.25);
+    transition: all .5s ease;
 }
 .relate span p{
     font-size: .7rem;
 }
-.bxs-heart{
-    color: rgb(228, 224, 224);
+.fa-heart{
+    color: hsla(0, 79%, 63%, 1);
     font-size: 1rem;
 }
-.bxs-heart:active{
+/* .bxs-heart:active{
     transform: scale(0.9,0.9);
 }
 .bxs-heart.active{
     animation: pop 0.6 1;
     color: hsla(0, 79%, 63%, 1);
-}
+} */
 .relate__text{
     font-size: .6rem;
     display: none;
@@ -425,6 +429,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: .2rem;
 }
 .going span i{
     font-size: .9rem;

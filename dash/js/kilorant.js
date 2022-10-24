@@ -18,12 +18,16 @@ if(chatClose){
     })
 }
 
-var likeButton = document.getElementById('like-button');
+//likes
+const likes = document.querySelectorAll('.like');
 
-function Toggle() {
-    if(likeButton.classList.contains == ".bx-heart"){
-        likeButton.classList.remove(".bx-heart");
-        likeButton.classList.add(".bxs-heart");
-    }
-}
+//console.log(likes);
+
+likes.forEach(function (like) {
+    like.addEventListener("click", () => {
+        if (like.childNodes[0].classList.contains("far")) {
+            like.innerHTML = `<i class='fas fa-heart'></i>`;
+        }
+    });
+});
 
