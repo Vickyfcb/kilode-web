@@ -68,11 +68,51 @@
             <h1 class="settings__title">Setttings</h1>
         </div>
         <div class="settings__list grid">
-            <a href="#" class="setting setting-active" id="open-modal">
-                <h1 class="setting__title">
-                    Your account
-                </h1>
-                <i class="uil uil-angle-right setting__link"></i>
+            <a href="#" class="setting setting-active open-modal">
+                    <h1 class="setting__title">
+                        Your account
+                    </h1>
+                    <i class="uil uil-angle-right setting__link"></i>
+                <div class="yaccount setting__modal" id="modal-open">
+                    <div class="yaccount__container container">
+                        <div class="yaccount__header">
+                            <i class="uil uil-angle-left modal-back"></i>
+                            <h1 class="yaccount__title">Your Account</h1>
+                        </div>
+                        <div class="edit__yaccount">
+                            <div class="edit__pic">
+                                <span class="profile__pic"></span>
+                                <buttton class="edit__button">Edit</buttton>
+                            </div>
+                            <div class="edit__details grid">
+                                <div class="edit__box">
+                                    <label class="label__title">Username</label>
+                                    <input type="text" class="edit__input">
+                                </div>
+                                <div class="edit__box">
+                                    <label class="label__title">Email</label>
+                                    <input type="email" class="edit__input">
+                                </div>
+                            </div>
+                            <button class="save__changes button">
+                                Save Changes
+                            </button>
+                            <div class="edit__password grid">
+                                <div class="edit__box">
+                                    <label class="label__title">New Password</label>
+                                    <input type="password" class="edit__input">
+                                </div>
+                                <div class="edit__box">
+                                    <label class="label__title">Re-type Password</label>
+                                    <input type="password" class="edit__input">
+                                </div>
+                            </div>
+                            <button class="save__password button">
+                                Change Password
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </a>
             <a href="#" class="setting" id="open-modal">
                 <h1 class="setting__title">
@@ -142,7 +182,7 @@
             </div>
         </div>
     </div>
-    <div class="listener modal-open" id="modal-open">
+    <!-- <div class="listener modal-open" id="modal-open">
         <div class="listener__container container">
             <div class="listener__header">
                 <i class="uil uil-angle-left modal__back"></i>
@@ -159,7 +199,7 @@
                 Take Listener's Quiz
             </a>
         </div>
-    </div>
+    </div> -->
     </div>
     </section>
 </body>

@@ -13,26 +13,26 @@ menuItems.forEach(item => {
     })
 })
 //OPEN MODALS
-const showYaccount = (openButton, modalContent) =>{
-    const openAcc = document.getElementById(openButton),
-    yaccContainer = document.getElementById(modalContent)
+// const showYaccount = (openButton, modalContent) =>{
+//     const openAcc = document.getElementById(openButton),
+//     yaccContainer = document.getElementById(modalContent)
 
-    if(openAcc && yaccContainer){
-        openAcc.addEventListener('click', ()=>{
-            yaccContainer.classList.add('show-modal')
-        })
-    }
-}
-showYaccount('open-modal','modal-open')
+//     if(openAcc && yaccContainer){
+//         openAcc.addEventListener('click', ()=>{
+//             yaccContainer.classList.add('show-modal')
+//         })
+//     }
+// }
+// showYaccount('open-modal','modal-open')
 
-/* close modal */
-const closeAcc = document.querySelectorAll('.modal__back','.setting')
+// /* close modal */
+// const closeAcc = document.querySelectorAll('.modal__back','.setting')
 
-function closeModal(){
-    const yaccContainer = document.getElementById('modal-open')
-    yaccContainer.classList.remove('show-modal')
-}
-closeAcc.forEach(c => c.addEventListener('click', closeModal))
+// function closeModal(){
+//     const yaccContainer = document.getElementById('modal-open')
+//     yaccContainer.classList.remove('show-modal')
+// }
+// closeAcc.forEach(c => c.addEventListener('click', closeModal))
 //listener
 // const showModal = (openButton, modalContent) =>{
 //     const openBtn = document.getElementById(openButton),
@@ -54,3 +54,21 @@ closeAcc.forEach(c => c.addEventListener('click', closeModal))
 //     modalContainer.classList.remove('show-modal')
 // }
 // closeBtn.forEach(c => c.addEventListener('click', closeModal))
+const modalViews = document.querySelectorAll('.setting__modal'),
+      modalBtns = document.querySelectorAll('.open-modal'),
+      modalCloses = document.querySelectorAll('.modal__back')
+let modal = function(modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+}
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click',() => {
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})

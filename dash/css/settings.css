@@ -149,7 +149,7 @@ img{
         align-items: center;
         column-gap:3.5rem;
     }
-    .yaccount{
+    /* .yaccount{
         position: absolute;
         top: 0;
         right: 0;
@@ -163,7 +163,7 @@ img{
         z-index: 1000;
         visibility: hidden;
         opacity: 0;
-    }
+    } */
     .listener{
         position: absolute;
         top: 0;
@@ -179,6 +179,7 @@ img{
         visibility: hidden;
         opacity: 0;
     }
+    
 }
 .nav__link{
     display: flex;
@@ -273,7 +274,24 @@ img{
     background-color: var(--first-color);
     border-radius: 0 5px 5px 0;
 }
-
+.setting__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: var(--container-color);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 23rem 0 0;
+    z-index: 1000;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
 .yaccount__header{
     display: flex;
     align-items: center;
@@ -284,7 +302,7 @@ img{
     font-size: 1.25rem;
     color: var(--text-color);
 }
-.yaccount__back{
+.modal__back{
     font-size: 1.5rem;
     color: var(--text-color);
 }
@@ -351,7 +369,7 @@ img{
     margin-bottom: 2rem;
 }
 
-.listener__header{
+/* .listener__header{
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -364,11 +382,11 @@ img{
 .listener__back{
     font-size: 1.5rem;
     color: var(--text-color);
-}
+} */
 /* show modal */
-.show-modal{
-    visibility: visible;
+.active-modal{
     opacity: 1;
+    visibility: visible;
 }
 @media screen and (max-width:320px) {
     .container{

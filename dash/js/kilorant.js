@@ -25,8 +25,13 @@ const likes = document.querySelectorAll('.like');
 
 likes.forEach(function (like) {
     like.addEventListener("click", () => {
-        if (like.childNodes[0].classList.contains("far")) {
-            like.innerHTML = `<i class='fas fa-heart'></i>`;
+        if (like.childNodes[1].classList.contains("like-emoji")) {
+            like.innerHTML = `<i class='bx bx-menu'></i>`;
+            setTimeout(function () {
+                like.innerHTML = `<i class='bx bxs-heart'></i> 26`;
+            }, 1000);
+        } else {
+            like.innerHTML = `<i class='bx bx-menu'></i>`;
         }
     });
 });
