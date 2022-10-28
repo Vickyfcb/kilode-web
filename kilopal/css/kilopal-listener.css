@@ -97,15 +97,28 @@ img{
 }
 /* setup 1 */
 .bg__up{
-    position: absolute;
-    top: -3rem;
+    position: fixed;
+    top: 0;
     right: 0;
-
 }
 .bg__down{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
+}
+.bg__up2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15%;
+    display: none;
+}
+.bg__down2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    display: none;
 }
 .setup{
     height: 100vh;
@@ -326,6 +339,14 @@ label .checkbox .check::after {
     }
 }
 @media screen and (min-width:767px) {
+    .bg__up2,
+    .bg__down2{
+        display: block;
+    }
+    .bg__up,
+    .bg__down{
+        display: none;
+    }
     .setup__button{
         width: 40%;
     }
