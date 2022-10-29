@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+:root{
+    /* colors */
+    --body-color: hsl(178,97%,14%);
+    --text-color: hsl(0, 0%, 11%);
+    --first-color: hsl(180,97%,28%);
+    --white-color: hsl(0,0%,100%);
+    --placeholder-color: hsla(0, 0%, 31%, 0.5);
+    --placeholder-border-color: hsl(0, 0%, 74%);
+    --forgot-color: hsl(0, 0%, 31%);
+    --google-border-color: hsla(0, 14%, 92%, 0.5);
+    --google-text-color: hsla(0, 16%, 4%, 0.5);
+    /* fonts */
+    --body-font: 'Open Sans', sans-serif;
+}
+/* ===== BASE ===== */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+}
+h1{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+input{
+    border: none;
+}
+.section{
+    background-color: var(--body-color);
+    height: 100vh;
+}
+/*========== Variables Dark theme ==========*/
+/* .dark-theme .section{
+    background-color: hsl(178, 77%, 9%);
+} */
+.dark-theme .login__forms{
+    background-color:hsl(178, 21%, 9%);
+}
+.dark-theme .login__button{
+    background-color:var(--body-color);
+}
+.dark-theme .checkmark{
+    background-color:hsl(178, 21%, 9%);
+    border: 1px white solid;
+}
+.dark-theme .login__input{
+    background-color:hsl(178, 21%, 9%);
+    border:1px hsla(0, 6%, 56%, 0.65) solid;
+    color: hsla(0, 0%, 74%, 1);
+}
+.dark-theme .login__input::placeholder{
+    color: hsla(0, 0%, 74%, 1);
+}
+.dark-theme .login__title{
+    color:white;
+}
+.dark-theme .login__google span{
+    color:white;
+}
+.dark-theme .checkbox__container{
+    color:white;
+}
+.dark-theme .login__account{
+    color:hsla(0, 0%, 74%, 0.55);
+}
+.dark-theme .login__forgot{
+    color:hsla(289, 3%, 41%, 1);
+}
+.dark-theme .checkbox__container:hover input ~ .checkmark {
+    background-color: hsl(178, 21%, 9%);
+}
+.dark-theme .checkbox__container input:checked ~ .checkmark {
+    background-color: var(--body-color)
+}
+.dark-theme .checkbox__container .checkmark:after{
+    top: 1px;
+}
+.header{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+}
+.header__img{
+    display: none;
+}
+.logo__img{
+    width: 148px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.logo__title{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 3.042rem;
+}
+.logo__title br{
+    display: none;
+}
+.change-theme{
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+.change-theme:hover{
+    transform: rotate(360deg);
+    transition: all .3s ease-in-out;
+}
+.form{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.login__forms{
+    background-color: var(--white-color);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+    height: 100vh;
+}
+.login__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--first-color);
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.login__box{
+    margin-top: 1rem;
+}
+.login__input{
+    padding: .8rem .6rem;
+    padding-left: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--placeholder-border-color);
+    width: 100%;
+    font-size: .875rem ;
+    font-weight:400;
+    color: var(--text-color);
+}
+.login__input::placeholder{
+    font-size: .875rem;
+    font-weight: 400;
+    font-family: var(--body-font);
+    color: var(--placeholder-color);
+}
+.login__input:active, .login__input:focus{
+    border: 1px solid var(--first-color);
+    border-image-slice: 1;
+    border-radius: .5rem;
+}
+.login__terms{
+    margin-top: 1rem;
+}
+.checkbox__container{
+    display: block;
+    position: relative;
+    padding-left: 1.2rem;
+    cursor: pointer;
+    font-size: .65rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.input__terms {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .9rem;
+    width: .9rem;
+    background-color: #eee;
+    border-radius: .2rem;
+}
+.checkbox__container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.checkbox__container input:checked ~ .checkmark {
+    background-color: var(--body-color)
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox__container input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox__container .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkbox__container a{
+    color: hsla(24, 50%, 58%, 1);
+}
+.login__forgot{
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-top: 1rem;
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--forgot-color);
+}
+.login__button{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-weight: 600;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+.login__button:hover{
+    background-color: var(--body-color);
+}
+.login__google{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--google-border-color);
+    padding: .6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.login__google span{
+    color: var(--google-text-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+.google__img{
+    width: 33px;
+}
+.form__account{
+    text-align: center;
+    margin-top: 1rem;
+}
+.login__account, .login__signup, .login__signin{
+    font-weight: 600;
+    font-size: .75rem;
+}
+.login__account{
+    color:var(--google-text-color);
+}
+.login__signup{
+    color: var(--first-color);
+}
+@media screen and (max-width:320px) {
+    .login__input{
+        width: 95%;
+    }
+    .login__google{
+        gap: .3rem;
+    }
+    .login__google span{
+        font-size: .6rem;
+    }
+}
+@media screen  and (min-width:576px) {
+    .login__forms{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+@media screen and (min-width:767px) {
+    body{
+        margin: 0;
+    }
+    .login{
+        display: flex;
+        height: 100vh;
+    }
+    .header__img{
+        display: block;
+        position: absolute;
+        width: 60%;
+        bottom: 0;
+        left: 3rem;
+    }
+    .login__forms{
+        width: 100%;
+        border-radius: 1rem 0 0 1rem;
+        padding: 5rem 5rem 0 5rem;
+    }
+    .header{
+        padding-left: 12rem;
+        padding-right: 2.5rem;
+        padding-top: 7rem;
+    }
+    .logo__img{
+        margin-left: 0;
+        margin-right: 0;
+        width: 193px;
+    }
+    .logo__title br{
+        display: block;
+    }
+    .logo__title{
+        text-align-last: left;
+    }
+    .login__title{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .login__box{
+        margin-top: 1.5rem;
+    }
+    .checkbox__container{
+        padding-left: 1.8rem;
+    }
+    .login__forgot,
+    .checkbox__container{
+        font-size: .85rem;
+    }
+    .checkbox__container .checkmark:after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+    }
+    .checkmark {
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+    .login__button{
+        margin-top: 1.3rem;
+    }
+    .change-theme{
+        font-size: 1.5rem;
+        color: var(--body-color);
+        cursor: pointer;
+        transition: .3s;
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+    }
+    .change-theme:hover{
+        transform: rotate(360deg);
+        transition: all .3s ease-in-out;
+    }
+}
+@media screen  and (min-width:992px) {
+    .header{
+        padding-left: 16rem;
+        padding-right: 6rem;
+    }
+    .logo__img{
+        width: 210px;
+    }
+    .logo__title{
+        font-size: 2rem;
+    }
+    .login__title{
+        font-size: 1.7rem;
+    }
+    .login__forms{
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+    .header__img{
+        width: 40%;
+    }
+}
