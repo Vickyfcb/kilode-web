@@ -381,7 +381,7 @@ body.dark-theme{
 }
 /* HOME */
 .home{
-    background-image: url(images/homebg.svg);
+    background-image: url(homebg.svg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1047,7 +1047,7 @@ body.dark-theme{
 /* =============== ABOUT =============== */
 .about{
     background-image: linear-gradient(rgba(1, 71, 70, 0.78),rgba(1, 71, 70, 0.78)),
-                      url(images/volunteer-img.png);
+                      url(volunteer-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1088,7 +1088,7 @@ body.dark-theme{
 .teams{
     /* padding-left: 1.5rem;
     padding-right: 1.5rem; */
-    background-image: url(/images/team-bg\ \(2\).png);
+    background-image: url(team-bg2.png);
     background-color: hsla(178, 97%, 14%,.8);
     /* filter:blur(5px); */
     background-size: 200px;
