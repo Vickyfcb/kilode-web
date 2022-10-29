@@ -381,7 +381,7 @@ body.dark-theme{
 }
 /* HOME */
 .home{
-    background-image: url(/images/homebg.svg);
+    background-image: url(images/homebg.svg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1047,7 +1047,7 @@ body.dark-theme{
 /* =============== ABOUT =============== */
 .about{
     background-image: linear-gradient(rgba(1, 71, 70, 0.78),rgba(1, 71, 70, 0.78)),
-                      url(/images/volunteer-img.png);
+                      url(images/volunteer-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
