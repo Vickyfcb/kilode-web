@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/kdashhome.css">
+    <link rel="stylesheet" href="css/kmessage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+<body id="body">
+    <div class="nav" id="navbar">
+        <nav class="nav__content">
+            <a href="/index.html" class="nav__logo">
+                <img src="images/kilode-logo-white.png" class="nav__logo-icon">
+                <img src="images/logo-small.png" alt="" class="nav__logo-small">
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="nav__list">
+                <div class="nav__list-first">
+                    <a href="kilopal-dash-home.html" class="nav__link">
+                        <i class="uil uis-apps nav-icon"></i>
+                        <span class="nav__text">Dashboard</span>
+                    </a>
+                    <a href="kd-message-request.html" class="nav__link active-link">
+                        <i class="uil uil-comment-alt-dots nav-icon"></i>
+                        <span class="nav__text">Messages</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <i class="uil uil-books nav-icon"></i>
+                        <span class="nav__text">Journal</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <i class="uil uil-message nav-icon"></i>
+                        <span class="nav__text">Kilorant</span>
+                    </a>
+                </div>
+                <div class="nav__list-second">
+                    <a href="#" class="nav__link">
+                        <i class="uil uil-setting nav-icon"></i>
+                        <span class="nav__text">Settings</span>
+                    </a>
+                    <a href="#" class="logout__link">
+                        <i class="uil uil-signout nav-icon"></i>
+                        <span class="nav__text logout-text">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- =============== MAIN ============== -->
+    <main class="main">
+        <div class="chat__header">
+            <h1 class="header__title">Inbox</h1>
+            <i class="uil uil-bell notification-icon"></i>
+        </div>
+        <section class="chat">
+            <div class="chat__container">
+                <div class="chats__container grid container">
+                    <div class="user__box" id="chat-open">
+                        <div class="user__pic-box">
+                            <h1 class="user__pic">H</h1>
+                        </div>
+                        <div class="user__box-names">
+                            <h2 class="user__name">UserX</h2>
+                            <p class="user__status"><i>Typing...</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="closed__conversations container">
+                    <h1 class="closed__conversations-title">
+                        Closed Conversations
+                    </h1>
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">Select Month</span>
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <ul class="options">
+                            <li class="option">
+                                <span class="option-text">January</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Febuary</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">March</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">April</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">May</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">June</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">July</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">August</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Septemper</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">October</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">November</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">December</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="closed__conversations-closed grid">
+                        <div class="user__box-closed">
+                            <div class="user__pic-closed-box">
+                                <h1 class="user__pic-closed">Z</h1>
+                            </div>
+                            <div class="user__box-names-closed">
+                                <h2 class="user__name-closed">Zoey</h2>
+                                <p class="user__status-closed">Have a nice evening</p>
+                            </div>
+                        </div>
+                        <div class="user__box-closed">
+                            <div class="user__pic-closed-box">
+                                <h1 class="user__pic-closed">Z</h1>
+                            </div>
+                            <div class="user__box-names-closed">
+                                <h2 class="user__name-closed">Zoey</h2>
+                                <p class="user__status-closed">Have a nice evening</p>
+                            </div>
+                        </div>
+                        <div class="user__box-closed">
+                            <div class="user__pic-closed-box">
+                                <h1 class="user__pic-closed">Z</h1>
+                            </div>
+                            <div class="user__box-names-closed">
+                                <h2 class="user__name-closed">Zoey</h2>
+                                <p class="user__status-closed">Have a nice evening</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message__container" id="chat-box">
+                <div class="message__header">
+                    <div class="header-left">
+                        <div class="chat__close" id="chat-close">
+                            <i class="uil uil-angle-left"></i>
+                        </div>
+                        <div class="message__header-box">
+                            <div class="header-pic">
+                                <div class="message__header-pic-box">
+                                    <h1 class="message__header-pic">H</h1>
+                                </div>
+                                <div class="active-online"></div>
+                            </div>
+                            
+                            <div class="message__header-names">
+                                <h2 class="message__header-name">UserX</h2>
+                                <p class="message__header-status">Online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more__icon" id="more-icon">
+                        <i class="uil uil-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="messages">
+                    <div class="message you__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message kilode__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message kilode__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message you__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message kilode__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message you__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message kilode__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message you__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message kilode__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                    <div class="message you__message">
+                        <div class="message__text">
+                            <p>Hello kilode</p>
+                            <span>4:41 pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__box-input">
+                    <div class="chat__input">
+                        <i class="uil uil-smile emoji-icon"></i>
+                        <input type="text" placeholder="What wil you like to I">
+                    </div>
+                    <button class="send__message">
+                        <i class="uil uil-message"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/user-dash.js"></script>
+    <script>
+        const optionMenu = document.querySelector(".select-menu"),
+        selectBtn = optionMenu.querySelector(".select-btn"),
+        options = optionMenu.querySelectorAll(".option"),
+        sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+        selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
+
+        options.forEach(option =>{
+        option.addEventListener("click", ()=>{
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
+
+        optionMenu.classList.remove("active");
+          });
+        });
+
+    </script>
+</body>
