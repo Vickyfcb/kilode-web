@@ -45,7 +45,7 @@
                         <i class="uil uil-angle-left"></i>
                     </div>
                     <a href="/index.html">
-                        <img src="image/kilode-logo-white.png" class="nav__logo-second-icon">
+                        <img src="images/kilode-logo-white.png" class="nav__logo-second-icon">
                     </a>
                     <div class="nav__second">
                         <a href="settings.html" class="nav__link">
@@ -103,8 +103,20 @@
                             <small class="time"> 9:00pm</small>
                         </div>
                     </div>
-                    <div class="feed__edit">
-                        <i class="uil uil-ellipsis-h"></i>
+                    <div class="more__container">
+                        <i onclick="document.getElementById('more-content').style.display='grid'" class="uil uil-ellipsis-h feed__edit" id="more-icon"></i>
+                        <!-- <div class="more__content" id="more-content">
+                            <i class="uil uil-times close-more-menu" onclick="document.getElementById('more-content').style.display='none'" ></i>
+                            <a href="#" class="more__item">
+                                <span>Rate Kilopal</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>Report Conversation</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>End Conversation</span>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
                 <p class="feed__post">
@@ -113,20 +125,14 @@
                     the risk of embarrassment, and even reproach.
                 </p>
                 <div class="action__button">
-                    <div class="relate">
-                        <span class="like" id="like-button">
-                            <i class='bx bxs-heart like-emoji'></i>
-                            <p>25</p>
-                        </span> 
-                        <p class="relate__text">I relate</p>
-                    </div>
-                    <div class="going">
-                        <span>
-                            <i class="fa-solid fa-bolt"></i>
-                            <p>12</p>
-                        </span> 
-                        <p class="going__text">Keep going</p>
-                    </div>
+                    <button class="relate__btn">
+                        <span class="icon"><i class='bx bx-heart'></i> <small>25</small> </span>
+                        <!-- <span id="count" class="relate__number">5</span> -->
+                    </button>
+                    <button class="going__btn">
+                        <span class="going-icon"> <i class="fa-light fa-bolt"></i> <small class="i-s">7</small> </span>
+                        <!-- <span id="going-count">7</span> -->
+                    </button>
                 </div>
             </div>
             <div class="feed">
@@ -143,28 +149,34 @@
                             <small class="time"> 9:00pm</small>
                         </div>
                     </div>
-                    <div class="feed__edit">
-                        <i class="uil uil-ellipsis-h"></i>
+                    <div class="more__container">
+                        <i onclick="document.getElementById('more-content').style.display='grid'" class="uil uil-ellipsis-h feed__edit" id="more-icon"></i>
+                        <!-- <div class="more__content" id="more-content">
+                            <i class="uil uil-times close-more-menu" onclick="document.getElementById('more-content').style.display='none'" ></i>
+                            <a href="#" class="more__item">
+                                <span>Rate Kilopal</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>Report Conversation</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>End Conversation</span>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
                 <p class="feed__post">
                     I just need a break.
                 </p>
                 <div class="action__button">
-                    <div class="relate">
-                        <span class="like" id="like-button">
-                            <i class='bx bx-heart'></i>
-                            <p>25</p>
-                        </span> 
-                        <p class="relate__text">I relate</p>
-                    </div>
-                    <div class="going">
-                        <span>
-                            <i class="fa-solid fa-bolt"></i>
-                            <p>12</p>
-                        </span> 
-                        <p class="going__text">Keep going</p>
-                    </div>
+                    <button class="relate__btn">
+                        <span class="icon"><i class='bx bx-heart'></i> <small>25</small> </span>
+                        <!-- <span id="count" class="relate__number">5</span> -->
+                     </button>
+                     <button class="going__btn">
+                        <span class="going-icon"> <i class="fa-light fa-bolt"></i> <small>7</small> </span>
+                        <!-- <span id="going-count">7</span> -->
+                    </button>
                 </div>
             </div>
             <div class="feed">
@@ -181,8 +193,20 @@
                             <small class="time"> 9:00pm</small>
                         </div>
                     </div>
-                    <div class="feed__edit">
-                        <i class="uil uil-ellipsis-h"></i>
+                    <div class="more__container">
+                        <i onclick="document.getElementById('more-content').style.display='grid'" class="uil uil-ellipsis-h feed__edit" id="more-icon"></i>
+                        <!-- <div class="more__content" id="more-content">
+                            <i class="uil uil-times close-more-menu" onclick="document.getElementById('more-content').style.display='none'" ></i>
+                            <a href="#" class="more__item">
+                                <span>Rate Kilopal</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>Report Conversation</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>End Conversation</span>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
                 <p class="feed__post">
@@ -191,20 +215,14 @@
                     the risk of embarrassment, and even reproach.
                 </p>
                 <div class="action__button">
-                    <div class="relate">
-                        <span class="like" id="like-button">
-                            <i class='bx bx-heart'></i>
-                            <p>25</p>
-                        </span> 
-                        <p class="relate__text">I relate</p>
-                    </div>
-                    <div class="going">
-                        <span>
-                            <i class="fa-solid fa-bolt"></i>
-                            <p>12</p>
-                        </span> 
-                        <p class="going__text">Keep going</p>
-                    </div>
+                    <button class="relate__btn">
+                        <span class="icon"><i class='bx bx-heart'></i> <small>25</small> </span>
+                        <!-- <span id="count" class="relate__number">5</span> -->
+                     </button>
+                     <button class="going__btn">
+                        <span class="going-icon"> <i class="fa-light fa-bolt"></i> <small>7</small> </span>
+                        <!-- <span id="going-count">7</span> -->
+                    </button>
                 </div>
             </div>
             <div class="feed">
@@ -221,8 +239,20 @@
                             <small class="time"> 9:00pm</small>
                         </div>
                     </div>
-                    <div class="feed__edit">
-                        <i class="uil uil-ellipsis-h"></i>
+                    <div class="more__container">
+                        <i onclick="document.getElementById('more-content').style.display='grid'" class="uil uil-ellipsis-h feed__edit" id="more-icon"></i>
+                        <!-- <div class="more__content" id="more-content">
+                            <i class="uil uil-times close-more-menu" onclick="document.getElementById('more-content').style.display='none'" ></i>
+                            <a href="#" class="more__item">
+                                <span>Rate Kilopal</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>Report Conversation</span>
+                            </a>
+                            <a href="#" class="more__item">
+                                <span>End Conversation</span>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
                 <p class="feed__post">
@@ -231,20 +261,14 @@
                     the risk of embarrassment, and even reproach.
                 </p>
                 <div class="action__button">
-                    <div class="relate">
-                        <span class="like" id="like-button">
-                            <i class='bx bx-heart'></i>
-                            <p>25</p>
-                        </span> 
-                        <p class="relate__text">I relate</p>
-                    </div>
-                    <div class="going">
-                        <span>
-                            <i class="fa-solid fa-bolt"></i>
-                            <p>12</p>
-                        </span> 
-                        <p class="going__text">Keep going</p>
-                    </div>
+                    <button class="relate__btn">
+                        <span class="icon"><i class='bx bx-heart'></i> <small>25</small> </span>
+                        <!-- <span id="count" class="relate__number">5</span> -->
+                     </button>
+                     <button class="going__btn">
+                        <span class="going-icon"> <i class="fa-light fa-bolt"></i> <small>7</small> </span>
+                        <!-- <span id="going-count">7</span> -->
+                    </button>
                 </div>
             </div>
         </div>
@@ -360,7 +384,10 @@
         </div>
     </div>
     </div>
+    <a href="#" class="rant__button" id="rant-btn">
+        <img src="images/rant-img.png" class="rant__img">
+    </a>
     <!-- <script src="js/dash.js"></script> -->
-    <script src="js/user-dash.js"></script> 
+    <script src="js/user-dash.js"></script>
 </body>
 </html>

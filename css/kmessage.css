@@ -81,6 +81,19 @@ img{
 .grid{
     display: grid;
 }
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-apperance:none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    flex: 1;
+    cursor: pointer;
+}
+select::-ms-expand{
+    display: none;
+}
 /* active link */
 .active-link{
     color: hsla(180, 97%, 28%, 1);
@@ -173,60 +186,32 @@ img{
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-color);
+    margin-bottom: 1rem;
 }
-.select-btn{
-    display: flex;
-    background: #fff;
-    padding: .8rem;
-    border-radius: 8px;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-    border: 1px solid hsla(0, 0%, 74%, 1);
-}
-.sBtn-text{
-    color: hsla(0, 0%, 31%, 1);
-    font-size: 1.1rem;
+.select__button{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
     font-weight: 400;
-}
-.select-btn i{
-    font-size:2rem;
-    transition: 0.3s;
     color: hsla(0, 0%, 31%, 1);
-}
-.select-menu.active .select-btn i{
-    transform: rotate(-180deg);
-}
-.select-menu .options{
+    padding: 0 1rem;
     position: relative;
-    margin-top: 10px;
-    background: #fff;
-    border: 1px solid hsla(0, 0%, 74%, 1);
-    border-radius: 8px;
-    display: none;
-    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
 }
-.select-menu.active .options{
-    display: block;
-}
-.options .option{
-    display: flex;
-    cursor: pointer;
-    padding: .8rem;
-    border-radius: 8px;
-    align-items: center;
-    background: #fff;
-}
-.options .option:hover{
-    background: #F2F2F2;
-}
-.option i{
-    font-size: 25px;
-    margin-right: 12px;
-}
-.option .option-text{
-    font-size: 1.1rem;
-    color: hsla(0, 0%, 31%, 1);
+.select__button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    height: 2px;
+    width: 2px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
 }
 .closed__conversations-closed{
     margin-top: 1rem;
@@ -312,6 +297,34 @@ img{
 }
 .more__icon{
     font-size:2rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.more__content{
+    display: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(88, 82, 82, 0.25);
+    border-radius: 8px;
+    position: absolute;
+    right: .5rem;
+    top: 5.5rem;
+    padding: 2rem;
+    gap: 1.5rem;
+    width: 70%;
+    transition: 3s ease-in-out;
+}
+.more__item{
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    text-align: left;
+}
+.close-more-menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 .message__header-box{
     display: flex;
@@ -322,13 +335,13 @@ img{
     position: relative;
 }
 .active-online{
-    width: 0.5rem;
-    height: 0.5rem;
-    border: #fff 1px solid;
+    width: 0.65rem;
+    height: 0.65rem;
+    border: #fff 2px solid;
     border-radius: 50%;
     background: hsl(130,95%,65%);
     position: absolute;
-    bottom: 8px;
+    bottom: 3px;
     right: 0;
 }
 .message__header-pic-box{
@@ -372,16 +385,16 @@ img{
     width: 100%;
     margin: 10px 0;
 }
-.you__message{
-    justify-content: flex-end;
-}
-.kilode__message{
+.user__message{
     justify-content: flex-start;
 }
-.you__message p{
+.kilode__message{
+    justify-content: flex-end;
+}
+.user__message p{
     position: relative;
     right: 0;
-    text-align: right;
+    text-align: left;
     padding: 1rem 2.2rem;
     color: var(--text-color-white);
     background:hsla(180, 32%, 50%, 1);
@@ -389,15 +402,15 @@ img{
     border-radius: 10px;
     font-size: 1rem;
 }
-.you__message span{
+.user__message span{
     display: block;
     margin-top: 5px;
     font-size: 0.83rem;
-    text-align: right;
+    text-align: left;
 }
 .kilode__message p{
     background: #fff;
-    text-align: left;
+    text-align: right;
     position: relative;
     right: 0;
     padding: 1rem 2.2rem;
@@ -410,7 +423,7 @@ img{
     display: block;
     margin-top: 5px;
     font-size: 0.83rem;
-    text-align:left;
+    text-align:right;
 }
 .chat__box-input{
     position: fixed;
@@ -469,7 +482,7 @@ img{
 }
 .request__box{
     background-color: var(--body-color);
-    padding: .5rem 1rem;
+    padding:  1rem.5rem;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -484,8 +497,8 @@ img{
 .request__pic-box{
     background-color: hsla(11, 85%, 67%, 1);
     border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
+    height: 2.7rem;
+    width: 2.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -500,15 +513,16 @@ img{
     flex-direction: column;
 }
 .request__name{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 .request__topic{
-    font-size: .7rem;
+    font-size: .65rem;
     font-weight: 400;
 }
 .request__button{
-    padding: .6rem;
+    padding: .6rem .8rem;
+    font-size: .8rem;
 }
 @media screen and (min-width:568px) {
     .request__box{

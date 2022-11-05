@@ -104,7 +104,7 @@ img{
 .active-link::after{
     content: '';
     position: absolute;
-    top: -1rem;
+    top: -.8rem;
     left: 0;
     width: 100%;
     height: 4px;
@@ -122,7 +122,7 @@ img{
         background-color: var(--body-color);
         box-shadow: 0 8px 24px hsla(228, 81%, 24%, .15);
         width: 99%;
-        padding:1.5rem 2rem;
+        padding:1rem 2rem;
         border-radius: .5rem;
         left: 0;
         right: 0;
@@ -182,6 +182,9 @@ img{
     }
     .nav__second .nav__link .nav__text{
         font-size: 1rem;
+    }
+    .nav__text{
+        display: none;
     }
     .nav__second .logout__link .nav__text{
         font-size: 1rem;
@@ -390,8 +393,39 @@ img{
 .feed__head-time .date{
     font-size: .65rem;
 }
+.more__container{
+    position: relative;
+}
 .feed__edit{
-    font-size: 1.5rem;
+    font-size:2rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.more__content{
+    display: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(88, 82, 82, 0.25);
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 5.5rem;
+    padding: 2rem;
+    gap: 1.5rem;
+    width: 70%;
+    transition: 3s ease-in-out;
+}
+.more__item{
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    text-align: left;
+}
+.close-more-menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 .feed__post{
     margin-top: .7rem;
@@ -405,61 +439,49 @@ img{
     margin-top: 1rem;
     gap: 1.5rem;
 }
-.relate{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.relate span{
+.relate__btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .2rem;
+    gap: .25rem;
+    font-size: 18px;
+    color: var(--text-color);
+    background-color: transparent;
+    cursor: pointer;
 }
-/* .bx-heart:hover{
-    color: hsla(0, 79%, 63%, 1);
-    border-radius: 50%;
-    box-shadow: 0 0 5px 10px rgba(255, 0, 0, 0.25);
-    transition: all .5s ease;
-} */
-.relate span p{
-    font-size: .7rem;
-}
-/* .bx-heart{
-    color: hsla(0, 79%, 63%, 1);
-    font-size: 1rem;
-} */
-.bxs-heart{
-    color: var(--first-color);
-    font-size: 1rem;
-}
-.relate__text{
-    font-size: .6rem;
-    display: none;
-}
-.going{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.going span{
+.relate__btn span{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .2rem;
+    gap: .3rem;
 }
-.going span i{
-    font-size: .9rem;
-    color: rgb(228, 224, 224);
+.relate__btn span i{
+    font-size: 1.2rem;
 }
-.going span p{
-    font-size: .7rem;
+.relate__btn .bxs-heart{
+    color: var(--first-color-alt);
 }
-.going__text{
-    font-size: .6rem;
-    display: none;
+.relate__number{
+    color: var(--text-color);
+    font-size: .813rem;
+}
+.going__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    font-size: 18px;
+    color: var(--text-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+#going-icon{
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+#going-count{
+    font-size: .8rem;
+    color: var(--text-color);
 }
 .notifications{
     position: fixed;
@@ -527,6 +549,20 @@ img{
     position: absolute;
     right: 1rem;
     top: 0;
+}
+.rant__button{
+    position: fixed;
+    right: 2rem;
+    background-color: hsla(24, 50%, 58%, 1);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.show-scroll{
+    bottom: 6rem;
 }
 @media screen and (max-width:320px) {
     .container{
@@ -738,6 +774,10 @@ img{
     }
     .expander{
        padding: 0 0 0 12rem;
+    }
+    .rant__button{
+        right: 30rem;
+        bottom: 4rem;
     }
 }
 @media screen and (min-width:996px) {

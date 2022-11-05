@@ -97,3 +97,45 @@ if(notificationClose){
         notificationBox.classList.remove('show-notifications')
     })
 }
+/*==================== SHOW SCROLL UP ====================*/ 
+function scrollUp(){
+    const scrollUp = document.getElementById('rant-btn');
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 120) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+//like
+const likeBtn = document.querySelectorAll(".icon");
+
+//console.log(likeBtn);
+
+likeBtn.forEach(function(like){
+    like.addEventListener('click',function(){
+        //console.log(like.childNodes);
+        if (like.childNodes[0].classList.contains('bx-heart')){
+            //console.log('object')
+            like.innerHTML  = `<i class='bx bxs-heart'></i> <small>26</small>`;
+        }
+        else {
+            like.innerHTML  = `<i class='bx bx-heart'></i> <small>25</small>`;
+        }
+    });
+});
+//going
+const goingBtn = document.querySelectorAll(".going-icon");
+
+//console.log(goingBtn);
+
+goingBtn.forEach(function(going){
+    going.addEventListener('click',function(){
+        //console.log(going.childNodes);
+        if (going.childNodes[0].classList.contains('fa-regular')){
+            //console.log('object')
+            going.innerHTML  = `<i class="fa-solid fa-bolt"></i> <small>8</small>`;
+        }
+        else {
+            going.innerHTML  = `<i class="fa-regular fa-bolt"></i> <small>7</small>`;
+        }
+    });
+});
