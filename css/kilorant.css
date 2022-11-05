@@ -439,21 +439,21 @@ img{
     margin-top: 1rem;
     gap: 1.5rem;
 }
+.like-img{
+    width: 25px;
+}
 .relate__btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .25rem;
+    gap: 0rem;
     font-size: 18px;
     color: var(--text-color);
     background-color: transparent;
     cursor: pointer;
 }
-.relate__btn span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .3rem;
+.like-count{
+    font-size: .813rem;
 }
 .relate__btn span i{
     font-size: 1.2rem;
@@ -470,16 +470,18 @@ img{
     align-items: center;
     justify-content: center;
     gap: .25rem;
-    font-size: 18px;
     color: var(--text-color);
     background-color: transparent;
     cursor: pointer;
 }
-#going-icon{
+.uil{
     font-size: 1.3rem;
+}
+.going-icon{
     color: var(--text-color);
 }
-#going-count{
+.g-s,
+.l-s{
     font-size: .8rem;
     color: var(--text-color);
 }

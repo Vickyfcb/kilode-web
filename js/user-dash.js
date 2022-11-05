@@ -106,19 +106,20 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 //like
-const likeBtn = document.querySelectorAll(".icon");
+const likeBtn = document.querySelectorAll(".relate__btn");
 
 //console.log(likeBtn);
 
 likeBtn.forEach(function(like){
     like.addEventListener('click',function(){
         //console.log(like.childNodes);
-        if (like.childNodes[0].classList.contains('bx-heart')){
+        if (like.childNodes[1].classList.contains('like-img')){
             //console.log('object')
-            like.innerHTML  = `<i class='bx bxs-heart'></i> <small>26</small>`;
+            like.innerHTML  = `<img src="images/like-solid.png" class="like-img"><small class="like-count">24</small>`;
         }
         else {
-            like.innerHTML  = `<i class='bx bx-heart'></i> <small>25</small>`;
+            //console.log('object')
+            like.innerHTML  = `<img src="images/like-light.png" class="like-img"><small class="like-count">23</small>`;
         }
     });
 });
@@ -130,12 +131,13 @@ const goingBtn = document.querySelectorAll(".going-icon");
 goingBtn.forEach(function(going){
     going.addEventListener('click',function(){
         //console.log(going.childNodes);
-        if (going.childNodes[0].classList.contains('fa-regular')){
+        if (going.childNodes[0].classList.contains('uil')){
             //console.log('object')
-            going.innerHTML  = `<i class="fa-solid fa-bolt"></i> <small>8</small>`;
+            going.innerHTML  = `<i class="fa-solid fa-bolt"></i> <small class="g-s">8</small>`;
         }
         else {
-            going.innerHTML  = `<i class="fa-regular fa-bolt"></i> <small>7</small>`;
+            //console.log('hello world');
+            going.innerHTML  = `<i class="uil uil-bolt-alt"> <small class="g-s">7</small>`;
         }
     });
 });
