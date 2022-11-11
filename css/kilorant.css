@@ -458,9 +458,6 @@ img{
 .relate__btn span i{
     font-size: 1.2rem;
 }
-.relate__btn .bxs-heart{
-    color: var(--first-color-alt);
-}
 .relate__number{
     color: var(--text-color);
     font-size: .813rem;
@@ -469,21 +466,17 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .25rem;
+    gap: 0rem;
+    font-size: 18px;
     color: var(--text-color);
     background-color: transparent;
     cursor: pointer;
 }
-.uil{
-    font-size: 1.3rem;
+.going-img{
+    width: 25px;
 }
-.going-icon{
-    color: var(--text-color);
-}
-.g-s,
-.l-s{
-    font-size: .8rem;
-    color: var(--text-color);
+.going-count{
+    font-size: .813rem;
 }
 .notifications{
     position: fixed;

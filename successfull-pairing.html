@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/userdash.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader__content container">
+            <div class="loader__header">
+                <a href="#" class="loader__back">
+                    <i class='bx bx-chevron-left'></i>
+                </a>
+                <h1 class="loader__title">Pairing you with a Listener</h1>
+            </div>
+            <div class="loader__img">
+                <img src="images/pairing-img.png">
+            </div>
+            <p class="loader__description">
+                Please wait patiently while we pair you with 
+                a listener, this would only take a moment.
+            </p>
+        </div>
+    </div>
+    <section class="spairing">
+        <a href="strat-convo.html" class="startconvo__back">
+            <i class='bx bx-chevron-left'></i>
+        </a>
+        <div class="spairing__content container">
+            <h1 class="spairing__title">You've been successfully paired</h1>
+            <div class="kilopal__user-img">
+                <img src="images/kilopaluser-img.png">
+            </div>
+            <p class="spairing__text">
+                <b> Efe, </b> is ready to listen to all you'd like to share now.
+            </p>
+            <a href="#" class="button spairing__button">
+                start conversation
+            </a>
+            <a href="#" class="button spairing1__button">
+                pair with another listener
+            </a>
+        </div>
+    </section>
+    <script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader-hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild("loader");
+        })
+    })
+    </script>
+</body>
+</html>

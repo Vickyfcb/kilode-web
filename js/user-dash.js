@@ -124,20 +124,61 @@ likeBtn.forEach(function(like){
     });
 });
 //going
-const goingBtn = document.querySelectorAll(".going-icon");
+const goingBtn = document.querySelectorAll(".going__btn");
 
 //console.log(goingBtn);
 
 goingBtn.forEach(function(going){
     going.addEventListener('click',function(){
         //console.log(going.childNodes);
-        if (going.childNodes[0].classList.contains('uil')){
+        if (going.childNodes[1].classList.contains('going-img')){
             //console.log('object')
-            going.innerHTML  = `<i class="fa-solid fa-bolt"></i> <small class="g-s">8</small>`;
+            going.innerHTML  = `<img src="images/going-solid.png" class="going-img"><small class="going-count">6</small>`;
         }
         else {
             //console.log('hello world');
-            going.innerHTML  = `<i class="uil uil-bolt-alt"> <small class="g-s">7</small>`;
+            going.innerHTML  = `<img src="images/going-light.png" class="going-img"><small class="going-count">5</small>`;
         }
+    });
+});
+//messages more
+var modal = document.getElementsByClassName("more__content")[0];
+//var modalBox = document.getElementsByClassName("modal-box")[0];
+
+var open = document.getElementsByClassName("more__icon")[0];
+var close = document.getElementsByClassName("close__more")[0];
+
+open.onclick = function() {
+  modal.style.display = "grid";
+  open.style.display = "none";
+  close.style.display = "block";
+}
+
+close.onclick = function() {
+  modal.style.display = "none";
+  open.style.display = "block";
+  close.style.display = "none";
+}
+
+window.onclick = function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//select
+const optionMenu = document.querySelector(".select-menu"),
+       selectBtn = optionMenu.querySelector(".select-btn"),
+       options = optionMenu.querySelectorAll(".option"),
+       sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
+
+options.forEach(option =>{
+    option.addEventListener("click", ()=>{
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
+
+        optionMenu.classList.remove("active");
     });
 });

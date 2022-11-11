@@ -168,8 +168,14 @@ img{
     .nav__second{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
+        height: 70vh;
         gap: .5rem;
+    }
+    .nav__second div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
     .nav__second .nav__link{
         flex-direction: row;
@@ -187,6 +193,15 @@ img{
     .nav__second .logout__link .nav__text{
         font-size: 1rem;
         color: var(--text-color-red);
+    }
+    .nav__second .nav__link .nav__text{
+        font-size: 1rem;
+    }
+    .nav__second .nav__link .nav__text{
+        display: block;
+    }
+    .nav__second .logout__link .nav__text{
+        display: block;
     }
     .nav__text{
         display: none;
@@ -539,6 +554,9 @@ img{
         margin-top: 1rem;
         margin-bottom: 1rem;
         justify-content: center;
+    }
+    .nsl{
+        display: none;
     }
     .nav__second-btn{
         display: flex;
