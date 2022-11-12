@@ -140,21 +140,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="more__container">
-                        <i onclick="document.getElementById('more-content').style.display='grid'" class="uil uil-ellipsis-v more__icon" id="more-icon"></i>
-                        <div class="more__content" id="more-content">
-                            <i class="uil uil-times close-more-menu" onclick="document.getElementById('more-content').style.display='none'" ></i>
-                            <a href="#" class="more__item">
-                                <span>Rate Kilopal</span>
-                            </a>
-                            <a href="#" class="more__item">
-                                <span>Report Conversation</span>
-                            </a>
-                            <a href="#" class="more__item">
-                                <span>End Conversation</span>
-                            </a>
-                        </div>
-                    </div> -->
                     <div class="more__container">
                         <div class="more-icons">
                             <i class="uil uil-times close__more"></i>
@@ -209,5 +194,31 @@
         </section>
     </main>
     <script src="js/user-dash.js"></script>
+    <script>
+        //messages more
+        var modal = document.getElementsByClassName("more__content")[0];
+        //var modalBox = document.getElementsByClassName("modal-box")[0];
+
+        var open = document.getElementsByClassName("more__icon")[0];
+        var close = document.getElementsByClassName("close__more")[0];
+
+        open.onclick = function() {
+         modal.style.display = "grid";
+         open.style.display = "none";
+         close.style.display = "block";
+        }
+
+        close.onclick = function() {
+        modal.style.display = "none";
+        open.style.display = "block";
+        close.style.display = "none";
+        }
+
+        window.onclick = function(e) {
+        if (e.target == modal) {
+          modal.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>

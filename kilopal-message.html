@@ -191,21 +191,29 @@
     </main>
     <script src="js/user-dash.js"></script>
     <script>
-        const optionMenu = document.querySelector(".select-menu"),
-        selectBtn = optionMenu.querySelector(".select-btn"),
-        options = optionMenu.querySelectorAll(".option"),
-        sBtn_text = optionMenu.querySelector(".sBtn-text");
+        //messages more
+        var modal = document.getElementsByClassName("more__content")[0];
+        //var modalBox = document.getElementsByClassName("modal-box")[0];
 
-        selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
+        var open = document.getElementsByClassName("more__icon")[0];
+        var close = document.getElementsByClassName("close__more")[0];
 
-        options.forEach(option =>{
-        option.addEventListener("click", ()=>{
-        let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
+        open.onclick = function() {
+         modal.style.display = "grid";
+         open.style.display = "none";
+         close.style.display = "block";
+        }
 
-        optionMenu.classList.remove("active");
-          });
-        });
+        close.onclick = function() {
+        modal.style.display = "none";
+        open.style.display = "block";
+        close.style.display = "none";
+        }
 
+        window.onclick = function(e) {
+        if (e.target == modal) {
+          modal.style.display = "none";
+          }
+        }
     </script>
 </body>

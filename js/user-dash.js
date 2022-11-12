@@ -141,30 +141,7 @@ goingBtn.forEach(function(going){
         }
     });
 });
-//messages more
-var modal = document.getElementsByClassName("more__content")[0];
-//var modalBox = document.getElementsByClassName("modal-box")[0];
 
-var open = document.getElementsByClassName("more__icon")[0];
-var close = document.getElementsByClassName("close__more")[0];
-
-open.onclick = function() {
-  modal.style.display = "grid";
-  open.style.display = "none";
-  close.style.display = "block";
-}
-
-close.onclick = function() {
-  modal.style.display = "none";
-  open.style.display = "block";
-  close.style.display = "none";
-}
-
-window.onclick = function(e) {
-  if (e.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 //select
 const optionMenu = document.querySelector(".select-menu"),
@@ -182,3 +159,5 @@ options.forEach(option =>{
         optionMenu.classList.remove("active");
     });
 });
+
+
