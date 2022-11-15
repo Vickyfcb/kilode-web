@@ -1,0 +1,491 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif !important;
+	/* font-family: 'Poppins', sans-serif; */
+	/* font-size: 15px; */
+	/* outline: 1px solid #000; */
+}
+
+body {
+	font-size: 140%;
+}
+
+html {
+	scroll-behavior: smooth !important;
+}
+
+li {
+	list-style-type: none !important;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #014745;
+}
+
+
+/* ----------- Custom Scrollbar --------------*/
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.primary {
+	background-color: #028c8c;
+}
+
+.secondary {
+	background-color: #ffaf86;
+}
+
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+button:active,
+button:focus,
+select:active,
+select:focus,
+.page-link:active,
+.page-link:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+
+/*------------------------- NavBar Section---------------------*/
+.navbar-brand {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 2.875rem;
+	font-weight: 700;
+	/* line-height: 62px; */
+	letter-spacing: 0em;
+	text-align: left;
+	color: #014745 !important;
+}
+
+
+.input-group {
+	/* border: 1px solid #868387 !important; */
+	/* height: 56px; */
+	/* width: 70rem !important; */
+	border-radius: .5rem
+}
+
+
+.form-select {
+	/* border: 1px solid #868387 !important; */
+	/* width: 10rem !important; */
+	/* height: 56px !important; */
+	border-radius: .5rem
+}
+
+.nav-icons {
+	height: 24px;
+	width: 32px;
+}
+
+.nav-card {
+	background: #fff;
+	/* border: 1px solid #868387 !important; */
+	width: 15rem !important;
+	height: 56px !important;
+	border-radius: .5rem;
+	box-shadow: 0px 4px 12px rgba(126, 120, 120, 0.25);
+}
+
+.nav-avatar {
+	border-radius: 100%;
+	width: 2.3rem;
+	height: 2.3rem;
+}
+
+.notification {
+	/* background-color: #555; */
+	color: white;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+
+.notification .badge {
+	position: absolute;
+	top: -8px;
+	right: -12px;
+	padding: 5px 8px;
+	border-radius: 50%;
+	background: #F27E64;
+	color: white;
+}
+
+.navbar-toggler-icon {
+	width: 100% !important;
+}
+
+/* ---------------------OffCanvas Section------------------- */
+.offcanvas {
+	width: 70%;
+}
+
+.offcanvas-nav .active {
+	background: #E7E7E7 !important;
+}
+
+.offcanvas-nav .nav-link {
+	margin-right: 0 !important;
+	background: #000;
+}
+
+.offCanvas-footer {
+	margin-top: 14rem;
+}
+
+.offCanvas-icon {
+	width: 2rem;
+}
+
+.form-select {
+	/* font-size: 16px !important; */
+}
+
+.logo {
+	width: 80%;
+}
+
+.nav-link {
+	color: #014745 !important;
+	font-weight: 600;
+	font-size: 18px !important;
+	margin-right: 2rem !important;
+}
+
+.nav-link:hover {
+	border-bottom: 3px solid #014745;
+}
+
+.navbar-nav .active {
+	border-bottom: 3px solid #014745;
+}
+
+.offCanvas-links {
+	margin-top: 75rem !important;
+	padding: 1rem 0;
+}
+
+/* ------------------------Total Card Section------------------- */
+.total-card {
+	/* width: 18rem; */
+	background: #F5F5F5;
+	box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+}
+
+.total-card-sub-title {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.total-card-title {
+	font-weight: 700;
+	font-size: 90px;
+}
+
+.total-card-text {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+/* --------------------Background colors ------------------*/
+.bg-primary {
+	background-color: #014745 !important;
+
+}
+
+.bg-primary-bright {
+	background-color: #028C8C !important;
+}
+
+.bg-light-green {
+	background-color: #B1DEDE !important;
+}
+
+.bg-bright-green {
+	background-color: #DDF3F3 !important;
+}
+
+.bg-secondary {
+	background-color: #ffaf86;
+}
+
+.bg-light-secondary {
+	background-color: #F3D1C9 !important;
+}
+
+.bg-gray {
+	background-color: #F0F0F0 !important;
+}
+
+
+/* -----------------Texts------------------------- */
+.text-primary {
+	color: #028C8C !important;
+}
+
+.text-dark-primary {
+	color: #006F6F !important;
+}
+
+.text-light {
+	color: #ffffff !important;
+}
+
+.text-red {
+	color: #D11F1F;
+}
+
+/* ------------------Buttons---------------------- */
+.btn-primary {
+	background-color: #028C8C !important;
+	border: 1px solid #028C8C;
+	border-radius: 8px;
+	padding: .5rem 3rem;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background-color: transparent !important;
+	border: 1px solid #028C8C;
+	color: #028C8C;
+}
+
+.btn-outline-secondary {
+	border: 1px solid #ced4da;
+	background-color: rgb(212, 206, 206) !important;
+}
+
+.btn-outline-secondary:hover {
+	background-color: rgb(156, 149, 149) !important;
+}
+
+.suspend-btn {
+	background: #ADEAEA;
+	color: #006F6F;
+	padding: .5rem 2rem;
+
+}
+
+.suspended-btn {
+	background: #F2BEBE;
+	color: #E81212;
+	padding: .5rem 2rem;
+
+}
+
+.btn-close {
+	background: url(../svg/chevron-left.svg) center/1em auto no-repeat;
+	border: 4px solid #014745;
+	border-radius: 90rem;
+	/* border: 0; */
+}
+
+/*----------------- Data Table Section ----------------*/
+.table-avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+/* #example_filter{
+	display: none !important;
+} */
+
+
+table.dataTable thead th {
+	/* display: none !important; */
+	text-align: center !important;
+
+}
+
+.dtr-title {
+	display: none !important;
+}
+
+#example_previous,
+#example_next,
+#example_info {
+	display: none !important;
+
+}
+
+.dataTables_wrapper .dataTables_paginate {
+	text-align: center !important;
+	float: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	background-color: #fff !important;
+	border: 1px solid #ced4da !important;
+}
+
+a .paginate_button .current {
+	background-color: #014745 !important;
+	border: 1 solid #014745 !important;
+}
+
+.sorting-label {
+	align-items: right !important;
+	display: block !important;
+}
+
+.dataTables_length label {
+	display: none !important;
+
+}
+
+.child {
+	background-color: #F0F0F0 !important;
+}
+
+.form-check-input {
+	border: 2px solid #028C8C !important;
+}
+
+.form-check-input:checked {
+	background-color: #028C8C !important;
+}
+
+td .bi-three-dots {
+	background-color: #D9D9D9;
+	color: #fff;
+	padding: .1rem 1rem;
+	width: 5rem !important;
+}
+
+table.dataTable tfoot th {
+	border-top: none !important;
+}
+
+thead {
+	background-color: transparent !important;
+}
+
+.table-inner-row {
+	border-radius: 1rem !important;
+	border-bottom: 3px solid #fff !important;
+	/* background-color: #D11F1F !important; */
+}
+
+
+table.dataTable {
+	border-collapse: collapse !important;
+	border-spacing: 0 15px !important;
+}
+
+table.dataTable.display tbody td {
+	border-top: none !important;
+}
+
+
+.user-status {
+	font-size: .8rem;
+	font-weight: 400;
+}
+
+.status {
+	margin-left: 3rem !important;
+}
+
+.collapse-card {
+	margin-left: -6.5rem;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
+	top: 50%;
+	/* left: 220% !important; */
+	height: 1em;
+	width: 5rem !important;
+	margin-top: -9px;
+	display: block;
+	position: absolute;
+	border: 0.15em solid transparent !important;
+	box-shadow: none !important;
+	box-sizing: content-box;
+	text-align: center;
+	text-indent: 2 !important;
+	line-height: 1em;
+	content: url(../svg/chevron-down.svg) !important;
+	background-color: transparent !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before {
+	content: url(../svg/chevron-up.svg) !important;
+	background-color: transparent !important;
+}
+table.dataTable.display>tbody>tr.odd>.sorting_1,
+table.dataTable.display>tbody>tr.odd>{
+	box-shadow: none !important;
+}
+
+.avatar {
+	/* vertical-align: middle; */
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+	#sidebar-wrapper {
+		margin-left: 0;
+	}
+
+	#page-content-wrapper {
+		min-width: 0;
+		width: 100%;
+	}
+
+	body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+		margin-left: -15rem;
+	}
+}
+/* -------------Media Query Section--------------- */
+@media screen and (max-width:768px) {
+	table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
+		left: 80% !important;
+
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
+		left: 175% !important;
+
+	}
+} 
