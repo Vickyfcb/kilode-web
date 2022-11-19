@@ -17,7 +17,22 @@
 .d-lg-none {
     display: none;
 }
-
+.nsbf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.nsbf span{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:hsl(178, 97%, 14%);;
+}
+.settings-active{
+    border: 1px solid  hsl(180, 97%, 28%);
+    padding: .6rem 0;
+    border-radius: 8px;
+}
 /* -------Buttons--------- */
 .btn-primary {
     width: 100%;
@@ -84,7 +99,7 @@
     font-size: 20px;
     margin: auto 0;
     padding-right: 12px;
-
+    color: hsl(0, 0%, 7%);
 }
 
 .back_btn h4 {
@@ -98,6 +113,7 @@
 /* Text Color Section */
 .text-danger {
     color: #EB5757;
+    background-color: transparent;
 }
 .text-green{
     color: #028C8C;
@@ -139,7 +155,7 @@
 
 .setting_nav_link {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #282828;
     margin: auto 2rem;
     padding-left: 19px;
@@ -421,9 +437,9 @@
     .setting_nav_link.active {
         width: 80%;
     }
-
-
-
+    .setting_section_content{
+        margin-top: 0;
+    }
     .setting_section_content {
         float: left;
         width: 100%;
@@ -472,7 +488,7 @@
     }
 
     .setting_nav_card {
-        width: 350px;
+        width: 330px;
         height: 65px;
         margin-right: 0 !important;
     }
@@ -579,4 +595,23 @@
 
     }
 }
-
+@media screen and (min-width:767px) {
+    .setting_section_content{
+        margin-top: 0;
+    }
+    .setting_nav_card{
+        width: 90%;
+    }
+    .nav__second-btn{
+        left: 0;
+        justify-content: flex-start;
+        height: 5rem;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        max-width: 100%;
+    }
+    /* .nsbf{
+        padding: .5rem;
+        background-color: #fff;
+    } */
+}
