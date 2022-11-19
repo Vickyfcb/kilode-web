@@ -23,7 +23,7 @@
 <body id="body">
 	<div class="nav" id="navbar">
 		<nav class="nav__content">
-			<a href="/index.html" class="nav__logo">
+			<a href="index.html" class="nav__logo">
 				<img src="images/kilode-logo-white.png" class="nav__logo-icon">
 				<img src="images/logo-small.png" alt="" class="nav__logo-small">
 			</a>
@@ -32,11 +32,11 @@
 			</div>
 			<div class="nav__list">
 				<div class="nav__list-first">
-					<a href="../dash.html" class="nav__link">
+					<a href="user-dashboard.html" class="nav__link active-link">
 						<i class="uil uis-apps nav-icon"></i>
 						<span class="nav__text">Dashboard</span>
 					</a>
-					<a href="../dashmessage.html" class="nav__link">
+					<a href="dashmessage.html" class="nav__link">
 						<i class="uil uil-comment-alt-dots nav-icon"></i>
 						<span class="nav__text">Messages</span>
 					</a>
@@ -44,42 +44,66 @@
 						<i class="uil uil-books nav-icon"></i>
 						<span class="nav__text">Journal</span>
 					</a>
-					<a href="../kilorant.html" class="nav__link ">
+					<a href="kilorant.html" class="nav__link ">
 						<i class="uil uil-message nav-icon"></i>
 						<span class="nav__text">Kilorant</span>
 					</a>
 				</div>
 				<div class="nav__list-second" id="nav-second">
-					<div class="nav__second-back" id="navsecond-close">
-						<i class="uil uil-arrow-circle-left"></i>
-					</div>
-					<a href="/index.html">
-						<img src="images/kilode-logo-white.png" class="nav__logo-second-icon">
-					</a>
-					<div class="nav__second">
-						<a href="index.html" class="nav__link active-linkk">
-							<i class="uil uil-setting nav-icon"></i>
-							<span class="nav__text">Settings</span>
-						</a>
-						<a href="/../signup.html" class="logout__link">
-							<i class="uil uil-signout nav-icon"></i>
-							<span class="nav__text logout-text">Logout</span>
-						</a>
-					</div>
-				</div>
+                    <div class="img-back">
+                        <a href="index.html">
+                            <img src="images/kilode-logo-white.png" class="nav__logo-second-icon">
+                        </a> 
+                        <div class="nav__second-back" id="navsecond-close">
+                            <i class="uil uil-arrow-circle-left"></i>
+                        </div>
+                    </div>
+                    <div class="nav__second">
+                        <div class="nsl">
+                            <a href="user-dashboard.html" class="nav__link">
+                                <i class="uil uis-apps nav-icon"></i>
+                                <span class="nav__text">Dashboard</span>
+                            </a>
+                            <a href="dashmessage.html" class="nav__link">
+                                <i class="uil uil-comment-alt-dots nav-icon"></i>
+                                <span class="nav__text">Messages</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <i class="uil uil-books nav-icon"></i>
+                                <span class="nav__text">Journal</span>
+                            </a>
+                            <a href="kilorant.html" class="nav__link">
+                                <i class="uil uil-message nav-icon"></i>
+                                <span class="nav__text">Kilorant</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="settings.html" class="nav__link settings-active">
+                                <i class="uil uil-setting nav-icon"></i>
+                                <span class="nav__text">Settings</span>
+                            </a>
+                            <a href="#" class="logout__link">
+                                <i class="uil uil-signout nav-icon"></i>
+                                <span class="nav__text logout-text">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</nav>
 	</div>
 	<!-- =============== MAIN ============== -->
 	<main class="main">
 		<div class="nav__second-btn">
-			<div class="nav__second-toggle" id="navsecond-toggle">
-				<i class='bx bx-menu'></i>
-				<span class="setting__title">Settings</span>
+			<div class="nsbf">
+				<div class="nav__second-toggle" id="navsecond-toggle">
+				    <i class='bx bx-menu'></i>
+			    </div>
+			    <span class="setting__title">Settings</span>
 			</div>
-			<!-- <div class="notification-icon" id="notifications-open">
+			<div class="notification-icon" id="notifications-open">
 				<i class="uil uil-bell"></i>
-			</div> -->
+			</div>
 		</div>
 		<!-- =============== FEEDS =============== -->
 
