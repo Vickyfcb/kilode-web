@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://kit.fontawesome.com/df97e1ef56.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="css/userdash.css">
+	<link rel="stylesheet" href="css/settings.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="../css/test.css">
+	<title>Setting</title>
+
+</head>
+
+<body id="body">
+	<div class="nav" id="navbar">
+		<nav class="nav__content">
+			<a href="/index.html" class="nav__logo">
+				<img src="../image/kilode-logo-white.png" class="nav__logo-icon">
+				<img src="../image/logo-small.png" alt="" class="nav__logo-small">
+			</a>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
+			</div>
+			<div class="nav__list">
+				<div class="nav__list-first">
+					<a href="../dash.html" class="nav__link">
+						<i class="uil uis-apps nav-icon"></i>
+						<span class="nav__text">Dashboard</span>
+					</a>
+					<a href="../dashmessage.html" class="nav__link">
+						<i class="uil uil-comment-alt-dots nav-icon"></i>
+						<span class="nav__text">Messages</span>
+					</a>
+					<a href="#" class="nav__link">
+						<i class="uil uil-books nav-icon"></i>
+						<span class="nav__text">Journal</span>
+					</a>
+					<a href="../kilorant.html" class="nav__link ">
+						<i class="uil uil-message nav-icon"></i>
+						<span class="nav__text">Kilorant</span>
+					</a>
+				</div>
+				<div class="nav__list-second" id="nav-second">
+					<div class="nav__second-back" id="navsecond-close">
+						<i class="uil uil-angle-left"></i>
+					</div>
+					<a href="/index.html">
+						<img src="image/kilode-logo-white.png" class="nav__logo-second-icon">
+					</a>
+					<div class="nav__second">
+						<a href="settings.html" class="nav__link active-linkk">
+							<i class="uil uil-setting nav-icon"></i>
+							<span class="nav__text">Settings</span>
+						</a>
+						<a href="#" class="logout__link">
+							<i class="uil uil-signout nav-icon"></i>
+							<span class="nav__text logout-text">Logout</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- =============== MAIN ============== -->
+	<div class="container">
+		<div class="setting_content_display">
+			<div class="setting_content_display_card">
+				<div class="back_btn">
+					<a href="feedback.html"><i class='bx bxs-chevron-left'></i></a>
+					<h4 for="">Feedback</h4>
+
+				</div>
+				<h5 class="input_sub_header">Feedback</h5>
+				<p>How is your stay in Kilode so far? We hope it has been blissful and serene. Kindly leave us a feedback</p>
+				<textarea name="" id="" cols="27" placeholder="Write you message" rows="10"></textarea>
+				<button class="btn-primary" id="myBtn" type="submit">Send Feedback</button>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close"><i class='bx bx-x'></i></span>
+					<div class="modal-content-body">
+						<p>Feedback message received !!!</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- The Modal -->
+			<div id="myModall" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close"><i class='bx bx-x'></i></span>
+					<div class="modal-content-body">
+						<h5 class="modal_header">Feedback Error</h5>
+						<p>Error in receiving feedback message. Please <a class="text-green" href="">try again</a></p>
+					</div>
+
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+
+		<br>
+	</div>
+
+	<!-- Custom JS -->
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+	<script src="js/user-dash.js"></script>
+</body>
+
+</html>
