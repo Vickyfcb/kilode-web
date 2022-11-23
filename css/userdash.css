@@ -185,11 +185,13 @@ input{
         flex-direction: row;
         justify-content: flex-start;
         gap: .5rem;
+        padding: .5rem;
     }
     .nav__second .logout__link{
         flex-direction: row;
         justify-content: flex-start;
         gap: .5rem;
+        padding: .5rem;
     }
     .nav__second .nav__link .nav__text{
         font-size: 1rem;
@@ -277,14 +279,14 @@ input{
 .nav__link i.uil-message{
     rotate: -30deg;
 }
-.nav__link:hover{
+/* .nav__link:hover{
     color: hsla(306, 61%, 94%, 1);
-}
+} */
 .nav__second-box{
     display: flex;
     align-items: center;
     gap: .5rem;
-    box-shadow: 0px 4px 12px rgba(126, 120, 120, 0.25);
+    /* box-shadow: 0px 4px 12px rgba(126, 120, 120, 0.25); */
     border-radius: 8px;
     background-color: #fff;
     padding: .5rem .8rem;
@@ -879,10 +881,10 @@ input{
     .logout__link i{
         color: var(--text-color-red);
     }
-    .nav__link:hover{
+    /* .nav__link:hover{
         background-color:hsla(306, 61%, 94%, 1);
         color: var(--text-color);
-    }
+    } */
     .nav__list{
         height: 75vh;
         width: 100%;
