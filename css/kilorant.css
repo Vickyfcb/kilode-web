@@ -392,15 +392,22 @@ img{
 }
 .feed__head-time .date{
     font-size: .65rem;
+    width: 100%;
 }
 .more__container{
     position: relative;
 }
-.feed__edit{
-    font-size:2rem;
+.more-icons{
+    position: relative;
+    display: inline-block;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+}
+.more__icon{
+    font-size:2rem;
+    transform: rotate(90deg);
+    display: block;
 }
 .more__content{
     display: none;
@@ -409,28 +416,32 @@ img{
     border-radius: 8px;
     position: absolute;
     right: 0;
-    top: 5.5rem;
+    top: 2.5rem;
     padding: 2rem;
     gap: 1.5rem;
-    width: 70%;
-    transition: 3s ease-in-out;
 }
 .more__item{
     font-size: var(--normal-font-size);
     color: var(--text-color);
     text-align: left;
 }
-.close-more-menu{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.2rem;
+.close__more{
+    left: 0;
+    top: 0;
+    display: none;
+    font-size: 2rem;
     color: var(--text-color);
+}
+.active-modal{
+    display: grid;
+}
+.active-modal1{
+    display: none;
 }
 .feed__post{
     margin-top: .7rem;
     margin-right: 2.5rem;
-    font-size: 1.1rem;
+    font-size: .95rem;
     font-weight: 400;
     line-height: 1.4rem;
 }
