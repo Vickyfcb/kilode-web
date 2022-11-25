@@ -511,7 +511,7 @@ input[type="checkbox"]:checked:after {
 
     .setting_content_display_card {
         /* display: none; */
-        width: 125%;
+        width: 125% !important;
         padding: 27px 23px;
         border: transparent;
     }
