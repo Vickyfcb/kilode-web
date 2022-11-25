@@ -470,7 +470,7 @@ input[type="checkbox"]:checked:after {
         margin-top: 3rem;
     }
 
-    /* make chunk brief insane all debris brief rapid cable position party magnet */
+    
     .setting_nav_link {
         width: 82%;
     }
@@ -511,7 +511,7 @@ input[type="checkbox"]:checked:after {
 
     .setting_content_display_card {
         /* display: none; */
-        width: 100%;
+        width: 125%;
         padding: 27px 23px;
         border: transparent;
     }
