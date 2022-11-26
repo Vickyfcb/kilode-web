@@ -94,6 +94,41 @@ input{
     color: var(--text-color-white);
     border-radius: .5rem;
 }
+/* ===== THEMES ===== */
+.switch{
+    display: inline-block;
+    width: 43px;
+    height: 24px;
+    cursor: pointer;
+}
+.switch__input{
+    display: none;
+}
+.switch__rail{
+    position: relative;
+    width: 43px;
+    height: 25px;
+    background-color:hsla(0, 0%, 74%, 1);
+    border-radius: 3rem;
+}
+.switch__circle{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    transition: transform .4s;
+}
+.switch__input:checked ~ .switch__rail .switch__circle{
+    transform: translate(18px, -50%);
+}
+.switch__input:checked ~ .switch__rail{
+    background-color: var(--first-color);
+}
 /* active link */
 .active-link{
     color: hsla(180, 97%, 28%, 1);
@@ -115,6 +150,27 @@ input{
     border-radius: 6px;
     background-color: hsla(180, 97%, 28%, 1);
 }
+.switch-active .swac-btn i{
+    transform: rotate(-180deg);
+}
+.switch-active .swac-options{
+    display: grid;
+}
+.switch-active2 .swac-btn2 i{
+    transform: rotate(-180deg);
+}
+.switch-active2 .swac-options2{
+    display: grid;
+}
+.user-active .user-home-drop{
+    transform: rotate(-180deg);
+}
+.user-active .navsb-modal{
+    display: block;
+}
+/* .switch-modal{
+    display: flex;
+} */
 @media screen and (max-width:767px) {
     .nav__logo,
     .nav__toggle{
@@ -161,6 +217,7 @@ input{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 .5rem;
     }
     .nav__logo-second-icon{
         width: 120px;
@@ -169,17 +226,117 @@ input{
         font-size: 2rem;
         color: var(--first-color);
     }
+    .nav__user-box{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding:0 .5rem;
+        margin-bottom: 1.5rem;
+    }
+    .nav__user-pic{
+        background-color: hsla(11, 85%, 67%, 1);
+        border-radius: 50%;
+        height: 2.7rem;
+        width: 2.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__user-pic h1{
+        color: var(--text-color-white);
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .nav__username-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav__user-name{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+    .nav__user-email{
+        font-size: .8rem;
+        font-weight: 400;
+    }
+    .navb2{
+        padding: 0 .5rem;
+        gap: 1rem;
+    }
+    .navsb-modal{
+        display: none;
+    }
+    .switch__acc{
+        width: 100%;
+        color: var(--text-color);
+        position: relative;
+    }
+    .swac-btn{
+        display: flex;
+        background: #fff;
+        font-size: 1.125rem;
+        font-weight: 400;
+        align-items: center;
+        color: var(--text-color);
+        cursor: pointer;
+        justify-content: space-between;
+    }
+    .swac-btn i {
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    .swac-options {
+        position: relative;
+        margin-top: 15px;
+        background: #fff;
+        gap:1rem;
+        display: none;
+    }
+    .swac-option {
+        display: flex;
+        cursor: pointer;
+        font-size: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .swac-option-role{
+        font-size: .813rem;
+        color: hsla(0, 0%, 31%, 1);
+    }
+    .swac-modal{
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        top: 2.5rem;
+        display: none;
+    }
+    .swac-modal-text{
+        font-size: 1rem;
+        color: var(--first-color-alt);
+    }
+    .change__theme{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .theme__text{
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
     .nav__second{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 70vh;
         gap: .5rem;
     }
     .nav__second div{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
     .nav__second .nav__link{
         flex-direction: row;
@@ -202,9 +359,9 @@ input{
     .nav__second .logout__link .nav__text{
         display: block;
     }
-    .nav__text{
+    /* .nav__text{
         display: none;
-    }
+    } */
     .nav__second .logout__link .nav__text{
         font-size: 1rem;
         color: var(--text-color-red);
@@ -225,6 +382,16 @@ input{
         width: 100%;
         background-color: #fff;
     }
+    .acc__type{
+        padding: 0 .5rem;
+        position: fixed;
+        bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        font-size: .813rem;
+    }
 }
 /* show menu */
 .show-menu{
@@ -243,10 +410,9 @@ input{
     font-size: 1.5rem;
     color: var(--text-color);
 }
-.notification-icon{
-    font-size: 1.5rem;
-    color: var(--text-color);
-    display: none;
+.notification__icon{
+    width: 24px;
+    cursor: pointer;
 }
 .nav__link{
     display: flex;
@@ -270,7 +436,7 @@ input{
     font-size: .6rem;
 }
 .nav__link .nav__text{
-    font-size: .6rem;
+    font-size: .5rem;
 }
 .nav__link i,
 .logout__link i{
@@ -295,6 +461,7 @@ input{
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    display: none;
 }
 .user__pic-home-box{
     background-color: hsla(11, 85%, 67%, 1);
@@ -316,6 +483,7 @@ input{
 }
 .user__box-home i{
     font-size: 1.2rem;
+    cursor: pointer;
 }
 .dashhome__container{
     padding-top: 4rem;
@@ -386,9 +554,8 @@ input{
     justify-content: center;
     gap: .5rem;
 }
-.totalconvo__streak i{
-    font-size: 1.2rem;
-    font-weight: 700;
+.fire__emoji{
+    width: 20px;
 }
 .totalconvo__streak{
     font-size: 1rem;
@@ -533,6 +700,7 @@ input{
     position: absolute;
     left: .5rem;
     top: -2.5rem;
+    color: var(--text-color);
 }
 .startconvo__back i{
     font-size: 2rem;
@@ -813,7 +981,12 @@ input{
     }
     .nav__second-back,
     .nav__logo-second-icon,
-    .nav__second-toggle{
+    .nav__second-toggle,
+    .nav__user-box,
+    .navb2,
+    .acc__type,
+    .hr,
+    br{
         display: none;
     }
     /* .container{
@@ -919,21 +1092,143 @@ input{
         display: flex;
         justify-content: flex-end;
         height: 6rem;
-        align-items: center;
         padding-right: 2rem;
         position: sticky;
         right: 0;
         top: 0;
+        z-index: 100;
+    }
+    .nav__second-menu{
+        margin-top: 1rem;
     }
     .nav__second-box{
-        padding: .8rem 2rem;
+        padding: .8rem 1rem;
+        gap: 1.5rem;
+        position: relative;
     }
-    .user__pic{
-        padding: .5rem .8rem;
-        font-size: 1.2rem;
+    .notification__icon{
+        width: 30px;
+    }
+    .user__box-home{
+        display: flex;
+        gap: .8rem;
+    }
+    .user__pic-home-box{
+        height: 2rem;
+        width: 2rem;
+    }
+    .user__pic-home{
+        font-size: 1.125rem;
+    }
+    .user__box-home i{
+        font-size: 1.4rem;
     }
     .user__box{
         gap: .5rem;
+    }
+    .navsb-modal{
+        margin-top: 10px;
+        padding: .5rem 0;
+        background-color: #fff;
+        border-radius: 8px;
+        display: none;
+    }
+    .navsb__user-box{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding:0 .5rem;
+        margin-bottom: .5rem;
+    }
+    .navsb__user-pic{
+        background-color: hsla(11, 85%, 67%, 1);
+        border-radius: 50%;
+        height: 2.7rem;
+        width: 2.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navsb__user-pic h1{
+        color: var(--text-color-white);
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .navsb__username-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navsb__user-name{
+        font-size: .9rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+    .navsb__user-email{
+        font-size: .7rem;
+        font-weight: 400;
+    }
+    .change__theme{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem .5rem;
+    }
+    .theme__text{
+        font-size: .9rem;
+        font-weight: 400;
+    }
+    .switch__acc2{
+        width: 100%;
+        color: var(--text-color);
+        position: relative;
+        padding: .5rem;
+    }
+    .swac-btn2{
+        display: flex;
+        background: #fff;
+        font-size: .9rem;
+        font-weight: 400;
+        align-items: center;
+        color: var(--text-color);
+        cursor: pointer;
+        justify-content: space-between;
+    }
+    .swac-btn2 i {
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    .swac-options2 {
+        position: relative;
+        margin-top: 15px;
+        background: #fff;
+        gap:1rem;
+        display: none;
+    }
+    .swac-option2 {
+        display: flex;
+        cursor: pointer;
+        font-size: .85rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .swac-option-role{
+        font-size: .77rem;
+        color: hsla(0, 0%, 31%, 1);
+    }
+    .swac-modal{
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        top: 2.5rem;
+        display: none;
+    }
+    .swac-modal-text{
+        font-size: 1rem;
+        color: var(--first-color-alt);
     }
     .dashhome__container{
         padding-bottom: 5rem;
