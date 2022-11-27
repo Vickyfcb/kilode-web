@@ -57,7 +57,9 @@
     <main class="main">
         <div class="chat__header">
             <h1 class="header__title">Inbox</h1>
-            <i class="uil uil-bell notification-icon"></i>
+            <a href="notifications.html">
+                <img src="images/Notification.png" alt="" class="notification__icon">
+            </a>
         </div>
         <section class="chat">
             <div class="chat__container">
@@ -142,9 +144,11 @@
                         </div>
                     </div>
                     <div class="more__container">
-                        <i onclick="document.getElementById('more-content').style.display='grid'" class="uil uil-ellipsis-v more__icon" id="more-icon"></i>
+                        <div class="more-icons">
+                            <i class="uil uil-times close__more"></i>
+                            <i class="uil uil-ellipsis-v more__icon" id="more-icon"></i>
+                        </div>
                         <div class="more__content" id="more-content">
-                            <i class="uil uil-times close-more-menu" onclick="document.getElementById('more-content').style.display='none'" ></i>
                             <a href="#" class="more__item">
                                 <span>Rate Kilopal</span>
                             </a>

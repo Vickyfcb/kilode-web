@@ -135,8 +135,10 @@
                 <i class='bx bx-menu' id="navsecond-toggle"></i>
             </div>
             <div class="nav__second-menu">
-                <div class="nav__second-box">
-                    <img src="images/Notification.png" alt="" class="notification__icon">
+                <div class="nav__second-box">  
+                    <a href="notifications.html">
+                        <img src="images/Notification.png" alt="" class="notification__icon">
+                    </a>
                     <div class="user__box-home">
                         <div class="user__pic-home-box">
                             <h1 class="user__pic-home">U</h1>
@@ -294,24 +296,24 @@
 
         userBtn.addEventListener("click", () => userMenu.classList.toggle("user-active"));
 
-    const modalViews = document.querySelectorAll('.swac-modal'),
-      modalBtns = document.querySelectorAll('.listener'),
-      modalCloses = document.querySelectorAll('.switch-close')
-    let modal = function(modalClick) {
-        modalViews[modalClick].style.display = "flex";
-    }
-    modalBtns.forEach((modalBtn, i) => {
-        modalBtn.addEventListener('click', () =>{
-            modal(i)
+        const modalViews = document.querySelectorAll('.swac-modal'),
+          modalBtns = document.querySelectorAll('.listener'),
+          modalCloses = document.querySelectorAll('.switch-close')
+        let modal = function(modalClick) {
+            modalViews[modalClick].style.display = "flex";
+        }
+        modalBtns.forEach((modalBtn, i) => {
+                modalBtn.addEventListener('click', () =>{
+                        modal(i)
+                })
         })
-    })
-    modalCloses.forEach((modalClose) => {
-        modalClose.addEventListener('click',() => {
-            modalViews.forEach((modalView) =>{
-                modalView.style.display = "none";
-            })
+        modalCloses.forEach((modalClose) => {
+                modalClose.addEventListener('click',() => {
+                        modalViews.forEach((modalView) =>{
+                                modalView.style.display = "none";
+                        })
+                })
         })
-    })
     </script>
 </body>
 </html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/userdash.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Notifications</title>
+</head>
+<body id="body">
+    <div class="nav" id="navbar">
+        <nav class="nav__content">
+            <a href="index.html" class="nav__logo">
+                <img src="images/kilode-logo-white.png" class="nav__logo-icon">
+                <img src="images/logo-small.png" alt="" class="nav__logo-small">
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="nav__list">
+                <div class="nav__list-first">
+                    <a href="user-dashboard.html" class="nav__link active-link">
+                        <i class="uil uis-apps nav-icon"></i>
+                        <span class="nav__text">Dashboard</span>
+                    </a>
+                    <a href="dashmessage.html" class="nav__link">
+                        <i class="uil uil-comment-alt-dots nav-icon"></i>
+                        <span class="nav__text">Messages</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <i class="uil uil-books nav-icon"></i>
+                        <span class="nav__text">Journal</span>
+                    </a>
+                    <a href="kilorant.html" class="nav__link">
+                        <i class="uil uil-message nav-icon"></i>
+                        <span class="nav__text">Kilorant</span>
+                    </a>
+                </div>
+                <div class="nav__list-second" id="nav-second">
+                    <div class="img-back">
+                        <a href="index.html">
+                            <img src="images/kilode-logo-white.png" class="nav__logo-second-icon">
+                        </a> 
+                        <div class="nav__second-back" id="navsecond-close">
+                            <i class="uil uil-arrow-circle-left"></i>
+                        </div>
+                    </div>
+                    <div class="nav__user-box">
+                        <div class="nav__user-pic">
+                            <h1>U</h1>
+                        </div>
+                        <div class="nav__username-box">
+                            <h2 class="nav__user-name">UserX</h2>
+                            <p class="nav__user-email">userx@gmail.com</p>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <br>
+                    <div class="navb2 grid">
+                        <div class="switch__acc">
+                            <div class="swac-btn">
+                                <span class="swac-title">Switch account</span>
+                                <i class="bx bx-chevron-down switch-close"></i>
+                            </div>
+                            <ul class="swac-options grid">
+                                <li class="swac-option">
+                                    <span class="swac-option-text">@hikari</span>
+                                    <span class="swac-option-role">User</span>
+                                </li>
+                                <li class="swac-option listener">
+                                    <span class="swac-option-text">@hinata</span>
+                                    <span class="swac-option-role">Listener</span>
+                                </li>
+                            </ul>
+                            <div class="swac-modal">
+                                <span class="swac-modal-text">Login as a listener</span>
+                            </div>
+                        </div>
+                        <div class="change__theme">
+                            <span class="theme__text">Theme</span>
+                            <label class="switch">
+                                <input type="checkbox" onclick="myFunction()" class="switch__input">
+                                <div class="switch__rail">
+                                    <span class="switch__circle"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="nav__second">
+                        <div>
+                            <a href="settings.html" class="nav__link">
+                                <i class="uil uil-setting nav-icon"></i>
+                                <span class="nav__text">Settings</span>
+                            </a>
+                            <a href="#" class="logout__link">
+                                <i class="uil uil-signout nav-icon"></i>
+                                <span class="nav__text logout-text">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="acc__type">
+                        <span>Account type: User</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="main">
+        <div class="notifications__header">
+            <a href="user-dashboard.html" class="notifications__back">
+                <i class='bx bx-chevron-left'></i>
+            </a>
+            <h1 class="notifications__title">Notifications</h1>
+        </div>
+        <section class="filters">
+            <!-- =============== FILTERS TABS =============== -->
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#all">
+                    All
+                </button>
+
+                <button class="filters__button" data-target="#kilorant">
+                    Kilorant
+                </button>
+            </ul>
+
+            <div class="filters__section">
+                <!-- =============== ALL =============== -->
+                <div class="all__content grid filters__active" data-content id="all">
+                    <div class="notifications__contents like-notification container">
+                        <img src="images/like-solid.png" alt="" class="like__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>R</h1>
+                            </div>
+                            <p class="notifications__text">Rickybae4 just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents going-notification container">
+                        <img src="images/going-solid.png" alt="" class="going__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>T</h1>
+                            </div>
+                            <p class="notifications__text">Tammyxxx just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents like-notification container">
+                        <img src="images/like-solid.png" alt="" class="like__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>R</h1>
+                            </div>
+                            <p class="notifications__text">Rickybae4 just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents like-notification container">
+                        <img src="images/like-solid.png" alt="" class="like__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>R</h1>
+                            </div>
+                            <p class="notifications__text">Rickybae4 just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents listener-test container">
+                        <p class="listener__text">
+                            Congratulations!!, You passed your listeners test. 
+                            Login to your kilode account as a listener
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents going-notification container">
+                        <img src="images/going-solid.png" alt="" class="going__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>T</h1>
+                            </div>
+                            <p class="notifications__text">Tammyxxx just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents shared-rant container">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>T</h1>
+                            </div>
+                            <p class="notifications__text">Tammyxxx just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents welcome-notification container">
+                        <p class="welcome__text">
+                            Welcome to Kilodeng 
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+
+                <!-- =============== KILORANT =============== -->
+                <div class="kilorant__content grid" data-content id="kilorant">
+                    <div class="notifications__contents like-notification container">
+                        <img src="images/like-solid.png" alt="" class="like__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>R</h1>
+                            </div>
+                            <p class="notifications__text">Rickybae4 just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents going-notification container">
+                        <img src="images/going-solid.png" alt="" class="going__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>T</h1>
+                            </div>
+                            <p class="notifications__text">Tammyxxx just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents like-notification container">
+                        <img src="images/like-solid.png" alt="" class="like__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>R</h1>
+                            </div>
+                            <p class="notifications__text">Rickybae4 just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents like-notification container">
+                        <img src="images/like-solid.png" alt="" class="like__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>R</h1>
+                            </div>
+                            <p class="notifications__text">Rickybae4 just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents going-notification container">
+                        <img src="images/going-solid.png" alt="" class="going__img">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>T</h1>
+                            </div>
+                            <p class="notifications__text">Tammyxxx just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="notifications__contents shared-rant container">
+                        <div class="notifications__content">
+                            <div class="profile__pic">
+                                <h1>T</h1>
+                            </div>
+                            <p class="notifications__text">Tammyxxx just related to your share</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/user-dash.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

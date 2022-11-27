@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://kit.fontawesome.com/df97e1ef56.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -70,7 +69,7 @@
                 <span class="k-header-title">Kilorant</span>
             </div>
             <div class="notification-icon" id="notifications-open">
-                <i class="uil uil-bell"></i>
+                <img src="images/Notification.png" alt="" class="notification__icon">
             </div>
         </div>
         <!-- =============== FEEDS =============== -->
@@ -398,31 +397,23 @@
     <!-- <script src="js/dash.js"></script> -->
     <script src="js/user-dash.js"></script>
     
-    <!-- <script>
-        //messages more
-        const modal = document.querySelectorAll("more__content");
-        //const modalBox = document.querySelectorAll("modal-box");
+    <script>
+        const switchMenu = document.querySelector(".more__container"),
+        swacBtn = switchMenu.querySelectorAll(".more-icons");
+        //swacOptions = switchMenu.querySelectorAll(".swac-option");
 
-        const open = document.querySelectorAll("more__icon");
-        const close = document.querySelectorAll("close__more");
+        //swacBtn.addEventListener("click", () => switchMenu.classList.toggle("more-active")); 
+        swacBtn.forEach(more =>{
+            more.addEventListener("click", () => switchMenu.classList.toggle("more-active"));
+        });
+        // swacOptions.forEach(option =>{
+        //     option.addEventListener("click", ()=>{
+        //     // let selectedOption = option.querySelector(".option-text").innerText;
+        //     // swacText.innerText = selectedOption;
 
-        open.onclick = function() {
-         modal.style.display = "grid";
-         open.style.display = "none";
-         close.style.display = "block";
-        }
-
-        close.onclick = function() {
-        modal.style.display = "none";
-        open.style.display = "block";
-        close.style.display = "none";
-        }
-
-        window.onclick = function(e) {
-        if (e.target == modal) {
-          modal.style.display = "none";
-          }
-        }
-    </script> -->
+        //     //switchMenu.classList.remove("switch-active");
+        //     });
+        // });
+    </script>
 </body>
 </html>
