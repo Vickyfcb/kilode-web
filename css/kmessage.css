@@ -295,11 +295,15 @@ select::-ms-expand{
 .chat__close{
     font-size: 1.7rem;
 }
-.more__icon{
-    font-size:2rem;
+.more-icons{
+    position: relative;
+    display: inline-block;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+}
+.more__icon{
+    font-size:2rem;
 }
 .more__content{
     display: none;
@@ -319,11 +323,11 @@ select::-ms-expand{
     color: var(--text-color);
     text-align: left;
 }
-.close-more-menu{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.2rem;
+.close__more{
+    left: 0;
+    top: 0;
+    display: none;
+    font-size: 2rem;
     color: var(--text-color);
 }
 .message__header-box{
@@ -525,6 +529,9 @@ select::-ms-expand{
     font-size: .8rem;
 }
 @media screen and (min-width:568px) {
+    .more__content{
+        width: 50%;
+    }
     .request__box{
         padding: 1rem;
         width: 90%;
@@ -598,6 +605,9 @@ select::-ms-expand{
     }
     .requests__container{
         margin-top: 3rem;
+    }
+    .more__content{
+        width: 40%;
     }
 }
 ::-webkit-scrollbar{

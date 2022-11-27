@@ -183,9 +183,9 @@ img{
     .nav__second .nav__link .nav__text{
         font-size: 1rem;
     }
-    .nav__text{
+    /* .nav__text{
         display: none;
-    }
+    } */
     .nav__second .logout__link .nav__text{
         font-size: 1rem;
         color: var(--text-color-red);
@@ -228,9 +228,9 @@ img{
     background-color: hsla(0, 0%, 85%, 0.8);
     border-radius: 50%;
 }
-.notification-icon{
-    font-size: 1.5rem;
-    color: var(--text-color);
+.notification__icon{
+    width: 24px;
+    cursor: pointer;
 }
 .nav__link{
     display: flex;
@@ -254,7 +254,7 @@ img{
     font-size: .6rem;
 }
 .nav__link .nav__text{
-    font-size: .6rem;
+    font-size: .5rem;
 }
 .nav__link i,
 .logout__link i{
@@ -263,9 +263,9 @@ img{
 .nav__link i.uil-message{
     rotate: -30deg;
 }
-.nav__link:hover{
+/* .nav__link:hover{
     color: hsla(306, 61%, 94%, 1);
-}
+} */
 .nav__second-box{
     display: flex;
     align-items: center;
@@ -431,6 +431,9 @@ img{
     display: none;
     font-size: 2rem;
     color: var(--text-color);
+}
+.more-active .more__content{
+    display: grid;
 }
 .active-modal{
     display: grid;
