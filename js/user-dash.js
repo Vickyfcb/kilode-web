@@ -142,27 +142,25 @@ goingBtn.forEach((going) => {
     });
 });
 
-/*=================== KILORANT MORE ======================*/
-const moreViews = document.querySelectorAll('.more__content'),
-      moreBtns = document.querySelectorAll('.more__icon'),
-      moreCloses = document.querySelectorAll('.close__more')
-let moda = function(moreClick) {
-    moreViews[moreClick].classList.add('active-modal')
-}
-moreBtns.forEach((moreBtn, i) => {
-    moreBtn.addEventListener('click', () =>{
-        moda(i)
+/*=================== NOTIFICATIONS ======================*/
+const tabs =document.querySelectorAll('[data-target]'),
+      tabsContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabsContents.forEach(tc =>{
+            tc.classList.remove('filters__active')
+        })
+        target.classList.add('filters__active')
+
+        tabs.forEach(t =>{
+            t.classList.remove('filter-tab-active')
+        })
+        tab.classList.add('filter-tab-active')
     })
 })
-moreCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click',() => {
-        moreViews.forEach((modalView) =>{
-            modalView.classList.remove('active-modal');
-        })
-    });
-})
-
-
 
 const selectAll = document.querySelector('.setup-group.select-all input');
 const allCheckbox = document.querySelectorAll('.setup-group:not(.select-all) input');
