@@ -858,6 +858,29 @@ input{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
+/* ========= JOURNAL ========== */
+.journal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.journal__title{
+    font-size: 1.8rem;
+    color: var(--first-color);
+    text-align: center;
+}
+.journal__subtitle{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--first-color);
+    text-align: center;
+}
+.journal__img img{
+    width: 340px;
+    margin-top: 2.5rem;
+}
 @keyframes loading {
     from{
         transform: rotate(0turn);
@@ -1105,6 +1128,7 @@ input{
         padding: .8rem 1rem;
         gap: 1.5rem;
         position: relative;
+        box-shadow: 0px 4px 12px rgba(126, 120, 120, 0.25);
     }
     .notification__icon{
         width: 30px;
@@ -1132,6 +1156,7 @@ input{
         background-color: #fff;
         border-radius: 8px;
         display: none;
+        box-shadow: 0px 4px 12px rgba(126, 120, 120, 0.25);
     }
     .navsb__user-box{
         display: flex;

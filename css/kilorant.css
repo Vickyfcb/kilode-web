@@ -348,12 +348,24 @@ img{
     color: var(--text-color);
 }
 /* FEEDS */
+.no__feed{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.no__feed h1{
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
 .feeds{
     margin-top: 1rem;
     position: relative;
 }
 .feed{
     margin-bottom: 2rem;
+    display: block;
 }
 .feed__head{
     display: flex;
@@ -419,6 +431,7 @@ img{
     top: 2.5rem;
     padding: 2rem;
     gap: 1.5rem;
+    z-index: 100;
 }
 .more__item{
     font-size: var(--normal-font-size);
@@ -513,6 +526,11 @@ img{
     height: 100vh;
     overflow: auto;
 }
+.notifications__header{
+    position: fixed;
+    width: 80%;
+    background-color: var(--first-color);
+}
 .title__line{
     position: absolute;
     width: 100%;
@@ -559,6 +577,20 @@ img{
     right: 1rem;
     top: 0;
 }
+.notifications__content{
+    display: block;
+}
+.no__notifications{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.no__notifications h1{
+    color: var(--text-color-white);
+    font-size: 1.2rem;
+}
 .rant__button{
     position: fixed;
     right: 2rem;
@@ -572,6 +604,141 @@ img{
 }
 .show-scroll{
     bottom: 6rem;
+}
+/* report */
+.report__header{
+    display: flex;
+    height: 5.5rem;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+}
+.report__back i{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.report__title{
+    font-size: 1.3rem;
+}
+.report__container{
+    margin-top: 6rem;
+}
+.report__reason{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+.setup-checkbox{
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+.setup-group {
+	margin-bottom: .5rem;
+}
+.setup-group:last-child {
+	margin-bottom: 0;
+}
+.setup-group input {
+	display: none;
+}
+.setup-group.select-all label {
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+label {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	cursor: pointer;
+    font-weight: 400;
+    font-size: 1rem;
+}
+label .checkbox {
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	border-radius: 4px;
+	position: relative;
+	transition: .2s ease;
+	transition-delay: .2s;
+}
+label .checkbox::before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	background: #fff;
+	border-radius: 2.5px;
+	transition: .2s ease;
+	transition-delay: .2s;
+}
+.setup-group input:checked + label .checkbox::before {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	transition-delay: 0s;
+}
+.setup-group input:checked + label .checkbox {
+	background: var(--first-color);
+	transition-delay: 0s;
+}
+label .checkbox .check {
+	display: block;
+	width: 12px;
+	height: 6px;
+	position: absolute;
+	top: 6px;
+	left: 50%;
+	transform: translateX(-50%) rotateZ(-45deg);
+}
+label .checkbox .check::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background: #fff;
+	transition: .2s ease;
+	transition-delay: .2s;
+}
+label .checkbox .check::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: .2s ease;
+	transition-delay: 0s;
+}
+.setup-group input:checked + label .checkbox .check::before {
+	height: 100%;
+	transition-delay: .2s;
+}
+.setup-group input:checked + label .checkbox .check::after {
+	width: 100%;
+	transition-delay: .4s;
+}
+.report__button{
+    width: 100%;
+    padding: .6rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 @media screen and (max-width:320px) {
     .container{
@@ -596,6 +763,15 @@ img{
     .nav__list{
         width: 372px;
         bottom: 1rem;
+    }
+    .notifications{
+        width: 70%;
+    }
+    .notifications__close{
+        right: 6rem;
+    }
+    .report__button{
+        width: 60%;
     }
 }
 @media screen and (min-width:767px) {
@@ -685,10 +861,10 @@ img{
     .logout__link i{
         color: var(--text-color-red);
     }
-    .nav__link:hover{
+    /* .nav__link:hover{
         background-color:hsla(306, 61%, 94%, 1);
         color: var(--text-color);
-    }
+    } */
     .nav__list{
         height: 75vh;
         width: 100%;
@@ -787,6 +963,12 @@ img{
     .rant__button{
         right: 30rem;
         bottom: 4rem;
+    }
+    .report__header{
+        position: sticky;
+    }
+    .report__container{
+        margin-top: 3rem;
     }
 }
 @media screen and (min-width:996px) {

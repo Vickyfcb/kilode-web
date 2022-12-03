@@ -39,6 +39,26 @@
         display: none;
     }
 }
+/* .filters__section{
+    display: none;
+} */
+.all__notifications{
+    display: block;
+}
+.kilorant__notifications{
+    display: block;
+}
+.no__notifications{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.no__notifications h1{
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 31%, 1);
+}
 .notifications__header{
     display: flex;
     height: 5.5rem;
@@ -151,6 +171,9 @@
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 600;
+}
+.shared-rant{
+    padding-left: 2.5rem;
 }
 @media screen and (min-width:767px) {
     .notifications__back{
