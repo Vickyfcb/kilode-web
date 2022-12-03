@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/kilorant.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Report Kilorant</title>
+</head>
+<body id="body">
+    <div class="nav" id="navbar">
+        <nav class="nav__content">
+            <a href="index.html" class="nav__logo">
+                <img src="images/kilode-logo-white.png" class="nav__logo-icon">
+                <img src="images/logo-small.png" alt="" class="nav__logo-small">
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="nav__list">
+                <div class="nav__list-first">
+                    <a href="user-dashboard.html" class="nav__link">
+                        <i class="uil uis-apps nav-icon"></i>
+                        <span class="nav__text">Dashboard</span>
+                    </a>
+                    <a href="dashmessage.html" class="nav__link">
+                        <i class="uil uil-comment-alt-dots nav-icon"></i>
+                        <span class="nav__text">Messages</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                        <i class="uil uil-books nav-icon"></i>
+                        <span class="nav__text">Journal</span>
+                    </a>
+                    <a href="kilorant.html" class="nav__link active-link">
+                        <i class="uil uil-message nav-icon"></i>
+                        <span class="nav__text">Kilorant</span>
+                    </a>
+                </div>
+                <div class="nav__list-second" id="nav-second">
+                    <div class="nav__second-back" id="navsecond-close">
+                        <i class="uil uil-angle-left"></i>
+                    </div>
+                    <a href="/index.html">
+                        <img src="images/kilode-logo-white.png" class="nav__logo-second-icon">
+                    </a>
+                    <div class="nav__second">
+                        <a href="settings.html" class="nav__link">
+                            <i class="uil uil-setting nav-icon"></i>
+                            <span class="nav__text">Settings</span>
+                        </a>
+                        <a href="#" class="logout__link">
+                            <i class="uil uil-signout nav-icon"></i>
+                            <span class="nav__text logout-text">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="body2">
+    <!-- =============== MAIN ============== -->
+    <main class="report">
+        <div class="report__header">
+            <a href="kilorant.html" class="report__back">
+                <i class='bx bx-chevron-left'></i>
+            </a>
+            <h1 class="report__title">Report Kilorant</h1>
+        </div>
+        <div class="report__container container">
+            <p class="report__reason">
+                Why the report? Don't worry you remain anonymous.
+            </p>
+            <div class="setup-checkbox grid">
+                <div class="setup-group">
+                    <input type="checkbox" id="uncomfortable">
+                    <label for="uncomfortable">
+                        <span class="checkbox">
+                            <span class="check"></span>
+                        </span>
+                        I found the rant extremely uncomfortable
+                    </label>
+                </div>
+                <div class="setup-group">
+                    <input type="checkbox" id="attention">
+                    <label for="attention">
+                        <span class="checkbox">
+                            <span class="check"></span>
+                        </span>
+                        Kiloranter needs emergency attention
+                    </label>
+                </div>
+                <div class="setup-group">
+                    <input type="checkbox" id="words">
+                    <label for="words">
+                        <span class="checkbox">
+                            <span class="check"></span>
+                        </span>
+                        Choice of words
+                    </label>
+                </div>
+            </div>
+            <button class="button report__button">
+                Report
+            </button>
+        </div>
+    </main>
+</body>
+</html>
