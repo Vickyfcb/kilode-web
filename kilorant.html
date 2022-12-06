@@ -10,7 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Kilorant</title>
 </head>
-<body id="body">
+<body class="bdy" id="body">
     <div class="nav" id="navbar">
         <nav class="nav__content">
             <a href="index.html" class="nav__logo">
@@ -403,24 +403,49 @@
     </a>
     <!-- <script src="js/dash.js"></script> -->
     <script src="js/user-dash.js"></script>
-    
     <script>
-        const switchMenu = document.querySelector(".more__container"),
-        swacBtn = switchMenu.querySelectorAll(".more-icons");
-        //swacOptions = switchMenu.querySelectorAll(".swac-option");
+        // const switchMenu = document.querySelector(".more__container"),
+        // swacBtn = switchMenu.querySelectorAll(".more-icons");
+        // //swacOptions = switchMenu.querySelectorAll(".swac-option");
 
-        //swacBtn.addEventListener("click", () => switchMenu.classList.toggle("more-active")); 
-        swacBtn.forEach(more =>{
-            more.addEventListener("click", () => switchMenu.classList.toggle("more-active"));
-        });
-        // swacOptions.forEach(option =>{
-        //     option.addEventListener("click", ()=>{
-        //     // let selectedOption = option.querySelector(".option-text").innerText;
-        //     // swacText.innerText = selectedOption;
-
-        //     //switchMenu.classList.remove("switch-active");
-        //     });
+        // //swacBtn.addEventListener("click", () => switchMenu.classList.toggle("more-active")); 
+        // swacBtn.forEach(more =>{
+        //     more.addEventListener("click", () => switchMenu.classList.toggle("more-active"));
         // });
+        // // swacOptions.forEach(option =>{
+        // //     option.addEventListener("click", ()=>{
+        // //     // let selectedOption = option.querySelector(".option-text").innerText;
+        // //     // swacText.innerText = selectedOption;
+
+        // //     //switchMenu.classList.remove("switch-active");
+        // //     });
+        // // });
+        // // const moreCon = document.querySelector(".more__container"),
+        // // swacBtn = document.querySelectorAll(".more-icons");
+
+        // // moreCon.foreach(more =>{
+        // //     more.addEventListener('click', () =>{
+        // //         switchMenu.classList.toggle("more-active")
+        // //     });
+        // // })
+//         const modalViews = document.querySelectorAll('.more__container'),
+//       modalBtns = document.querySelectorAll('.more-icon'),
+//       modalCloses = document.querySelectorAll('.bdy')
+// let modal = function(modalClick) {
+//     modalViews[modalClick].classList.add('more-active')
+// }
+// modalBtns.forEach((modalBtn, i) => {
+//     modalBtn.addEventListener('click', () =>{
+//         modal(i)
+//     })
+// })
+// modalCloses.forEach((modalClose) => {
+//     modalClose.addEventListener('click',() => {
+//         modalViews.forEach((modalView) =>{
+//             modalView.classList.remove('more-active')
+//         })
+//     })
+// })
     </script>
 </body>
 </html>
