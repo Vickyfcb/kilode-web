@@ -161,7 +161,24 @@ tabs.forEach(tab =>{
         tab.classList.add('filter-tab-active')
     })
 })
-
+const moreViews = document.querySelectorAll('.more__content'),
+moreBtns = document.querySelectorAll('.more__icon'),
+moreCloses = document.querySelectorAll('.feed__post')
+let more = function(moreClick) {
+moreViews[moreClick].classList.add('more-active')
+}
+moreBtns.forEach((moreBtn, i) => {
+moreBtn.addEventListener('click', () =>{
+  more(i);
+})
+})
+moreCloses.forEach((moreClose) => {
+moreClose.addEventListener('click',() => {
+  moreViews.forEach((moreView) =>{
+      moreView.classList.remove('more-active')
+  })
+})
+})
 const selectAll = document.querySelector('.setup-group.select-all input');
 const allCheckbox = document.querySelectorAll('.setup-group:not(.select-all) input');
 let listBoolean = [];
