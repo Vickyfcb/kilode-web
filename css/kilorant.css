@@ -445,10 +445,15 @@ img{
     font-size: 2rem;
     color: var(--text-color);
 }
-.more-active{
+.more__close .more__content{
+    display: none;
+}
+.more__open .more__content{
     display: grid;
 }
-
+/* .more-active{
+    display: grid;
+} */
 .active-modal{
     display: grid;
 }

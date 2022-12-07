@@ -172,8 +172,10 @@
     color: var(--text-color);
     font-weight: 600;
 }
-.shared-rant{
-    padding-left: 2.5rem;
+.shared-rant,
+.listener__text,
+.welcome__text{
+    padding-left: 2.3rem;
 }
 @media screen and (min-width:767px) {
     .notifications__back{
