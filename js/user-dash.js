@@ -161,24 +161,43 @@ tabs.forEach(tab =>{
         tab.classList.add('filter-tab-active')
     })
 })
-const moreViews = document.querySelectorAll('.more__content'),
-moreBtns = document.querySelectorAll('.more__icon'),
-moreCloses = document.querySelectorAll('.feed__post')
-let more = function(moreClick) {
-moreViews[moreClick].classList.add('more-active')
+// const moreViews = document.querySelectorAll('.more__content'),
+// moreBtns = document.querySelectorAll('.more__icon'),
+// moreCloses = document.querySelectorAll('.feed__post')
+// let more = function(moreClick) {
+// moreViews[moreClick].classList.add('more-active')
+// }
+// moreBtns.forEach((moreBtn, i) => {
+// moreBtn.addEventListener('click', () =>{
+//   more(i);
+// })
+// })
+// moreCloses.forEach((moreClose) => {
+// moreClose.addEventListener('click',() => {
+//   moreViews.forEach((moreView) =>{
+//       moreView.classList.remove('more-active')
+//   })
+// })
+// })
+
+const skillsContent = document.getElementsByClassName('more__container'),
+      skillsHeader = document.querySelectorAll('.more-icons')
+
+function toggleSkills(){
+    let itemClass = this.parentNode.className
+
+    for(i = 0; i < skillsContent.length; i++){
+        skillsContent[i].className = 'more__container more__close'
+    }
+    if (itemClass === 'more__container more__close') {
+       this.parentNode.className = 'more__container more__open'
+    }
 }
-moreBtns.forEach((moreBtn, i) => {
-moreBtn.addEventListener('click', () =>{
-  more(i);
+  
+skillsHeader.forEach((el) =>{
+    el.addEventListener('click', toggleSkills)
 })
-})
-moreCloses.forEach((moreClose) => {
-moreClose.addEventListener('click',() => {
-  moreViews.forEach((moreView) =>{
-      moreView.classList.remove('more-active')
-  })
-})
-})
+
 const selectAll = document.querySelector('.setup-group.select-all input');
 const allCheckbox = document.querySelectorAll('.setup-group:not(.select-all) input');
 let listBoolean = [];
@@ -209,19 +228,3 @@ selectAll.addEventListener('change', function () {
 	}
 })
 
-//select
-const optionMenu = document.querySelector(".select-menu"),
-       selectBtn = optionMenu.querySelector(".select-btn"),
-       options = optionMenu.querySelectorAll(".option"),
-       sBtn_text = optionMenu.querySelector(".sBtn-text");
-
-selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
-
-options.forEach(option =>{
-    option.addEventListener("click", ()=>{
-        let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-
-        optionMenu.classList.remove("active");
-    });
-});
