@@ -173,11 +173,22 @@ img{
     border-image-slice: 1;
     border-radius: .5rem;
 }
+.sbtn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .setup__button{
     width: 100%;
     padding: .8rem;
     text-align: center;
     color: var(--text-color-white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.setup__button2{
+    text-align: center;
+    color: var(--first-color);
     font-size: 1rem;
     font-weight: 600;
 }

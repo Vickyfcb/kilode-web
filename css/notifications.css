@@ -178,9 +178,7 @@
     padding-left: 2.3rem;
 }
 @media screen and (min-width:767px) {
-    .notifications__back{
-        display: none;
-    }
+    
     .notifications__header{
         position: sticky;
     }
@@ -192,6 +190,9 @@
     }
     .filters__section{
         margin-top: 2rem;
+    }
+    .nav{
+        display: none;
     }
 }
 @media screen and (min-width:992px) {

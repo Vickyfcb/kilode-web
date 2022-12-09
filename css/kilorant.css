@@ -427,7 +427,8 @@ img{
     box-shadow: 0px 4px 20px rgba(88, 82, 82, 0.25);
     border-radius: 8px;
     position: absolute;
-    right: 0;
+    right: 0rem;
+    width: 250px;
     top: 2.5rem;
     padding: 2rem;
     gap: 1.5rem;
@@ -437,6 +438,7 @@ img{
     font-size: var(--normal-font-size);
     color: var(--text-color);
     text-align: left;
+    font-size: .9rem;
 }
 .close__more{
     left: 0;
