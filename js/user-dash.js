@@ -7,7 +7,7 @@ navClose = document.getElementById('navsecond-close')
 /* Validate if constant exists */
 if(navToggle){
 navToggle.addEventListener('click', () =>{
-  navMenu.classList.add('show-menu')
+  navMenu.classList.add('show-sidemenu')
 })
 }
 
@@ -15,7 +15,7 @@ navToggle.addEventListener('click', () =>{
 /* Validate if constant exists */
 if(navClose){
 navClose.addEventListener('click', () =>{
-  navMenu.classList.remove('show-menu')
+  navMenu.classList.remove('show-sidemenu')
 })
 }
 
@@ -24,8 +24,8 @@ const navLink = document.querySelectorAll('.nav__link, .logout__link')
 
 function linkAction(){
 const navMenu = document.getElementById('nav-second')
-// When we click on each nav__link, we remove the show-menu class
-navMenu.classList.remove('show-menu')
+// When we click on each nav__link, we remove the show-sidemenu class
+navMenu.classList.remove('show-sidemenu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
