@@ -647,7 +647,7 @@ select::-ms-expand{
 .stress{
     background-image:linear-gradient(rgba(1, 71, 69, 0.8),
                                      rgba(1, 71, 69, 0.8)),
-                     url(stress-img.png);
+                     url(../images/stress-img.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1490,7 +1490,7 @@ select::-ms-expand{
     cursor: pointer;
 }
 .like-count{
-    font-size: .813rem;
+    font-size: .913rem;
 }
 .relate__btn span i{
     font-size: 1.2rem;
