@@ -125,10 +125,14 @@
                     the risk of embarrassment, and even reproach.
                 </p>
                 <div class="action__button">
-                    <span class="relate__btn">
+                    <!-- <span class="relate__btn">
                         <img src="images/like-light.png" alt="" class="like-img">
                         <small class="like-count">23</small>
-                    </span>
+                    </span> -->
+                    <button class="relate__btn">
+                        <img src="images/like-light.png" alt="" class="like-img">
+                        <span class="like-count">0</span>
+                    </button>
                     <span class="going__btn">
                         <img src="images/going-light.png" alt="" class="going-img">
                         <small class="going-count">5</small>
@@ -171,10 +175,14 @@
                     I just need a break.
                 </p>
                 <div class="action__button">
-                    <span class="relate__btn">
+                    <!-- <span class="relate__btn">
                         <img src="images/like-light.png" alt="" class="like-img">
                         <small class="like-count">23</small>
-                    </span>
+                    </span> -->
+                    <button class="relate__btn">
+                        <img src="images/like-light.png" alt="" class="like-img">
+                        <span class="like-count">0</span>
+                    </button>
                     <span class="going__btn">
                         <img src="images/going-light.png" alt="" class="going-img">
                         <small class="going-count">5</small>
@@ -219,10 +227,14 @@
                     the risk of embarrassment, and even reproach.
                 </p>
                 <div class="action__button">
-                    <span class="relate__btn">
+                    <!-- <span class="relate__btn">
                         <img src="images/like-light.png" alt="" class="like-img">
                         <small class="like-count">23</small>
-                    </span>
+                    </span> -->
+                    <button class="relate__btn">
+                        <img src="images/like-light.png" alt="" class="like-img">
+                        <span class="like-count">0</span>
+                    </button>
                     <span class="going__btn">
                         <img src="images/going-light.png" alt="" class="going-img">
                         <small class="going-count">5</small>
@@ -267,10 +279,14 @@
                     the risk of embarrassment, and even reproach.
                 </p>
                 <div class="action__button">
-                    <span class="relate__btn">
+                    <!-- <span class="relate__btn">
                         <img src="images/like-light.png" alt="" class="like-img">
                         <small class="like-count">23</small>
-                    </span>
+                    </span> -->
+                    <button class="relate__btn">
+                        <img src="images/like-light.png" alt="" class="like-img">
+                        <span class="like-count">0</span>
+                    </button>
                     <span class="going__btn">
                         <img src="images/going-light.png" alt="" class="going-img">
                         <small class="going-count">5</small>
@@ -404,48 +420,12 @@
     <!-- <script src="js/dash.js"></script> -->
     <script src="js/user-dash.js"></script>
     <script>
-        // const switchMenu = document.querySelector(".more__container"),
-        // swacBtn = switchMenu.querySelectorAll(".more-icons");
-        // //swacOptions = switchMenu.querySelectorAll(".swac-option");
-
-        // //swacBtn.addEventListener("click", () => switchMenu.classList.toggle("more-active")); 
-        // swacBtn.forEach(more =>{
-        //     more.addEventListener("click", () => switchMenu.classList.toggle("more-active"));
-        // });
-        // // swacOptions.forEach(option =>{
-        // //     option.addEventListener("click", ()=>{
-        // //     // let selectedOption = option.querySelector(".option-text").innerText;
-        // //     // swacText.innerText = selectedOption;
-
-        // //     //switchMenu.classList.remove("switch-active");
-        // //     });
-        // // });
-        // // const moreCon = document.querySelector(".more__container"),
-        // // swacBtn = document.querySelectorAll(".more-icons");
-
-        // // moreCon.foreach(more =>{
-        // //     more.addEventListener('click', () =>{
-        // //         switchMenu.classList.toggle("more-active")
-        // //     });
-        // // })
-//         const modalViews = document.querySelectorAll('.more__container'),
-//       modalBtns = document.querySelectorAll('.more-icon'),
-//       modalCloses = document.querySelectorAll('.bdy')
-// let modal = function(modalClick) {
-//     modalViews[modalClick].classList.add('more-active')
-// }
-// modalBtns.forEach((modalBtn, i) => {
-//     modalBtn.addEventListener('click', () =>{
-//         modal(i)
-//     })
-// })
-// modalCloses.forEach((modalClose) => {
-//     modalClose.addEventListener('click',() => {
-//         modalViews.forEach((modalView) =>{
-//             modalView.classList.remove('more-active')
-//         })
-//     })
-// })
+        function scrollUp(){
+    const scrollUp = document.getElementById('rant-btn');
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 120) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
     </script>
 </body>
 </html>
