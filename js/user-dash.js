@@ -98,45 +98,45 @@ if(notificationClose){
     })
 }
 
-//like
-// const likeBtn = document.querySelectorAll(".relate__btn");
+like
+const likeBtn = document.querySelectorAll(".relate__btn");
 
-// //console.log(likeBtn);
+//console.log(likeBtn);
 
-// likeBtn.forEach(function(like){
-//     like.addEventListener('click',function(){
-//         //console.log(like.childNodes);
-//         if (like.childNodes[1].classList.contains('like-img')){
-//             //console.log('object')
-//             like.innerHTML  = `<img src="images/like-solid.png" class="like-img"><small class="like-count">24</small>`;
-//         }
-//         else {
-//             //console.log('object')
-//             like.innerHTML  = `<img src="images/like-light.png" class="like-img"><small class="like-count">23</small>`;
-//         }
-//     });
-// });
-
-const buttons = document.querySelectorAll('.relate__btn');
-
-buttons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const isLiked = button.innerHTML = `<img src="images/like-solid.png" class="like-img">`;
-    const likeCount = parseInt(button.querySelector('.like-count').innerText, 10);
-
-    if (isLiked) {
-      // Remove the "liked" class from the button
-      button.innerHTML = `<img src="images/like-light.png" class="like-img">`;
-      // Decrement the like count
-      button.querySelector('.like-count').innerText = likeCount - 1;
-    } else {
-      // Add the "liked" class to the button
-      button.innerHTML = `<img src="images/like-solid.png" class="like-img">`;
-      // Increment the like count
-      button.querySelector('.like-count').innerText = likeCount + 1;
-    }
-  });
+likeBtn.forEach(function(like){
+    like.addEventListener('click',function(){
+        //console.log(like.childNodes);
+        if (like.childNodes[1].classList.contains('like-img')){
+            //console.log('object')
+            like.innerHTML  = `<img src="images/like-solid.png" class="like-img"><small class="like-count">24</small>`;
+        }
+        else {
+            //console.log('object')
+            like.innerHTML  = `<img src="images/like-light.png" class="like-img"><small class="like-count">23</small>`;
+        }
+    });
 });
+
+// const buttons = document.querySelectorAll('.relate__btn');
+
+// buttons.forEach((button) => {
+//   button.addEventListener('click', (event) => {
+//     const isLiked = button.innerHTML = `<img src="images/like-solid.png" class="like-img">`;
+//     const likeCount = parseInt(button.querySelector('.like-count').innerText, 10);
+
+//     if (isLiked) {
+//       // Remove the "liked" class from the button
+//       button.innerHTML = `<img src="images/like-light.png" class="like-img">`;
+//       // Decrement the like count
+//       button.querySelector('.like-count').innerText = likeCount - 1;
+//     } else {
+//       // Add the "liked" class to the button
+//       button.innerHTML = `<img src="images/like-solid.png" class="like-img">`;
+//       // Increment the like count
+//       button.querySelector('.like-count').innerText = likeCount + 1;
+//     }
+//   });
+// });
 //going
 const goingBtn = document.querySelectorAll(".going__btn");
 
