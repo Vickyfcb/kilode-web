@@ -394,7 +394,7 @@ select::-ms-expand{
     }
 }
 /* show menu */
-.show-menu{
+.show-sidemenu{
     left: 0;
 }
 .nav__second-toggle{
@@ -927,9 +927,9 @@ label .checkbox .check::after {
 }
 /* ======= MESSAGE REQUESTS ======= */
 @media screen and (max-width:767px) {
-    .nav__list-second {
+    /* .nav__list-second {
         display: none;
-    }
+    } */
 }
 .message__container{
     position: fixed;
