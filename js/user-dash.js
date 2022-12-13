@@ -78,25 +78,25 @@ if(chatClose){
     })
 }
 //NOTIFICATIONS
-const notificationBox = document.getElementById('notifications-menu'),
-      notificationOpen = document.getElementById('notifications-open'),
-      notificationClose = document.getElementById('notifications-close')
+// const notificationBox = document.getElementById('notifications-menu'),
+//       notificationOpen = document.getElementById('notifications-open'),
+//       notificationClose = document.getElementById('notifications-close')
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if(notificationOpen){
-    notificationOpen.addEventListener('click', () =>{
-        notificationBox.classList.add('show-notifications')
-    })
-}
+// /*===== MENU SHOW =====*/
+// /* Validate if constant exists */
+// if(notificationOpen){
+//     notificationOpen.addEventListener('click', () =>{
+//         notificationBox.classList.add('show-notifications')
+//     })
+// }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if(notificationClose){
-    notificationClose.addEventListener('click', () =>{
-        notificationBox.classList.remove('show-notifications')
-    })
-}
+// /*===== MENU HIDDEN =====*/
+// /* Validate if constant exists */
+// if(notificationClose){
+//     notificationClose.addEventListener('click', () =>{
+//         notificationBox.classList.remove('show-notifications')
+//     })
+// }
 
 //like
 const likeBtn = document.querySelectorAll(".relate__btn");
