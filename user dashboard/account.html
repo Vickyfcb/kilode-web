@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://kit.fontawesome.com/df97e1ef56.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- Loading Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="C:\Users\USER\Desktop\kilode-adimn\css\custom-styles.css"> -->
+	<!-- <link rel="stylesheet" href="css/settings.css"> -->
+	<link rel="stylesheet" href="css/settings.css">
+	<title>Setting</title>
+
+	<style>
+
+	</style>
+
+</head>
+
+<body id="body">
+	<div class="nav" id="navbar">
+		<nav class="nav__content">
+			<a href="index.html" class="nav__logo">
+				<img src="../images/kilode-logo-white.png" class="nav__logo-icon">
+				<img src="../images/logo-small.png" alt="" class="nav__logo-small">
+			</a>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
+			</div>
+			<div class="nav__list">
+				<div class="nav__list-first">
+					<a href="user-dashboard.html" class="nav__link">
+						<i class="uil uis-apps nav-icon"></i>
+						<span class="nav__text">Dashboard</span>
+					</a>
+					<a href="dashmessage.html" class="nav__link">
+						<i class="uil uil-comment-alt-dots nav-icon"></i>
+						<span class="nav__text">Messages</span>
+					</a>
+					<a href="#" class="nav__link">
+						<i class="uil uil-books nav-icon"></i>
+						<span class="nav__text">Journal</span>
+					</a>
+					<a href="kilorant.html" class="nav__link ">
+						<i class="uil uil-message nav-icon"></i>
+						<span class="nav__text">Kilorant</span>
+					</a>
+				</div>
+				<div class="nav__list-second" id="nav-second">
+                    <div class="img-back">
+                        <a href="index.html">
+                            <img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
+                        </a> 
+                        <div class="nav__second-back" id="navsecond-close">
+                            <i class="uil uil-arrow-circle-left"></i>
+                        </div>
+                    </div>
+                    <div class="nav__second">
+                        <div class="nsl">
+                            <a href="user-dashboard.html" class="nav__link">
+                                <i class="uil uis-apps nav-icon"></i>
+                                <span class="nav__text">Dashboard</span>
+                            </a>
+                            <a href="dashmessage.html" class="nav__link">
+                                <i class="uil uil-comment-alt-dots nav-icon"></i>
+                                <span class="nav__text">Messages</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <i class="uil uil-books nav-icon"></i>
+                                <span class="nav__text">Journal</span>
+                            </a>
+                            <a href="kilorant.html" class="nav__link">
+                                <i class="uil uil-message nav-icon"></i>
+                                <span class="nav__text">Kilorant</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="settings.html" class="nav__link settings-active">
+                                <i class="uil uil-setting nav-icon"></i>
+                                <span class="nav__text">Settings</span>
+                            </a>
+                            <a href="#" class="logout__link">
+                                <i class="uil uil-signout nav-icon"></i>
+                                <span class="nav__text logout-text">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</nav>
+	</div>
+	<!-- =============== MAIN ============== -->
+	<div class="container">
+		<div class="setting_content_display">
+			<div class="setting_content_display_card">
+				<div class="back_btn">
+					<a href="settings.html"><i class='bx bxs-chevron-left'></i></a>
+					<h4 for="">Your Account</h4>
+
+				</div>
+				<div class="profile">
+					<img class="profile_thumbnail" src="../images/stress-img.png">
+					<label>Edit</label>
+				</div>
+				<h5 class="input_header">Username</h5>
+				<input class="input_field" type="text" placeholder="Hikari">
+				<h5 class="input_header">Email Address</h5>
+				<input class="input_field" type="text" placeholder="Hikaritesss@gmail.com">
+				<button class="btn-primary" type="submit">Save changes</button>
+
+				<!-- Change Password Section -->
+				<h5 class="input_sub_header">Change password</h5>
+				<h5 class="input_header">New Password</h5>
+				<input class="input_field" type="password" placeholder="***************">
+				<h5 class="input_header">Re-type Password</h5>
+				<input class="input_field" type="password" placeholder="***************">
+				<!-- Trigger/Open The Popup -->
+				<button class=" btn-secondary" id="myBtn" type="submit"><strong>Change password</strong></button>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close"><i class='bx bx-x'></i></span>
+				<h5 class="modal_header">Change password</h5>
+				<p>Are you sure you want to change your password?</p>
+				
+				<br>
+				<br>
+				<button class="btn-secondary modal-btn" type="submit">Change password</button>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+	<script src="js/user-dash.js"></script>
+</body>
+
+</html>
