@@ -98,7 +98,7 @@ if(notificationClose){
     })
 }
 
-like
+//like
 const likeBtn = document.querySelectorAll(".relate__btn");
 
 //console.log(likeBtn);
