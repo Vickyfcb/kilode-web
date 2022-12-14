@@ -77,85 +77,36 @@ if(chatClose){
         chatBox.classList.remove('show-menu')
     })
 }
-//NOTIFICATIONS
-// const notificationBox = document.getElementById('notifications-menu'),
-//       notificationOpen = document.getElementById('notifications-open'),
-//       notificationClose = document.getElementById('notifications-close')
-
-// /*===== MENU SHOW =====*/
-// /* Validate if constant exists */
-// if(notificationOpen){
-//     notificationOpen.addEventListener('click', () =>{
-//         notificationBox.classList.add('show-notifications')
-//     })
-// }
-
-// /*===== MENU HIDDEN =====*/
-// /* Validate if constant exists */
-// if(notificationClose){
-//     notificationClose.addEventListener('click', () =>{
-//         notificationBox.classList.remove('show-notifications')
-//     })
-// }
-
 //like
-const likeBtn = document.querySelectorAll(".relate__btn");
-
-//console.log(likeBtn);
-
-likeBtn.forEach(function(like){
-    like.addEventListener('click',function(){
-        //console.log(like.childNodes);
-        if (like.childNodes[1].classList.contains('like-img')){
-            //console.log('object')
-            like.innerHTML  = `<img src="images/like-solid.png" class="like-img"><small class="like-count">24</small>`;
-        }
-        else {
-            //console.log('object')
-            like.innerHTML  = `<img src="images/like-light.png" class="like-img"><small class="like-count">23</small>`;
-        }
-    });
+var likeIcons = document.querySelectorAll('.like-img');
+likeIcons.forEach(function(likeIcon) {
+  likeIcon.addEventListener('click', function() {
+    var likeCount = this.nextElementSibling;
+    var count = parseInt(likeCount.innerHTML, 10);
+    if (this.src.endsWith('images/like-light.png')) {
+      this.src = 'images/like-solid.png';
+      likeCount.innerHTML = count + 1;
+    } else {
+      this.src = 'images/like-light.png';
+      likeCount.innerHTML = count - 1;
+    }
+  });
 });
-
-// const buttons = document.querySelectorAll('.relate__btn');
-
-// buttons.forEach((button) => {
-//   button.addEventListener('click', (event) => {
-//     const isLiked = button.innerHTML = `<img src="images/like-solid.png" class="like-img">`;
-//     const likeCount = parseInt(button.querySelector('.like-count').innerText, 10);
-
-//     if (isLiked) {
-//       // Remove the "liked" class from the button
-//       button.innerHTML = `<img src="images/like-light.png" class="like-img">`;
-//       // Decrement the like count
-//       button.querySelector('.like-count').innerText = likeCount - 1;
-//     } else {
-//       // Add the "liked" class to the button
-//       button.innerHTML = `<img src="images/like-solid.png" class="like-img">`;
-//       // Increment the like count
-//       button.querySelector('.like-count').innerText = likeCount + 1;
-//     }
-//   });
-// });
 //going
-const goingBtn = document.querySelectorAll(".going__btn");
-
-//console.log(goingBtn);
-
-goingBtn.forEach((going) => {
-    going.addEventListener('click',function(){
-        //console.log(going.childNodes);
-        if (going.childNodes[1].classList.contains('going-img')){
-            //console.log('object')
-            going.innerHTML  = `<img src="images/going-solid.png" class="going-img"><small class="going-count">6</small>`;
-        }
-        else {
-            //console.log('hello world');
-            going.innerHTML  = `<img src="images/going-light.png" class="going-img"><small class="going-count">5</small>`;
-        }
-    });
+var goingIcons = document.querySelectorAll('.going-img');
+goingIcons.forEach(function(goingIcon) {
+  goingIcon.addEventListener('click', function() {
+    var goingCount = this.nextElementSibling;
+    var count = parseInt(goingCount.innerHTML, 10);
+    if (this.src.endsWith('images/going-light.png')) {
+      this.src = 'images/going-solid.png';
+      goingCount.innerHTML = count + 1;
+    } else {
+      this.src = 'images/going-light.png';
+      goingCount.innerHTML = count - 1;
+    }
+  });
 });
-
 /*=================== NOTIFICATIONS ======================*/
 const tabs =document.querySelectorAll('[data-target]'),
       tabsContents = document.querySelectorAll('[data-content]')
@@ -175,23 +126,6 @@ tabs.forEach(tab =>{
         tab.classList.add('filter-tab-active')
     })
 })
-// const moreViews = document.querySelectorAll('.more__content'),
-// moreBtns = document.querySelectorAll('.more__icon'),
-// moreCloses = document.querySelectorAll('.feed__post')
-// let more = function(moreClick) {
-// moreViews[moreClick].classList.add('more-active')
-// }
-// moreBtns.forEach((moreBtn, i) => {
-// moreBtn.addEventListener('click', () =>{
-//   more(i);
-// })
-// })
-// moreCloses.forEach((moreClose) => {
-// moreClose.addEventListener('click',() => {
-//   moreViews.forEach((moreView) =>{
-//       moreView.classList.remove('more-active')
-//   })
-// })
 // })
 
 const skillsContent = document.getElementsByClassName('more__container'),
@@ -211,6 +145,3 @@ function toggleSkills(){
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
-
-//select
-
