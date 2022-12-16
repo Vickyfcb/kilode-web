@@ -17,23 +17,27 @@
 .d-lg-none {
     display: none;
 }
-.mycontainer{
-    margin: 69px 1.5rem;
+
+.mycontainer {
+    margin: 40px 1.5rem;
     /* width: 1300px ; */
 
 }
+
 .top_nav__content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
 }
-.notification_btn{
+
+.notification_btn {
     margin-left: auto;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
 .top_nav__content span {
     font-family: 'Open Sans';
     font-style: normal;
@@ -62,6 +66,22 @@
     text-align: center;
     color: #FFFFFF;
     border: 1px solid #028C8C;
+    margin-bottom: 64px;
+}
+
+.btn-gray {
+    width: 100%;
+    height: 50px;
+    right: 82px;
+    top: 628px;
+    background: #868387;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #868387;
     margin-bottom: 64px;
 }
 
@@ -171,6 +191,7 @@
     /* padding-right: 1rem; */
 }
 
+
 .setting_nav_card img {
     width: 10px;
     height: 83px;
@@ -233,6 +254,8 @@
 
 .setting_content_display p {
     font-size: 20px;
+    margin-top: 55px;
+    margin-bottom: 103px;
 }
 
 .setting_content_display textarea {
@@ -378,10 +401,22 @@
 
 }
 
+.countdown {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    margin-top: 21px;
+    margin-bottom: 130px;
+}
+
 /* Notification Page  */
-.notification_wrapper{
+.notification_wrapper {
     padding-bottom: 50px;
 }
+
 .myCheckbox {
     display: flex;
     position: absolute;
@@ -391,18 +426,19 @@
     padding-bottom: 23px;
 }
 
-label{
+label {
     padding-left: 12px;
-    color: #1D1D1D;
-    font-size: 20px;
+    color: #1D1D1D !important;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 input[type="checkbox"] {
     appearance: none;
     /* -webkit-appearance: none; */
-    height: 24px ;
-    width: 24px ;
+    height: 24px;
+    width: 24px;
     background-color: #d5d5d5;
     border-radius: 5px;
     cursor: pointer;
@@ -476,10 +512,11 @@ input[type="checkbox"]:checked:after {
 }
 
 @media screen and (min-width:768px) and (max-width:1181px) {
-    .mycontainer{
-        margin: 0 auto !important;
-    
+    .mycontainer {
+        /* margin: 0 auto !important; */
+
     }
+
     .setting_nav_card {
         width: 110%;
         height: 55px;
@@ -491,9 +528,10 @@ input[type="checkbox"]:checked:after {
         display: none;
     }
 
-    .setting_nav_card{
+    .setting_nav_card {
         width: 90% !important;
     }
+
     .setting_nav_card img {
         width: 15px;
         height: 55px;
@@ -589,11 +627,6 @@ input[type="checkbox"]:checked:after {
         margin-right: 0 !important;
     }
 
-    /* .setting_section_content {
-        float: left;
-        width: 100%;
-    } */
-
     .btn-primary,
     .btn-secondary {
         height: 36px;
@@ -656,31 +689,8 @@ input[type="checkbox"]:checked:after {
     }
 
     /* Notification page  */
-    .checkbox_wrapper .checkbox {
-        box-sizing: border-box;
-        width: 13px !important;
-        /* height: 18px !important; */
-        border: 1px solid #BDBDBD;
-        border-radius: 8px;
-        padding: 8px;
-        font-weight: 400;
-        color: #1D1D1D;
-        margin-bottom: 27px;
-        /* margin-right: 12px; */
-    }
-
-    .checkbox_wrapper {
-        display: flex;
-        margin: 0 0 !important;
-        padding-bottom: 24px;
-    }
-
-    .checkbox_wrapper .checkbox_label {
+    .notification_wrapper label {
         margin: 0 !important;
-        font-weight: 400;
-        font-size: 16px !important;
-        color: #1D1D1D;
-        padding-left: 12px;
     }
 
     /* Listener Page  */

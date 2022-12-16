@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="css/settings.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
 	<title>Setting</title>
 
 	<style>
@@ -98,39 +97,28 @@
 		<div class="setting_content_display">
 			<div class="setting_content_display_card">
 				<div class="back_btn">
-					<a href="notification.html"><i class='bx bxs-chevron-left'></i></a>
-					<h4 for="">Notifications</h4>
+					<a href="listener.html"><i class='bx bxs-chevron-left'></i></a>
+					<h4 for="">Take Listener’s Quiz</h4>
 
 				</div>
-				<h5 class="input_sub_header">Send me Notifications</h5>
+				<p>Sorry, the cut-off mark for the test is 80%. You can take the test in the 24 hours and try
+					again.</p>
 
-				<div class="notification_wrapper">
-					<div class="myCheckbox">
-						<input type="checkbox" name="" id="check_1">
-						<label for="check_1">Notify me on someone reacts to my kilorant</label>
-					</div>
-				</div>
+				<!-- Trigger/Open The Popup -->
+				<button class="btn-gray" id="myBtn" type="submit">Take Listener's Quiz</button>
 
-				<div class="notification_wrapper">
-					<div class="myCheckbox">
-						<input type="checkbox" name="" id="check_2">
-						<label for="check_2">Notify me when there is a new blog post</label>
+				<h6 class="countdown" id="demo"></h6>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close"><i class='bx bx-x'></i></span>
+						<div class="modal-content-body">
+							<p class="">You are currently being directed to another page to take the listener’s test.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="notification_wrapper">
-					<div class="myCheckbox">
-						<input type="checkbox" name="" id="check_3">
-						<label for="check_3">Notify me on Kilorants I am following</label>
-					</div>
-				</div>
-				<div class="notification_wrapper">
-					<div class="myCheckbox">
-						<input type="checkbox" name="" id="check_4">
-						<label for="check_4">Turn on email notifications</label>
-					</div>
-				</div>
-
-				<button class="btn-primary" type="submit">Done</button>
 			</div>
 		</div>
 
@@ -161,7 +149,50 @@
 
 
 
+	<!-- Custom JS -->
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
 
+		var btn = document.getElementById("myBtn");
+
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		// Listener Count Down
+		var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+		var x = setInterval(function () {
+
+			var now = new Date().getTime();
+
+			var distance = countDownDate - now;
+
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("demo").innerHTML = hours + ": "
+				+ minutes + ":" + seconds;
+
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			}
+		}, 500);
+	</script>
 	<script src="js/user-dash.js"></script>
 </body>
 

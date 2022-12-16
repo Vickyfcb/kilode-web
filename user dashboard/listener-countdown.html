@@ -51,45 +51,45 @@
 					</a>
 				</div>
 				<div class="nav__list-second" id="nav-second">
-                    <div class="img-back">
-                        <a href="index.html">
-                            <img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
-                        </a> 
-                        <div class="nav__second-back" id="navsecond-close">
-                            <i class="uil uil-arrow-circle-left"></i>
-                        </div>
-                    </div>
-                    <div class="nav__second">
-                        <div class="nsl">
-                            <a href="user-dashboard.html" class="nav__link">
-                                <i class="uil uis-apps nav-icon"></i>
-                                <span class="nav__text">Dashboard</span>
-                            </a>
-                            <a href="dashmessage.html" class="nav__link">
-                                <i class="uil uil-comment-alt-dots nav-icon"></i>
-                                <span class="nav__text">Messages</span>
-                            </a>
-                            <a href="#" class="nav__link">
-                                <i class="uil uil-books nav-icon"></i>
-                                <span class="nav__text">Journal</span>
-                            </a>
-                            <a href="kilorant.html" class="nav__link">
-                                <i class="uil uil-message nav-icon"></i>
-                                <span class="nav__text">Kilorant</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="settings.html" class="nav__link settings-active">
-                                <i class="uil uil-setting nav-icon"></i>
-                                <span class="nav__text">Settings</span>
-                            </a>
-                            <a href="#" class="logout__link">
-                                <i class="uil uil-signout nav-icon"></i>
-                                <span class="nav__text logout-text">Logout</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<div class="img-back">
+						<a href="index.html">
+							<img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
+						</a>
+						<div class="nav__second-back" id="navsecond-close">
+							<i class="uil uil-arrow-circle-left"></i>
+						</div>
+					</div>
+					<div class="nav__second">
+						<div class="nsl">
+							<a href="user-dashboard.html" class="nav__link">
+								<i class="uil uis-apps nav-icon"></i>
+								<span class="nav__text">Dashboard</span>
+							</a>
+							<a href="dashmessage.html" class="nav__link">
+								<i class="uil uil-comment-alt-dots nav-icon"></i>
+								<span class="nav__text">Messages</span>
+							</a>
+							<a href="#" class="nav__link">
+								<i class="uil uil-books nav-icon"></i>
+								<span class="nav__text">Journal</span>
+							</a>
+							<a href="kilorant.html" class="nav__link">
+								<i class="uil uil-message nav-icon"></i>
+								<span class="nav__text">Kilorant</span>
+							</a>
+						</div>
+						<div>
+							<a href="settings.html" class="nav__link settings-active">
+								<i class="uil uil-setting nav-icon"></i>
+								<span class="nav__text">Settings</span>
+							</a>
+							<a href="#" class="logout__link">
+								<i class="uil uil-signout nav-icon"></i>
+								<span class="nav__text logout-text">Logout</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</nav>
 	</div>
@@ -103,7 +103,7 @@
 				<a href="user-dashboard.html" class="settings__back">
 					<i class='bx bx-chevron-left'></i>
 				</a>
-			    <span class="setting__title">Settings</span>
+				<span class="setting__title">Settings</span>
 			</div>
 			<div class="notification_btn">
 				<a href="notifications.html">
@@ -162,19 +162,22 @@
 						<br>
 						<br>
 
-						<p>Take the listener’s quiz to become a kilopal. Help and listen to those in need of a friend to
-							vent.</p>
-						
+						<p>Sorry, the cut-off mark for the test is 80%. You can take the test in the 24 hours and try
+							again.</p>
+
 						<!-- Trigger/Open The Popup -->
-						<a href="listener-countdown.html"><button class="btn-primary" id="myBtn" type="submit">Take Listener's Quiz</button></a>
-						
+						<button class="btn-gray" id="myBtn" type="submit">Take Listener's Quiz</button>
+
+						<h6 class="countdown" id="demo"></h6>
+
 						<!-- The Modal -->
 						<div id="myModal" class="modal">
 							<!-- Modal content -->
 							<div class="modal-content">
 								<span class="close"><i class='bx bx-x'></i></span>
 								<div class="modal-content-body">
-									<p class="">You are currently being directed to another page to take the listener’s test.</p>
+									<p class="">You are currently being directed to another page to take the listener’s
+										test.</p>
 								</div>
 							</div>
 						</div>
@@ -187,7 +190,6 @@
 	</main>
 	<!-- Custom JS -->
 	<script>
-		// Get the modal
 		var modal = document.getElementById("myModal");
 
 		var btn = document.getElementById("myBtn");
@@ -207,6 +209,28 @@
 				modal.style.display = "none";
 			}
 		}
+
+		// Listener Count Down
+		var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+		var x = setInterval(function () {
+
+			var now = new Date().getTime();
+
+			var distance = countDownDate - now;
+
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("demo").innerHTML = hours + ": "
+				+ minutes + ":" + seconds;
+
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			}
+		}, 500);
+
 	</script>
 	<script src="js/user-dash.js"></script>
 </body>
