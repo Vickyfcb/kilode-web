@@ -17,15 +17,24 @@
 .d-lg-none {
     display: none;
 }
+.mycontainer{
+    margin: 69px 1.5rem;
+    /* width: 1300px ; */
 
-.nsbf {
+}
+.top_nav__content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
 }
-
-.nsbf span {
+.notification_btn{
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.top_nav__content span {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -130,11 +139,12 @@
 }
 
 
+
 .setting_section_content {
     float: left;
     width: 30%;
-    margin-top: 5rem;
-    margin-left: -3rem;
+    /* margin-top: 5rem; */
+    /* margin-left: -3rem; */
 }
 
 .setting_content_display {
@@ -155,8 +165,9 @@
     border-radius: 8px;
     margin-bottom: 24px;
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 83px;
+    /* margin-left: 0rem; */
     /* padding-right: 1rem; */
 }
 
@@ -177,10 +188,6 @@
 
 }
 
-/* .bx-chevron-right {
-    margin-left: 1rem;
-    background-color: red;
-} */
 
 .setting_nav_link.active {
     font-weight: 700;
@@ -202,6 +209,8 @@
 
 }
 
+
+
 .body2 {
     display: flex;
     height: 100vh;
@@ -214,10 +223,11 @@
 
 .setting_content_display_card {
     box-sizing: border-box;
-    width: 801px;
+    width: 90%;
     border: 0.6px solid #4F4F4F;
     border-radius: 10px;
     padding: 27px 53px;
+    margin: 0 53px;
     /* display: none; */
 }
 
@@ -369,31 +379,78 @@
 }
 
 /* Notification Page  */
-.checkbox_wrapper .checkbox {
-    /* box-sizing: border-box; */
-    width: 24px;
-    height: 24px;
-    border: 1px solid #BDBDBD;
-    border-radius: 8px;
-    padding: 8px;
-    font-weight: 400;
-    color: #1D1D1D;
-    margin-bottom: 27px;
-    /* margin-right: 12px; */
+.notification_wrapper{
+    padding-bottom: 50px;
 }
-
-.checkbox_wrapper {
+.myCheckbox {
     display: flex;
-    margin: auto 0;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 23px;
 }
 
-.checkbox_wrapper .checkbox_label {
-    margin: 0 !important;
-    font-weight: 400;
-    font-size: 20px;
-    color: #1D1D1D;
+label{
     padding-left: 12px;
+    color: #1D1D1D;
+    font-size: 20px;
+    font-weight: 400;
 }
+
+input[type="checkbox"] {
+    appearance: none;
+    /* -webkit-appearance: none; */
+    height: 24px ;
+    width: 24px ;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: none; */
+}
+
+label {
+    color: #4c4c4c;
+    font-size: 55px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+input[type="checkbox"]:after {
+    font-weight: 900;
+    /* font-size: 4/0px; */
+    content: "";
+    color: white;
+    display: none;
+    width: 5px;
+    height: 15px;
+    margin-top: 13px;
+    margin-left: 8px;
+    transform: translate(-50%, -50%) rotateZ(40deg);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+
+
+}
+
+input[type="checkbox"]:hover {
+    background-color: #a5a5a5;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: #028C8C;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+
+}
+
 
 @media screen and (min-width:1181px) {
     .setting_content_display {
@@ -412,19 +469,31 @@
     .settings__back {
         display: none;
     }
+
+    .notification__icon {
+        display: none !important;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1181px) {
+    .mycontainer{
+        margin: 0 auto !important;
+    
+    }
     .setting_nav_card {
-        width: 100%;
+        width: 110%;
         height: 55px;
         margin-right: 0 !important;
+        margin-left: 2rem !important;
     }
 
     .settings__back {
         display: none;
     }
 
+    .setting_nav_card{
+        width: 90% !important;
+    }
     .setting_nav_card img {
         width: 15px;
         height: 55px;
@@ -446,6 +515,7 @@
         padding: 27px 53px;
         /* display: none; */
         margin-top: 3rem;
+        margin-left: 0 !important;
     }
 
     /* make chunk brief insane all debris brief rapid cable position party magnet */
@@ -498,6 +568,7 @@
         width: 100%;
         padding: 27px 23px;
         border: transparent;
+        margin: 0 !important;
     }
 
     .setting_nav_card .active_indicator {
@@ -550,6 +621,7 @@
         color: #1D1D1D;
         margin-bottom: 24px;
     }
+
 
     .setting_content_display_card .input_sub_header {
         font-size: 20px !important;
@@ -642,4 +714,11 @@
     .settings-active {
         padding: 0.5rem;
     }
+
+    /* body{
+        padding: 0 0 0 1rem !important;
+    } */
+
+
+
 }
