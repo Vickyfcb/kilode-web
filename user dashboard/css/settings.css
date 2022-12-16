@@ -17,21 +17,26 @@
 .d-lg-none {
     display: none;
 }
-.nsbf{
+
+.nsbf {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
 }
-.nsbf span{
+
+.nsbf span {
     font-size: 1.25rem;
     font-weight: 700;
-    color:hsl(178, 97%, 14%);;
+    color: hsl(178, 97%, 14%);
+    ;
 }
-.settings-active{
-    border: 1px solid  hsl(180, 97%, 28%);
+
+.settings-active {
+    border: 1px solid hsl(180, 97%, 28%);
     border-radius: 8px;
 }
+
 /* -------Buttons--------- */
 .btn-primary {
     width: 100%;
@@ -86,7 +91,7 @@
 
 }
 
-.settings__back i{
+.settings__back i {
     font-size: 2rem;
     color: #000;
 }
@@ -117,14 +122,24 @@
     color: #EB5757;
     background-color: transparent;
 }
-.text-green{
+
+.text-green {
     color: #028C8C;
+}
+
+.setting__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px !important;
+    line-height: 35px;
 }
 
 .setting_section_content {
     float: left;
     width: 30%;
     margin-top: 5rem;
+    /* margin-left: -3rem; */
 }
 
 .setting_content_display {
@@ -398,7 +413,8 @@
     .notifications {
         display: none;
     }
-    .settings__back{
+
+    .settings__back {
         display: none;
     }
 }
@@ -409,9 +425,11 @@
         height: 55px;
         margin-right: 0 !important;
     }
-    .settings__back{
+
+    .settings__back {
         display: none;
     }
+
     .setting_nav_card img {
         width: 15px;
         height: 55px;
@@ -443,9 +461,11 @@
     .setting_nav_link.active {
         width: 80%;
     }
-    .setting_section_content{
+
+    .setting_section_content {
         margin-top: 0;
     }
+
     .setting_section_content {
         float: left;
         width: 100%;
@@ -456,9 +476,11 @@
     body {
         position: absolute !important;
     }
-    .nav__list{
+
+    .nav__list {
         display: none;
     }
+
     .setting_content_display_card .profile_thumbnail {
         width: 66px;
         height: 66px;
@@ -603,14 +625,17 @@
 
     }
 }
+
 @media screen and (min-width:767px) {
-    .setting_section_content{
+    .setting_section_content {
         margin-top: 0;
     }
-    .setting_nav_card{
+
+    .setting_nav_card {
         width: 90%;
     }
-    .nav__second-btn{
+
+    .nav__second-btn {
         left: 0;
         justify-content: flex-start;
         height: 5rem;
@@ -618,7 +643,8 @@
         background-color: #fff;
         max-width: 100%;
     }
-    .settings-active{
+
+    .settings-active {
         padding: 0.5rem;
     }
 }
