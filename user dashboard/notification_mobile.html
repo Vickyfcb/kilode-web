@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/settings.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-	
+
 	<title>Setting</title>
 
 	<style>
@@ -51,45 +51,45 @@
 					</a>
 				</div>
 				<div class="nav__list-second" id="nav-second">
-                    <div class="img-back">
-                        <a href="index.html">
-                            <img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
-                        </a> 
-                        <div class="nav__second-back" id="navsecond-close">
-                            <i class="uil uil-arrow-circle-left"></i>
-                        </div>
-                    </div>
-                    <div class="nav__second">
-                        <div class="nsl">
-                            <a href="user-dashboard.html" class="nav__link">
-                                <i class="uil uis-apps nav-icon"></i>
-                                <span class="nav__text">Dashboard</span>
-                            </a>
-                            <a href="dashmessage.html" class="nav__link">
-                                <i class="uil uil-comment-alt-dots nav-icon"></i>
-                                <span class="nav__text">Messages</span>
-                            </a>
-                            <a href="#" class="nav__link">
-                                <i class="uil uil-books nav-icon"></i>
-                                <span class="nav__text">Journal</span>
-                            </a>
-                            <a href="kilorant.html" class="nav__link">
-                                <i class="uil uil-message nav-icon"></i>
-                                <span class="nav__text">Kilorant</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="settings.html" class="nav__link settings-active">
-                                <i class="uil uil-setting nav-icon"></i>
-                                <span class="nav__text">Settings</span>
-                            </a>
-                            <a href="#" class="logout__link">
-                                <i class="uil uil-signout nav-icon"></i>
-                                <span class="nav__text logout-text">Logout</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<div class="img-back">
+						<a href="index.html">
+							<img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
+						</a>
+						<div class="nav__second-back" id="navsecond-close">
+							<i class="uil uil-arrow-circle-left"></i>
+						</div>
+					</div>
+					<div class="nav__second">
+						<div class="nsl">
+							<a href="user-dashboard.html" class="nav__link">
+								<i class="uil uis-apps nav-icon"></i>
+								<span class="nav__text">Dashboard</span>
+							</a>
+							<a href="dashmessage.html" class="nav__link">
+								<i class="uil uil-comment-alt-dots nav-icon"></i>
+								<span class="nav__text">Messages</span>
+							</a>
+							<a href="#" class="nav__link">
+								<i class="uil uil-books nav-icon"></i>
+								<span class="nav__text">Journal</span>
+							</a>
+							<a href="kilorant.html" class="nav__link">
+								<i class="uil uil-message nav-icon"></i>
+								<span class="nav__text">Kilorant</span>
+							</a>
+						</div>
+						<div>
+							<a href="settings.html" class="nav__link settings-active">
+								<i class="uil uil-setting nav-icon"></i>
+								<span class="nav__text">Settings</span>
+							</a>
+							<a href="#" class="logout__link">
+								<i class="uil uil-signout nav-icon"></i>
+								<span class="nav__text logout-text">Logout</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</nav>
 	</div>
@@ -103,28 +103,34 @@
 
 				</div>
 				<h5 class="input_sub_header">Send me Notifications</h5>
-				
-				<div class="checkbox_wrapper">
-					<input class="checkbox" type="checkbox" name="" id="">
-					<label class="checkbox_label">Notify me on someone reacts to my kilorant</label><br>
+
+				<div class="notification_wrapper">
+					<div class="myCheckbox">
+						<input type="checkbox" name="" id="check_1">
+						<label for="check_1">Notify me on someone reacts to my kilorant</label>
+					</div>
 				</div>
-				<div class="checkbox_wrapper">
-					<input class="checkbox" type="checkbox" name="" id="">
-					<label class="checkbox_label">Notify me when there is a new blog post</label><br>
+
+				<div class="notification_wrapper">
+					<div class="myCheckbox">
+						<input type="checkbox" name="" id="check_2">
+						<label for="check_2">Notify me when there is a new blog post</label>
+					</div>
 				</div>
-				<div class="checkbox_wrapper">
-					<input class="checkbox" type="checkbox" name="" id="">
-					<label class="checkbox_label">Notify me on Kilorants I am  following</label><br>
+				<div class="notification_wrapper">
+					<div class="myCheckbox">
+						<input type="checkbox" name="" id="check_3">
+						<label for="check_3">Notify me on Kilorants I am following</label>
+					</div>
 				</div>
-				<div class="checkbox_wrapper">
-					<input class="checkbox" type="checkbox" name="" id="">
-					<label class="checkbox_label">Turn on email notifications</label><br>
+				<div class="notification_wrapper">
+					<div class="myCheckbox">
+						<input type="checkbox" name="" id="check_4">
+						<label for="check_4">Turn on email notifications</label>
+					</div>
 				</div>
-				
-				
-				<br>
-				<br>
-				<br>
+
+				<button class="btn-primary" type="submit">Done</button>
 			</div>
 		</div>
 
