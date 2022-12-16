@@ -26,10 +26,12 @@
 }
 
 .nsbf span {
-    font-size: 1.25rem;
+    font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 700;
+    font-size: 32px !important;
+    line-height: 35px;
     color: hsl(178, 97%, 14%);
-    ;
 }
 
 .settings-active {
@@ -127,19 +129,12 @@
     color: #028C8C;
 }
 
-.setting__title {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px !important;
-    line-height: 35px;
-}
 
 .setting_section_content {
     float: left;
     width: 30%;
     margin-top: 5rem;
-    /* margin-left: -3rem; */
+    margin-left: -3rem;
 }
 
 .setting_content_display {
