@@ -126,7 +126,6 @@ tabs.forEach(tab =>{
         tab.classList.add('filter-tab-active')
     })
 })
-// })
 
 const skillsContent = document.getElementsByClassName('more__container'),
       skillsHeader = document.querySelectorAll('.more-icons')

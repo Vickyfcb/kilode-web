@@ -164,13 +164,13 @@ select::-ms-expand{
     border-radius: 6px;
     background-color: hsla(180, 97%, 28%, 1);
 }
-.switch-active .swac-btn i{
+.switch-active .swac-btn img{
     transform: rotate(-180deg);
 }
 .switch-active .swac-options{
     display: grid;
 }
-.switch-active2 .swac-btn2 i{
+.switch-active2 .swac-btn2 img{
     transform: rotate(-180deg);
 }
 .switch-active2 .swac-options2{
@@ -233,8 +233,7 @@ select::-ms-expand{
         width: 120px;
     }
     .nav__second-back{
-        font-size: 2rem;
-        color: var(--first-color);
+        width: 28px;
     }
     .nav__user-box{
         display: flex;
@@ -293,9 +292,8 @@ select::-ms-expand{
         cursor: pointer;
         justify-content: space-between;
     }
-    .swac-btn i {
-        font-size: 25px;
-        transition: 0.3s;
+    .swac-btn img {
+        width: 28px;
     }
     .swac-options {
         position: relative;
@@ -410,9 +408,8 @@ select::-ms-expand{
     border-radius: 50%;
     background-color: hsla(0, 0%, 85%, 0.8);
 }
-.nav__second-toggle i{
-    font-size: 1.5rem;
-    color: var(--text-color);
+.nav__second-toggle img{
+    width: 26px;
 }
 .notification__icon {
     width: 24px;
@@ -435,6 +432,12 @@ select::-ms-expand{
     color: var(--text-color);
     font-weight: 500;
     transition: .3s;
+}
+.nav-icon{
+    width: 25px;
+}
+.desktop-img{
+    display: none;
 }
 .logout__link .nav__text{
     font-size: .6rem;
@@ -485,8 +488,8 @@ select::-ms-expand{
     font-size: 1rem;
     font-weight: 600;
 }
-.listener__box i{
-    font-size: 1.2rem;
+.listener__box img{
+    width: 28px;
 }
 .dashhome__container{
     padding-top: 4rem;
@@ -971,8 +974,8 @@ label .checkbox .check::after {
     align-items: center;
     gap: 1rem;
 }
-.chat__close{
-    font-size: 1.7rem;
+.chat__close img{
+    width: 35px;
 }
 .more-icons{
     position: relative;
@@ -982,7 +985,7 @@ label .checkbox .check::after {
     cursor: pointer;
 }
 .more__icon{
-    font-size:2rem;
+    width: 6px;
 }
 .more__content{
     display: none;
@@ -1006,8 +1009,7 @@ label .checkbox .check::after {
     left: 0;
     top: 0;
     display: none;
-    font-size: 2rem;
-    color: var(--text-color);
+    width: 6px;
 }
 .message__header-box{
     display: flex;
@@ -1127,21 +1129,26 @@ label .checkbox .check::after {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    width: 100%;
+    width: 90%;
     gap: 1rem;
 }
 .chat__input input{
     width: 100%;
 }
-.chat__input i{
-    font-size: 1.5rem;
+.chat__input img{
+    width: 26px;
 }
 .send__message{
-    font-size: 1.5rem;
-    padding:.6rem 1rem .7rem;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: hsla(180, 38%, 50%, 1);
     border-radius: 50%;
-    color: #fff;
+}
+.send__message img{
+    width: 20px;
 }
 .requests__header{
     height: 4rem;
@@ -1206,6 +1213,60 @@ label .checkbox .check::after {
 .request__button{
     padding: .6rem .8rem;
     font-size: .8rem;
+}
+.spairing{
+    margin-top: 4rem;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.startconvo__back{
+    position: absolute;
+    left: .5rem;
+    top: -2.5rem;
+    color: var(--text-color);
+}
+.startconvo__back img{
+    width: 40px;
+}
+.startconvo__content,
+.spairing__content{
+    width: 100%;
+}
+.spairing__content{
+    margin-top: 2rem;
+}
+.spairing__title{
+    font-size: 1.2rem;
+    color: var(--first-color);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.kilopal__user-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kilopal__user-img img{
+    width: 362px;
+}
+.spairing__text{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: hsla(289, 2%, 52%, 1);
+}
+.spairing__button{
+    width: 100%;
+    text-align: center;
+    padding: .8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 @media screen and (max-width:320px) {
     .container{
@@ -1294,6 +1355,18 @@ label .checkbox .check::after {
     .request__button{
         padding: .8rem 1.5rem;
     }
+    .spairing__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .spairing__button{
+        width: 60%;
+    }
+    .startconvo__back {
+        top: 2rem;
+        left: 5rem;
+    }
 }
 @media screen and (min-width:767px) {
     body{
@@ -1310,6 +1383,12 @@ label .checkbox .check::after {
         color: var(--text-color-white);
     }
     .active-link::after{
+        display: none;
+    }
+    .desktop-img{
+        display: block;
+    }
+    .mobile-img{
         display: none;
     }
     .nav__second-back,
@@ -1364,8 +1443,8 @@ label .checkbox .check::after {
         cursor: pointer;
         transition: .5s;
     }
-    .nav__toggle i{
-        font-size: 1.5rem;
+    .nav__toggle img{
+        width: 55px;
         padding: 0.5rem;
         border-radius: 50%;
         background-color: hsla(0, 0%, 85%, 0.8);
@@ -1438,6 +1517,7 @@ label .checkbox .check::after {
         padding: .8rem 1rem;
         gap: 1.5rem;
         position: relative;
+        box-shadow: 0px 4px 12px rgb(126 120 120 / 25%);
     }
     .notification__icon{
         width: 30px;
@@ -1453,8 +1533,9 @@ label .checkbox .check::after {
     .listener__pic{
         font-size: 1.125rem;
     }
-    .listener__box i{
-        font-size: 1.4rem;
+    .listener__box img{
+        width: 28px;
+        cursor: pointer;
     }
     .navsb-modal{
         margin-top: 10px;
@@ -1524,9 +1605,8 @@ label .checkbox .check::after {
         cursor: pointer;
         justify-content: space-between;
     }
-    .swac-btn2 i {
-        font-size: 25px;
-        transition: 0.3s;
+    .swac-btn2 img {
+        width: 30px;
     }
     .swac-options2 {
         position: relative;
@@ -1665,6 +1745,16 @@ label .checkbox .check::after {
     .more__content{
         width: 40%;
     }
+    .spairing__title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .startconvo__back{
+        left: 9rem;
+    }
+    .kilopal__user-img img{
+        width: 440px;
+    }
 }
 @media screen and (min-width:992px) {
     .container{
@@ -1689,6 +1779,12 @@ label .checkbox .check::after {
     }
     .totalconvo__number{
         margin-bottom: 1.5rem;
+    }
+    .spairing__content{
+        width: 60%;
+    }
+    .startconvo__back{
+        left: 17rem;
     }
 }
 ::-webkit-scrollbar{

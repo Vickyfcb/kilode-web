@@ -148,11 +148,11 @@ select::-ms-expand{
     color: hsla(180, 97%, 28%, 1);
     position: relative;
 }
-.active-link i{
-    color: hsla(180, 97%, 28%, 1);
-}
 .active-link span{
     color: hsla(180, 97%, 28%, 1);
+}
+.desktop-img{
+    display: none;
 }
 .active-link::after{
     content: '';
@@ -164,13 +164,13 @@ select::-ms-expand{
     border-radius: 6px;
     background-color: hsla(180, 97%, 28%, 1);
 }
-.switch-active .swac-btn i{
+.switch-active .swac-btn img{
     transform: rotate(-180deg);
 }
 .switch-active .swac-options{
     display: grid;
 }
-.switch-active2 .swac-btn2 i{
+.switch-active2 .swac-btn2 img{
     transform: rotate(-180deg);
 }
 .switch-active2 .swac-options2{
@@ -237,8 +237,7 @@ select::-ms-expand{
         width: 120px;
     }
     .nav__second-back{
-        font-size: 2rem;
-        color: var(--first-color);
+        width: 28px;
     }
     .nav__user-box{
         display: flex;
@@ -297,8 +296,8 @@ select::-ms-expand{
         cursor: pointer;
         justify-content: space-between;
     }
-    .swac-btn i {
-        font-size: 25px;
+    .swac-btn img {
+        width: 30px;
         transition: 0.3s;
     }
     .swac-options {
@@ -421,9 +420,8 @@ select::-ms-expand{
     border-radius: 50%;
     background-color: hsla(0, 0%, 85%, 0.8);
 }
-.nav__second-toggle i{
-    font-size: 1.5rem;
-    color: var(--text-color);
+.nav__second-toggle img{
+    width: 28px;
 }
 .notification__icon{
     width: 24px;
@@ -434,6 +432,7 @@ select::-ms-expand{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.2rem;
     color: var(--text-color);
     font-weight: 500;
     transition: .3s;
@@ -456,6 +455,9 @@ select::-ms-expand{
 .nav__link i,
 .logout__link i{
     font-size: 1.6rem;
+}
+.nav-icon{
+    width: 25px;
 }
 .nav__link i.uil-message{
     rotate: -30deg;
@@ -667,7 +669,9 @@ select::-ms-expand{
 .stress__link{
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+}
+.stress__link img{
+    width: 35px;
 }
 /* START CONVERSATION */
 .startconvo,
@@ -717,8 +721,8 @@ select::-ms-expand{
     top: -2.5rem;
     color: var(--text-color);
 }
-.startconvo__back i{
-    font-size: 2rem;
+.startconvo__back img{
+    width: 40px;
 }
 .startconvo__container{
     margin-top: 2rem;
@@ -758,9 +762,8 @@ select::-ms-expand{
     cursor: pointer;
     justify-content: space-between;
 }
-.select-btn i{
-    font-size: 25px;
-    transition: 0.3s;
+.select-btn img{
+    width: 34px;
 }
 .select-menu.active .select-btn i{
     transform: rotate(-180deg);
@@ -861,8 +864,8 @@ select::-ms-expand{
     top: -2.5rem;
     color: var(--text-color);
 }
-.loader__back i{
-    font-size: 2rem;
+.loader__back img{
+    width: 40px;
 }
 .loader__img{
     display: flex;
@@ -1063,8 +1066,8 @@ select::-ms-expand{
     align-items: center;
     gap: 1rem;
 }
-.chat__close{
-    font-size: 1.7rem;
+.chat__close img{
+    width: 35px;
 }
 .more-icons{
     position: relative;
@@ -1228,8 +1231,8 @@ select::-ms-expand{
 .chat__input input{
     width: 100%;
 }
-.chat__input i{
-    font-size: 1.5rem;
+.chat__input img{
+    width: 26px;
 }
 .send__message{
     height: 3rem;
@@ -1240,9 +1243,8 @@ select::-ms-expand{
     background-color: hsla(180, 38%, 50%, 1);
     border-radius: 50%; 
 }
-.send__message i{
-    color: #fff;
-    font-size: 1.5rem;
+.send__message img{
+    width: 20px;
 }
 /* =========== JOURNAL ========== */
 .journal{
@@ -1330,9 +1332,8 @@ select::-ms-expand{
     background-color: hsla(180, 38%, 50%, 1);
     border-radius: 50%; 
 }
-.send__post i{
-    color: #fff;
-    font-size: 1.3rem;
+.send__post img{
+    width: 20px;
 }
 /* .send__post{
     height: 2.5rem;
@@ -1346,8 +1347,7 @@ select::-ms-expand{
     border-radius: 50%;
 } */
 .emoji-icon{
-    font-size: 1.5rem;
-    color: var(--text-color);
+    width: 26px;
 }
 /* FEEDS */
 .no__feed{
@@ -1419,9 +1419,11 @@ select::-ms-expand{
     cursor: pointer;
 }
 .more__icon{
-    font-size:2rem;
-    transform: rotate(90deg);
+    width: 6px;
     display: block;
+}
+.kmore__icon{
+    width: 26px;
 }
 .more__content{
     display: none;
@@ -1446,8 +1448,7 @@ select::-ms-expand{
     left: 0;
     top: 0;
     display: none;
-    font-size: 2rem;
-    color: var(--text-color);
+    width: 6px;
 }
 .more__close .more__content{
     display: none;
@@ -1634,9 +1635,8 @@ select::-ms-expand{
     background-color: #fff;
     width: 100%;
 }
-.report__back i{
-    font-size: 2rem;
-    color: var(--text-color);
+.report__back img{
+    width: 40px;
 }
 .report__title{
     font-size: 1.3rem;
@@ -1789,9 +1789,8 @@ label .checkbox .check::after {
 .filters{
     margin-top: 5.5rem;
 }
-.notifi__back i{
-    font-size: 2rem;
-    color: var(--text-color);
+.notifi__back img{
+    width: 48px;
 }
 .notifi__title{
     font-size: 1.3rem;
@@ -2036,6 +2035,12 @@ label .checkbox .check::after {
         margin-left: 7rem;
         margin-right: 1.5rem;
     } */
+    .mobile-img{
+        display: none;
+    }
+    .desktop-img{
+        display: block;
+    }
     .nav{
         position: fixed;
         left: 0;
@@ -2043,7 +2048,7 @@ label .checkbox .check::after {
         background-color: var(--body-color);
         width: 58px;
         height: 100vh;
-        padding: 1.25rem .5rem 2rem;
+        padding: 1.25rem .5rem 0;
         transition: .3s;
     }
     .nav__logo{
@@ -2074,16 +2079,18 @@ label .checkbox .check::after {
         cursor: pointer;
         transition: .5s;
     }
-    .nav__toggle i{
-        font-size: 1.5rem;
+    .nav__toggle img{
+        width: 55px;
         padding: 0.5rem;
         border-radius: 50%;
         background-color: hsla(0, 0%, 85%, 0.8);
-        color: var(--text-color);
     }
     .nav__link i,
     .logout__link i{
         font-size: 1.5rem;
+    }
+    .nav-icon{
+        width: 22px;
     }
     .nav__link .nav__text{
         font-weight: 700;
@@ -2164,8 +2171,9 @@ label .checkbox .check::after {
     .user__pic-home{
         font-size: 1.125rem;
     }
-    .user__box-home i{
-        font-size: 1.4rem;
+    .user__box-home img{
+        width: 28px;
+        cursor: pointer;
     }
     .user__box{
         gap: .5rem;
@@ -2239,8 +2247,8 @@ label .checkbox .check::after {
         cursor: pointer;
         justify-content: space-between;
     }
-    .swac-btn2 i {
-        font-size: 25px;
+    .swac-btn2 img {
+        width: 30px;
         transition: 0.3s;
     }
     .swac-options2 {
@@ -2400,10 +2408,6 @@ label .checkbox .check::after {
         overflow: auto;
         padding-bottom: 2rem;
     }
-    .notification-icon,
-    .notifications__close{
-        display: none;
-    }
     .send__post{
         height: 3rem;
         width: 3rem;
@@ -2418,9 +2422,16 @@ label .checkbox .check::after {
         font-size: 1.5rem;
     }
     .kbtn{
-        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
         z-index: 100;
         background-color: #fff;
+    }
+    .report__header{
+        position: sticky;
+    }
+    .report__back{
+        display: none;
     }
     .knav__second-toggle span{
         font-size: 1.5rem;
@@ -2437,6 +2448,10 @@ label .checkbox .check::after {
     }
     .notifi__header{
         position: sticky;
+    }
+    .rant__button{
+        bottom: 6rem;
+        right: 3rem;
     }
     .filters__content{
         position: sticky;
