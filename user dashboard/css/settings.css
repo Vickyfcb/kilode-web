@@ -597,6 +597,7 @@ input[type="checkbox"]:checked:after {
         width: 100%;
         padding: 27px 23px;
         border: transparent;
+        margin: 0 !important;
     }
 
     .setting_nav_card .active_indicator {
@@ -617,10 +618,7 @@ input[type="checkbox"]:checked:after {
         margin-right: 0 !important;
     }
 
-    /* .setting_section_content {
-        float: left;
-        width: 100%;
-    } */
+    
 
     .btn-primary,
     .btn-secondary {
@@ -683,31 +681,8 @@ input[type="checkbox"]:checked:after {
     }
 
     /* Notification page  */
-    .checkbox_wrapper .checkbox {
-        box-sizing: border-box;
-        width: 13px !important;
-        /* height: 18px !important; */
-        border: 1px solid #BDBDBD;
-        border-radius: 8px;
-        padding: 8px;
-        font-weight: 400;
-        color: #1D1D1D;
-        margin-bottom: 27px;
-        /* margin-right: 12px; */
-    }
-
-    .checkbox_wrapper {
-        display: flex;
-        margin: 0 0 !important;
-        padding-bottom: 24px;
-    }
-
-    .checkbox_wrapper .checkbox_label {
+    .notification_wrapper label {
         margin: 0 !important;
-        font-weight: 400;
-        font-size: 16px !important;
-        color: #1D1D1D;
-        padding-left: 12px;
     }
 
     /* Listener Page  */
