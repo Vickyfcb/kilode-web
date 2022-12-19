@@ -207,10 +207,7 @@
 
 }
 
-/* .bx-chevron-right {
-    margin-left: 1rem;
-    background-color: red;
-} */
+
 
 .setting_nav_link.active {
     font-weight: 700;
@@ -514,10 +511,10 @@ input[type="checkbox"]:checked:after {
 
     }
     .setting_nav_card {
-        width: 100%;
+        width: 97% !important;
         height: 55px;
         margin-right: 0 !important;
-        margin-left: 2rem !important;
+        /* margin-left: 2rem !important; */
     }
 
     .settings__back {
@@ -701,10 +698,7 @@ input[type="checkbox"]:checked:after {
         margin-top: 0;
     }
 
-    .setting_nav_card {
-        width: 90%;
-    }
-
+    
     .nav__second-btn {
         left: 0;
         justify-content: flex-start;
