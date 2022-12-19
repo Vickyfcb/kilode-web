@@ -616,6 +616,7 @@ input[type="checkbox"]:checked:after {
         width: 330px;
         height: 65px;
         margin-right: 0 !important;
+        margin-top: 1rem;
     }
 
     
