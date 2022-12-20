@@ -227,8 +227,7 @@
 }
 
 .setting_nav_card .bx {
-    margin: auto 1rem auto auto;
-    padding-right: 1rem;
+    margin: auto .5rem auto auto;
     font-size: 3rem;
     color: #1D1D1D;
 }
@@ -602,7 +601,9 @@ input[type="checkbox"]:checked:after {
     .nav__list {
         display: none;
     }
-
+    .setting_section_content{
+        margin-top: 1rem;
+    }
     .setting_content_display_card .profile_thumbnail {
         width: 66px;
         height: 66px;
@@ -655,7 +656,7 @@ input[type="checkbox"]:checked:after {
         width: 330px;
         height: 65px;
         margin-right: 0 !important;
-        margin-top: 1rem;
+        margin-top: 12px;
     }
 
 
