@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/kilopal.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>kilopal Dashboard</title>
+</head>
+
+<body id="body">
+    <div class="nav" id="navbar">
+        <nav class="nav__content">
+            <a href="../index.html" class="nav__logo">
+                <img src="../images/kilode-logo-white.png" class="nav__logo-icon">
+                <img src="../images/logo-small.png" alt="" class="nav__logo-small">
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+                <img src="../images/Menu.png" alt="">
+            </div>
+            <div class="nav__list">
+                <div class="nav__list-first">
+                    <a href="kilopal-dash-home.html" class="nav__link ">
+                        <img src="../images/dashhome-icon-mobile.png" alt="" class="mobile-img nav-icon">
+                        <img src="../images/dashhome-icon-solid.png" alt="" class="desktop-img nav-icon">
+                        <span class="nav__text">Dashboard</span>
+                    </a>
+                    <a href="kilopal-message.html" class="nav__link">
+                        <img src="../images/messages-icon.png" alt="" class="nav-icon">
+                        <span class="nav__text">Messages</span>
+                    </a>
+                </div>
+                <div class="nav__list-second" id="nav-second">
+                    <div class="img-back">
+                        <a href="index.html">
+                            <img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
+                        </a>
+                        <div class="nav__second-back" id="navsecond-close">
+                            <img src="../images/arrow-left-circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="nav__user-box">
+                        <div class="nav__user-pic">
+                            <h1>U</h1>
+                        </div>
+                        <div class="nav__username-box">
+                            <h2 class="nav__user-name">UserX</h2>
+                            <p class="nav__user-email">userx@gmail.com</p>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <br>
+                    <div class="navb2 grid">
+                        <div class="switch__acc">
+                            <div class="swac-btn">
+                                <span class="swac-title">Switch account</span>
+                                <img src="../images/arrow-down.png" alt="" class="switch-close">
+                            </div>
+                            <ul class="swac-options grid">
+                                <li class="swac-option listener">
+                                    <span class="swac-option-text">@hikari</span>
+                                    <span class="swac-option-role">User</span>
+                                </li>
+                                <li class="swac-option">
+                                    <span class="swac-option-text">@hinata</span>
+                                    <span class="swac-option-role">Listener</span>
+                                </li>
+                            </ul>
+                            <div class="swac-modal">
+                                <a href="../user dashboard/user-dashboard.html">
+                                    <span class="swac-modal-text">Login as a user</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="change__theme">
+                            <span class="theme__text">Theme</span>
+                            <label class="switch">
+                                <input type="checkbox" onclick="myFunction()" class="switch__input">
+                                <div class="switch__rail">
+                                    <span class="switch__circle"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="nav__second">
+                        <div>
+                            <a href="#" class="nav__link active-link">
+                                <img src="../images/setting-icon.png" alt="" class="nav-icon">
+                                <span class="nav__text">Settings</span>
+                            </a>
+                            <a href="#" class="logout__link">
+                                <img src="../images/logout-icon.png" alt="" class="nav-icon">
+                                <span class="nav__text logout-text">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- =============== MAIN ============== -->
+    <main class="main">
+
+        <div class="container">
+            <!-- Sidebar -->
+
+            <div class="setting_content_display">
+                <div class="setting_content_display_card">
+                    <div class="back_btn">
+                        <a href="notification.html"><i class='bx bxs-chevron-left'></i></a>
+                        <h4 for="">Notifications</h4>
+
+                    </div>
+                    <h5 class="input_sub_header">Send me Notifications</h5>
+
+                    <div class="notification_wrapper">
+                        <div class="myCheckbox">
+                            <input type="checkbox" name="" id="check_1">
+                            <label for="check_1">Notify me on someone reacts to my kilorant</label>
+                        </div>
+                    </div>
+
+                    <div class="notification_wrapper">
+                        <div class="myCheckbox">
+                            <input type="checkbox" name="" id="check_2">
+                            <label for="check_2">Notify me when there is a new blog post</label>
+                        </div>
+                    </div>
+                    <div class="notification_wrapper">
+                        <div class="myCheckbox">
+                            <input type="checkbox" name="" id="check_3">
+                            <label for="check_3">Notify me on Kilorants I am following</label>
+                        </div>
+                    </div>
+                    <div class="notification_wrapper">
+                        <div class="myCheckbox">
+                            <input type="checkbox" name="" id="check_4">
+                            <label for="check_4">Turn on email notifications</label>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" type="submit">Done</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="js/setting_modal.js"></script>
+    <script src="js/user-dash.js"></script>
+    <script>
+        const switchMenu = document.querySelector(".switch__acc"),
+            swacBtn = switchMenu.querySelector(".swac-btn"),
+            swacOptions = switchMenu.querySelectorAll(".swac-option");
+
+        swacBtn.addEventListener("click", () => switchMenu.classList.toggle("switch-active"));
+
+        swacOptions.forEach(option => {
+            option.addEventListener("click", () => {
+                // let selectedOption = option.querySelector(".option-text").innerText;
+                // swacText.innerText = selectedOption;
+
+                //switchMenu.classList.remove("switch-active");
+            });
+        });
+
+        const switchMenu2 = document.querySelector(".switch__acc2"),
+            swacBtn2 = switchMenu2.querySelector(".swac-btn2");
+        swacOptions2 = switchMenu2.querySelectorAll(".swac-option2");
+
+        swacBtn2.addEventListener("click", () => switchMenu2.classList.toggle("switch-active2"));
+
+        const userMenu = document.querySelector(".nav__second-menu"),
+            userBtn = userMenu.querySelector(".user-home-drop");
+
+        userBtn.addEventListener("click", () => userMenu.classList.toggle("user-active"));
+
+        const modalViews = document.querySelectorAll('.swac-modal'),
+            modalBtns = document.querySelectorAll('.listener'),
+            modalCloses = document.querySelectorAll('.switch-close')
+        let modal = function (modalClick) {
+            modalViews[modalClick].style.display = "flex";
+        }
+        modalBtns.forEach((modalBtn, i) => {
+            modalBtn.addEventListener('click', () => {
+                modal(i)
+            })
+        })
+        modalCloses.forEach((modalClose) => {
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalView) => {
+                    modalView.style.display = "none";
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
