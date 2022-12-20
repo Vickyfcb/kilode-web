@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>kilopal Dashboard</title>
 </head>
+
 <body id="body">
     <div class="nav" id="navbar">
         <nav class="nav__content">
@@ -21,7 +23,7 @@
             </div>
             <div class="nav__list">
                 <div class="nav__list-first">
-                    <a href="kilopal-dash-home.html" class="nav__link active-link">
+                    <a href="kilopal-dash-home.html" class="nav__link ">
                         <img src="../images/dashhome-icon-mobile.png" alt="" class="mobile-img nav-icon">
                         <img src="../images/dashhome-icon-solid.png" alt="" class="desktop-img nav-icon">
                         <span class="nav__text">Dashboard</span>
@@ -35,7 +37,7 @@
                     <div class="img-back">
                         <a href="index.html">
                             <img src="../images/kilode-logo-white.png" class="nav__logo-second-icon">
-                        </a> 
+                        </a>
                         <div class="nav__second-back" id="navsecond-close">
                             <img src="../images/arrow-left-circle.png" alt="">
                         </div>
@@ -87,7 +89,7 @@
                     <hr>
                     <div class="nav__second">
                         <div>
-                            <a href="#" class="nav__link ">
+                            <a href="#" class="nav__link active-link">
                                 <img src="../images/setting-icon.png" alt="" class="nav-icon">
                                 <span class="nav__text">Settings</span>
                             </a>
@@ -101,111 +103,112 @@
             </div>
         </nav>
     </div>
-        <!-- =============== MAIN ============== -->
-        <main class="main">
-            <div class="nav__second-btn">
-                <div class="nsbf">
-                    <!-- <div class="nav__second-toggle" id="navsecond-toggle">
+    <!-- =============== MAIN ============== -->
+    <main class="main">
+        <div class="nav__second-btn">
+            <div class="nsbf">
+                <!-- <div class="nav__second-toggle" id="navsecond-toggle">
                         <i class='bx bx-menu'></i>
                     </div> -->
-                    <a href="user-dashboard.html" class="settings__back">
-                        <i class='bx bx-chevron-left'></i>
-                    </a>
-                    <span class="setting__title">Settings</span>
+                <a href="user-dashboard.html" class="settings__back">
+                    <i class='bx bx-chevron-left'></i>
+                </a>
+                <span class="setting__title">Settings</span>
+            </div>
+            <div class="notification_btn">
+                <a href="notifications.html">
+                    <img src="../images/Notification.png" alt="" class="notification__icon">
+                </a>
+            </div>
+        </div>
+        <!-- =============== FEEDS =============== -->
+
+        <div class="my_container">
+            <!-- Sidebar -->
+
+            <div class="setting_section">
+
+                <div class="setting_section_content">
+                    <div>
+                        <div class="setting_nav_card">
+                            <img class="active_indicator" src="../images/Rectangle.png" alt="">
+                            <h4 class="setting_nav_link active">Your Account</h4>
+                            <a class="large_screen" href="settings.html"><i class='bx bx-chevron-right'></i></a>
+                            <a class="small_screen" href="account.html"><i class='bx bx-chevron-right'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="setting_nav_card">
+                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
+                        <h4 class="setting_nav_link ">Register as a Therapist</h4>
+                        <a class="large_screen" href="listener.html"><i class='bx bx-chevron-right'></i></a>
+                        <a class="small_screen" href="listener_mobile.html"><i class='bx bx-chevron-right'></i></a>
+                    </div>
+
+                    <div class="setting_nav_card">
+                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
+                        <h4 class="setting_nav_link ">Feedback</h4>
+                        <a class="large_screen" href="feedback.html"><i class='bx bx-chevron-right'></i></a>
+                        <a class="small_screen" href="feedback_mobile.html"><i class='bx bx-chevron-right'></i></a>
+                    </div>
+
+                    <div class="setting_nav_card">
+                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
+                        <h4 class="setting_nav_link ">Notifications</h4>
+                        <a class="large_screen" href="notification.html"><i class='bx bx-chevron-right'></i></a>
+                        <a class="small_screen" href="notification_mobile.html"><i class='bx bx-chevron-right'></i></a>
+                    </div>
+
+                    <div class="setting_nav_card">
+                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
+                        <h4 class="setting_nav_link ">Delete Account</h4>
+                        <a class="large_screen" href="delete.html"><i class='bx bx-chevron-right'></i></a>
+                        <a class="small_screen" href="delete_mobile.html"><i class='bx bx-chevron-right'></i></a>
+                    </div>
                 </div>
-                <div class="notification_btn">
-                    <a href="notifications.html">
-                        <img src="../images/Notification.png" alt="" class="notification__icon">
-                    </a>
+                <div class="setting_content_display d-md-none">
+                    <div class="setting_content_display_card">
+                        <div class="sub_heading">User Account</div>
+                        <div class="profile">
+                            <img class="profile_thumbnail" src="../images/stress-img.png">
+                            <label>Edit</label>
+                        </div>
+                        <h5 class="input_header">Username</h5>
+                        <input class="input_field" type="text" value="Hikari">
+                        <h5 class="input_header">Email Address</h5>
+                        <input class="input_field" type="text" value="Hikaritesss@gmail.com">
+                        <button class="btn-primary" type="submit">Save changes</button>
+
+
+                        <!-- Change Password Section -->
+                        <h5 class="input_sub_header">Change password</h5>
+                        <h5 class="input_header">New Password</h5>
+                        <input class="input_field" type="password" value="***************">
+                        <h5 class="input_header">Re-type Password</h5>
+                        <input class="input_field" type="password" value="***************">
+                        <!-- Trigger/Open The Popup -->
+                        <button class=" btn-secondary" id="myBtn" type="submit"><strong>Change
+                                password</strong></button>
+
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close"><i class='bx bx-x'></i></span>
+                        <h5 class="modal_header" style="padding-bottom: 17px;">Change password</h5>
+                        <p style="padding-bottom:39px;">Are you sure you want to change your password?</p>
+
+                        <button class="btn-secondary modal-btn" type="submit">Change password</button>
+
+                    </div>
                 </div>
             </div>
-            <!-- =============== FEEDS =============== -->
-    
-            <div class="my_container">
-                <!-- Sidebar -->
-    
-                <div class="setting_section">
-    
-                    <div class="setting_section_content">
-                        <div>
-                            <div class="setting_nav_card">
-                                <img class="active_indicator" src="../images/Rectangle.png" alt="">
-                                <h4 class="setting_nav_link active">Your Account</h4>
-                                <a class="large_screen" href="settings.html"><i class='bx bx-chevron-right'></i></a>
-                                <a class="small_screen" href="account.html"><i class='bx bx-chevron-right'></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="setting_nav_card">
-                            <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
-                            <h4 class="setting_nav_link ">Take Listener Quiz</h4>
-                            <a class="large_screen" href="listener.html"><i class='bx bx-chevron-right'></i></a>
-                            <a class="small_screen" href="listener_mobile.html"><i class='bx bx-chevron-right'></i></a>
-                        </div>
-    
-                        <div class="setting_nav_card">
-                            <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
-                            <h4 class="setting_nav_link ">Feedback</h4>
-                            <a class="large_screen" href="feedback.html"><i class='bx bx-chevron-right'></i></a>
-                            <a class="small_screen" href="feedback_mobile.html"><i class='bx bx-chevron-right'></i></a>
-                        </div>
-    
-                        <div class="setting_nav_card">
-                            <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
-                            <h4 class="setting_nav_link ">Notifications</h4>
-                            <a class="large_screen" href="notification.html"><i class='bx bx-chevron-right'></i></a>
-                            <a class="small_screen" href="notification_mobile.html"><i class='bx bx-chevron-right'></i></a>
-                        </div>
-    
-                        <div class="setting_nav_card">
-                            <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
-                            <h4 class="setting_nav_link ">Delete Account</h4>
-                            <a class="large_screen" href="delete.html"><i class='bx bx-chevron-right'></i></a>
-                            <a class="small_screen" href="delete_mobile.html"><i class='bx bx-chevron-right'></i></a>
-                        </div>
-                    </div>
-                    <div class="setting_content_display d-md-none">
-                        <div class="setting_content_display_card">
-                            <div class="sub_heading">User Account</div>
-                            <div class="profile">
-                                <img class="profile_thumbnail" src="../images/stress-img.png">
-                                <label>Edit</label>
-                            </div>
-                            <h5 class="input_header">Username</h5>
-                            <input class="input_field" type="text" value="Hikari">
-                            <h5 class="input_header">Email Address</h5>
-                            <input class="input_field" type="text" value="Hikaritesss@gmail.com" >
-                            <button class="btn-primary" type="submit">Save changes</button>
-    
-    
-                            <!-- Change Password Section -->
-                            <h5 class="input_sub_header">Change password</h5>
-                            <h5 class="input_header">New Password</h5>
-                            <input class="input_field" type="password" value="***************">
-                            <h5 class="input_header">Re-type Password</h5>
-                            <input class="input_field" type="password" value="***************">
-                            <!-- Trigger/Open The Popup -->
-                            <button class=" btn-secondary" id="myBtn" type="submit"><strong>Change password</strong></button>
-    
-                        </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close"><i class='bx bx-x'></i></span>
-                            <h5 class="modal_header">Change password</h5>
-                            <p>Are you sure you want to change your password?</p>
-                            
-                            <button class="btn-secondary modal-btn" type="submit">Change password</button>
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-    
-            <!-- Notifications Section
+        </div>
+
+
+        <!-- Notifications Section
             <div class="notifications" id="notifications-menu">
                 <div class="notifications__container">
                     <div class="notifications__close" id="notifications-close">
@@ -315,53 +318,55 @@
                     </div>
                 </div>
             </div> -->
-        </main>
+    </main>
+    <script src="js/setting_modal.js"></script>
     <script src="js/user-dash.js"></script>
     <script>
         const switchMenu = document.querySelector(".switch__acc"),
-        swacBtn = switchMenu.querySelector(".swac-btn"),
-        swacOptions = switchMenu.querySelectorAll(".swac-option");
+            swacBtn = switchMenu.querySelector(".swac-btn"),
+            swacOptions = switchMenu.querySelectorAll(".swac-option");
 
-        swacBtn.addEventListener("click", () => switchMenu.classList.toggle("switch-active")); 
+        swacBtn.addEventListener("click", () => switchMenu.classList.toggle("switch-active"));
 
-        swacOptions.forEach(option =>{
-            option.addEventListener("click", ()=>{
-            // let selectedOption = option.querySelector(".option-text").innerText;
-            // swacText.innerText = selectedOption;
+        swacOptions.forEach(option => {
+            option.addEventListener("click", () => {
+                // let selectedOption = option.querySelector(".option-text").innerText;
+                // swacText.innerText = selectedOption;
 
-            //switchMenu.classList.remove("switch-active");
+                //switchMenu.classList.remove("switch-active");
             });
         });
 
         const switchMenu2 = document.querySelector(".switch__acc2"),
-        swacBtn2 = switchMenu2.querySelector(".swac-btn2");
+            swacBtn2 = switchMenu2.querySelector(".swac-btn2");
         swacOptions2 = switchMenu2.querySelectorAll(".swac-option2");
 
-        swacBtn2.addEventListener("click", () => switchMenu2.classList.toggle("switch-active2")); 
+        swacBtn2.addEventListener("click", () => switchMenu2.classList.toggle("switch-active2"));
 
-        const  userMenu= document.querySelector(".nav__second-menu"),
-        userBtn = userMenu.querySelector(".user-home-drop");
+        const userMenu = document.querySelector(".nav__second-menu"),
+            userBtn = userMenu.querySelector(".user-home-drop");
 
         userBtn.addEventListener("click", () => userMenu.classList.toggle("user-active"));
 
         const modalViews = document.querySelectorAll('.swac-modal'),
-          modalBtns = document.querySelectorAll('.listener'),
-          modalCloses = document.querySelectorAll('.switch-close')
-        let modal = function(modalClick) {
+            modalBtns = document.querySelectorAll('.listener'),
+            modalCloses = document.querySelectorAll('.switch-close')
+        let modal = function (modalClick) {
             modalViews[modalClick].style.display = "flex";
         }
         modalBtns.forEach((modalBtn, i) => {
-                modalBtn.addEventListener('click', () =>{
-                        modal(i)
-                })
+            modalBtn.addEventListener('click', () => {
+                modal(i)
+            })
         })
         modalCloses.forEach((modalClose) => {
-                modalClose.addEventListener('click',() => {
-                        modalViews.forEach((modalView) =>{
-                                modalView.style.display = "none";
-                        })
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalView) => {
+                    modalView.style.display = "none";
                 })
+            })
         })
     </script>
 </body>
+
 </html>
