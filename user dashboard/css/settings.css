@@ -506,10 +506,7 @@ input[type="checkbox"]:checked:after {
 }
 
 @media screen and (min-width:768px) and (max-width:1181px) {
-    .mycontainer {
-        /* margin: 0 auto !important; */
-
-    }
+    
     .setting_nav_card {
         width: 97% !important;
         height: 55px;
