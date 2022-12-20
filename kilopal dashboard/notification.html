@@ -146,15 +146,15 @@
                     </div>
 
                     <div class="setting_nav_card">
-                        <img class="active_indicator" src="../images/Rectangle.png" alt="">
-                        <h4 class="setting_nav_link active">Feedback</h4>
+                        <!-- <img class="active_indicator" src="../images/Rectangle.png" alt=""> -->
+                        <h4 class="setting_nav_link ">Feedback</h4>
                         <a class="large_screen" href="feedback.html"><i class='bx bx-chevron-right'></i></a>
                         <a class="small_screen" href="feedback_mobile.html"><i class='bx bx-chevron-right'></i></a>
                     </div>
 
                     <div class="setting_nav_card">
-                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
-                        <h4 class="setting_nav_link ">Notifications</h4>
+                        <img class="active_indicator" src="../images/Rectangle.png" alt="">
+                        <h4 class="setting_nav_link active">Notifications</h4>
                         <a class="large_screen" href="notification.html"><i class='bx bx-chevron-right'></i></a>
                         <a class="small_screen" href="notification_mobile.html"><i class='bx bx-chevron-right'></i></a>
                     </div>
@@ -168,22 +168,35 @@
                 </div>
                 <div class="setting_content_display d-md-none">
                     <div class="setting_content_display_card">
-                        <h5 class="input_sub_header">Feedback</h5>
-                        <p>How is your stay in Kilode so far? We hope it has been blissful and serene. Kindly leave us a
-                            feedback</p>
-                        <textarea name="" id="" cols="74" placeholder="Write you message" rows="10"></textarea>
-                        <button class="btn-primary" id="myBtn" type="submit">Send Feedback</button>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close"><i class='bx bx-x'></i></span>
-                            <div class="modal-content-body">
-                                <p>Error in receiving feedback message. <br> Please <a class="text-green" href="">try
-                                        again</a></p>
+                        <h5 class="input_sub_header">Send me Notifications</h5>
+                        <div class="notification_wrapper">
+                            <div class="myCheckbox">
+                                <input type="checkbox" name="" id="check_1">
+                                <label for="check_1">Notify me on someone reacts to my kilorant</label>
                             </div>
                         </div>
+
+                        <div class="notification_wrapper">
+                            <div class="myCheckbox">
+                                <input type="checkbox" name="" id="check_2">
+                                <label for="check_2">Notify me when there is a new blog post</label>
+                            </div>
+                        </div>
+                        <div class="notification_wrapper">
+                            <div class="myCheckbox">
+                                <input type="checkbox" name="" id="check_3">
+                                <label for="check_3">Notify me on Kilorants I am following</label>
+                            </div>
+                        </div>
+                        <div class="notification_wrapper">
+                            <div class="myCheckbox">
+                                <input type="checkbox" name="" id="check_4">
+                                <label for="check_4">Turn on email notifications</label>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary" type="submit">Done</button>
+
                     </div>
 
 

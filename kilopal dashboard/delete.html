@@ -146,47 +146,61 @@
                     </div>
 
                     <div class="setting_nav_card">
-                        <img class="active_indicator" src="../images/Rectangle.png" alt="">
-                        <h4 class="setting_nav_link active">Feedback</h4>
+                        <!-- <img class="active_indicator" src="../images/Rectangle.png" alt=""> -->
+                        <h4 class="setting_nav_link ">Feedback</h4>
                         <a class="large_screen" href="feedback.html"><i class='bx bx-chevron-right'></i></a>
                         <a class="small_screen" href="feedback_mobile.html"><i class='bx bx-chevron-right'></i></a>
                     </div>
 
                     <div class="setting_nav_card">
-                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
+                        <!-- <img class="active_indicator" src="../images/Rectangle.png" alt=""> -->
                         <h4 class="setting_nav_link ">Notifications</h4>
                         <a class="large_screen" href="notification.html"><i class='bx bx-chevron-right'></i></a>
                         <a class="small_screen" href="notification_mobile.html"><i class='bx bx-chevron-right'></i></a>
                     </div>
 
                     <div class="setting_nav_card">
-                        <!-- <img class="active_indicator" src="image/Rectangle.png" alt=""> -->
-                        <h4 class="setting_nav_link ">Delete Account</h4>
+                        <img class="active_indicator" src="../images/Rectangle.png" alt="">
+                        <h4 class="setting_nav_link active">Delete Account</h4>
                         <a class="large_screen" href="delete.html"><i class='bx bx-chevron-right'></i></a>
                         <a class="small_screen" href="delete_mobile.html"><i class='bx bx-chevron-right'></i></a>
                     </div>
                 </div>
                 <div class="setting_content_display d-md-none">
                     <div class="setting_content_display_card">
-                        <h5 class="input_sub_header">Feedback</h5>
-                        <p>How is your stay in Kilode so far? We hope it has been blissful and serene. Kindly leave us a
-                            feedback</p>
-                        <textarea name="" id="" cols="74" placeholder="Write you message" rows="10"></textarea>
-                        <button class="btn-primary" id="myBtn" type="submit">Send Feedback</button>
+
+                        <strong>
+                            <p class="input_sub_headfer" style="padding-bottom: 44px;">Are you sure you want to delete
+                                your account?</p>
+                        </strong>
+
+                        <p style="padding-bottom: 34px;">Deleting your account will remove all data and content
+                            associated with your account</p>
+
+                        <p>Delete Kilode account associated with this email: <a class="text-green"
+                                href="">Johndoe@gmai.com</a></p>
+
+                        <button class="text-danger" style="padding-top: 52px; padding-bottom: 250px;" id="myBtn"
+                            type="submit"><strong>Delete Account</strong></button>
+
                     </div>
+
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                         <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close"><i class='bx bx-x'></i></span>
-                            <div class="modal-content-body">
-                                <p>Error in receiving feedback message. <br> Please <a class="text-green" href="">try
-                                        again</a></p>
-                            </div>
+                            <h5 class="modal_header" style="padding-bottom: 17px;">Delete Account?</h5>
+                            <p style="padding-bottom:39px;">Are you sure want to delete your account? You will lose all
+                                journals and messages associated with this account?</p>
+
+                            <!-- <p id="myBtnConfirm"></p> -->
+                            <!-- Trigger/Open The Modal -->
+                            <button class="btn-secondary modal-btn modalBtn" id="myBtnConfirm" type="submit">Delete
+                                Account</button>
+
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
