@@ -212,5 +212,24 @@ skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
 
-//select
+// Get the modal
+var modalMy = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+    modalMy.style.display = "block";
+}
+
+span.onclick = function () {
+    modalMy.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modalMy) {
+        modalMy.style.display = "none";
+    }
+}
 

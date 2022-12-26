@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/settings.css">
     <link rel="stylesheet" href="css/kilopal.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>kilopal Dashboard</title>
 </head>
 
@@ -22,12 +20,12 @@
                 <img src="../images/Menu.png" alt="">
             </div>
             <div class="nav__list">
-                <div class="nav__list-first">
-                    <a href="kilopal-dash-home.html" class="nav__link ">
-                        <img src="../images/dashhome-icon-mobile.png" alt="" class="mobile-img nav-icon">
-                        <img src="../images/dashhome-icon-solid.png" alt="" class="desktop-img nav-icon">
-                        <span class="nav__text">Dashboard</span>
-                    </a>
+                <div class="nav__list settings-nav__list">
+                    <div class="nav__list-first">
+                        <a href="kilopal-dash-home.html" class="nav__link">
+                            <img src="../images/dashhome-icon.png" alt="" class="nav-icon">
+                            <span class="nav__text">Dashboard</span>
+                        </a>
                     <a href="kilopal-message.html" class="nav__link">
                         <img src="../images/messages-icon.png" alt="" class="nav-icon">
                         <span class="nav__text">Messages</span>
@@ -89,7 +87,7 @@
                     <hr>
                     <div class="nav__second">
                         <div>
-                            <a href="#" class="nav__link active-link">
+                            <a href="#" class="nav__link settings-active">
                                 <img src="../images/setting-icon.png" alt="" class="nav-icon">
                                 <span class="nav__text">Settings</span>
                             </a>
@@ -112,7 +110,7 @@
             <div class="setting_content_display">
                 <div class="setting_content_display_card">
                     <div class="back_btn">
-                        <a href="notification.html"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="notification.html"><img src="../images/arrow-left.png" alt=""></a>
                         <h4 for="">Notifications</h4>
 
                     </div>
@@ -152,7 +150,6 @@
 
 
     </main>
-    <script src="js/setting_modal.js"></script>
     <script src="js/user-dash.js"></script>
     <script>
         const switchMenu = document.querySelector(".switch__acc"),
