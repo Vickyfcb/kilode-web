@@ -1801,12 +1801,7 @@ label .checkbox .check::after {
 
 /* SETTINGS */
 /* Setting Page Sections CSS */
-* {
-    margin: 0;
-    padding: 0;
-    outline: 1px red;
-    /* outline: 1px solid red; */
-}
+
 
 .d-none {
     display: none;
@@ -2014,22 +2009,23 @@ label .checkbox .check::after {
 
 
 
-.setting_nav_link.active {
-    font-weight: 700;
+.setting_nav_link {
+    font-weight: 400;
     font-size: 18px;
-    color: var(--first-color);
-    /* padding-left: 2px; */
-    /* width: 70%; */
-    margin: auto 0;
-    padding-left: 43px;
+    color: #282828;
+    margin: auto 2rem;
+    padding-left: 19px;
+    width: 70%;
+    /* padding-right: 6rem; */
     /* margin: auto 120px auto 35px; */
-    /* margin-right: 11rem; */
+
 }
 
 .setting_nav_card .bx {
     width: 35px;
     height: 35px;
     display: flex;
+    margin: auto 0;
 }
 
 .setting_nav_card a {
@@ -2040,6 +2036,11 @@ label .checkbox .check::after {
     /* padding-left: 2rem; */
     /* float: left; */
 
+}
+
+.setting_nav_card a img{
+    width: 35px;
+    height: auto;
 }
 
 .body2 {
